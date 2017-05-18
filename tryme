@@ -1,0 +1,23 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+TEST_DIR=~/tmp/hackit_quickstart_test
+
+cd $SCRIPT_DIR
+go generate ./...
+go install ./...
+
+rm -rf $TEST_DIR
+mkdir -p $TEST_DIR
+cd $TEST_DIR
+git init
+git remote add origin "git@git.idevsix.com:ghackett/test.git"
+
+echo "switch to dir: $TEST_DIR"
+echo "running hackit-quickstart $@"
+
+hackit-quickstart $@
+
+echo "done with init, testing"
+./gradlew clean check

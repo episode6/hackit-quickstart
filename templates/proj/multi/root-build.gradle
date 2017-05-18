@@ -1,0 +1,12 @@
+allprojects {
+  repositories {
+    jcenter()
+  }
+
+  group = '{{ .Group }}'
+  version = '{{ .Version }}'
+}
+
+task clean(type: Delete) {
+  delete rootProject.buildDir
+}

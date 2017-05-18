@@ -1,0 +1,15 @@
+buildscript {
+  repositories {
+    jcenter()
+  }
+  dependencies { {{ range $index, $dep := .BuildScriptDeps }}
+    classpath '{{ $dep }}'{{ end }}
+  }
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = "3.3"
+  distributionType = "all"
+}
+
+{{ .ProjSpecRootGradleBody }}
