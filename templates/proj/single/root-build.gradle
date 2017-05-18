@@ -1,0 +1,8 @@
+repositories {
+  jcenter()
+}
+
+group = '{{ .Group }}'
+version = '{{ .Version }}'
+
+{{ .ProjGradleBody }}

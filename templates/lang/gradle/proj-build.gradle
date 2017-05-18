@@ -1,0 +1,9 @@
+dependencies {
+  compile localGroovy()
+  compile gradleApi()
+
+  testCompile gradleTestKit()
+  testCompile("org.spockframework:spock-core")  {
+    exclude module: 'groovy-all'
+  }
+}
