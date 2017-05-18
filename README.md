@@ -1,15 +1,15 @@
 # hackit-quickstart
 A gradle project generator written in go. Generates gradle projects that use episode6's hackit open source tools.
 
-# Why
+## Why
 I wanted a faster way to create new libraries and apps using the episode6/hackit toolkit. I also wanted to learn go.
 
-# Usage
+## Usage
 Install with
 ```bash
+# You'll also need a relatively modern version of gradle to run the initial wrapper task
 go get -u https://github.com/episode6/hackit-quickstart
 ```
-
 First, ensure you `cd` to a git repo with a remote named origin (url is used to pre-populate some of [deployable](https://github.com/episode6/deployable)'s properties)
 ```bash
 git clone git@github.com:<myusername>/<mynewproject>.git
@@ -54,3 +54,10 @@ If you want to use a gdmc repository by default, set it as an environment variab
 # this repo will be included as a sub-module by default in /gdmc
 export GDMC="git@github.com:episode6/hackit-gdmc.git"
 ```
+
+## Generated Projects
+Generated projects include some or all of the following classpath dependencies by default...
+- gradle wrapper v3.3 - All projects
+- [gdmc](https://github.com/episode6/gdmc) - All projects - dependency manager
+- [deployable](https://github.com/episode6/deployable) - All projects except androidApp - simplified publishing to mavenCentral
+- [android gradle build tools](https://developer.android.com/studio/releases/gradle-plugin.html) - android and androidApp
