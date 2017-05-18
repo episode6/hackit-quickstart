@@ -13,7 +13,7 @@ node {
     goRunner = fileLoader.fromGit(
         'go/GoRunner',
         'git@github.com:episode6/jenkins-pipelines.git',
-        'develop',
+        'v0.0.6',
         null,
         '')
   }
