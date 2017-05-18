@@ -8,7 +8,7 @@ I wanted a faster way to create new libraries and apps using the episode6/hackit
 Install with
 ```bash
 # You'll also need a relatively modern version of gradle to run the initial wrapper task
-go get -u https://github.com/episode6/hackit-quickstart
+go get -u github.com/episode6/hackit-quickstart
 ```
 First, ensure you `cd` to a git repo with a remote named origin (url is used to pre-populate some of [deployable](https://github.com/episode6/deployable)'s properties)
 ```bash
