@@ -26,7 +26,7 @@ Then execute the `hackit-quickstart` command (if you exclude any required flags 
 ```bash
 Usage of hackit-quickstart:
   -gdmc string
-    	Url of a shared gdmc repo to add as a sub-module (default "git@github.com:episode6/hackit-gdmc.git")
+    	Url of a shared gdmc repo to add as a sub-module
   -group string
     	GroupId (aka package name) of library to generate
   -lang string
@@ -37,7 +37,7 @@ Usage of hackit-quickstart:
 		android: A deployable android library
 		androidApp: An android application
   -name string
-    	The name of the new module to generate
+    	The name of the new module to generate (for a multi-module project, this will be the sub-modules name)
   -noGdmcRepo
     	Dont use a gdmc repo, equivilent to gdmc=""
   -type string
