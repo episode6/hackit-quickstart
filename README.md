@@ -48,3 +48,9 @@ Usage of hackit-quickstart:
   -version string
     	Initial version name to use (default "0.0.1-SNAPSHOT")
 ```
+
+If you want to use a gdmc repository by default, set it as an environment variable named `GDMC`
+```bash
+# this repo will be included as a sub-module by default in /gdmc
+export GDMC="git@github.com:episode6/hackit-gdmc.git"
+```
