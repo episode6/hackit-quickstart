@@ -19,7 +19,7 @@ android {
 }
 
 dependencies {
-  compile 'net.sourceforge.findbugs:jsr305'
+  compile 'com.google.code.findbugs:jsr305'
   testCompile 'junit:junit'
   testCompile 'org.easytesting:fest-assert-core'
 }
