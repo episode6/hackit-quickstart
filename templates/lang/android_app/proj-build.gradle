@@ -11,8 +11,9 @@ android {
   }
   buildTypes {
     release {
-      minifyEnabled false
-      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
     }
   }
 }
@@ -26,6 +27,7 @@ dependencies {
   testCompile 'junit:junit'
   testCompile 'org.robolectric:robolectric'
   testCompile 'org.easytesting:fest-assert-core'
+  androidTestCompile 'com.google.code.findbugs:jsr305'
   androidTestCompile 'org.easytesting:fest-assert-core'
   androidTestCompile('com.android.support.test.espresso:espresso-core', {
     exclude group: 'com.android.support', module: 'support-annotations'
