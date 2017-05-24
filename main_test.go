@@ -31,7 +31,7 @@ func TestSingleProjectGeneration(t *testing.T) {
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -53,7 +53,7 @@ func TestMultiProjectGeneration(t *testing.T) {
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 
 		subProjectData := &ProjectData{
 			Proj:  &subProject{},
@@ -63,7 +63,7 @@ func TestMultiProjectGeneration(t *testing.T) {
 		}
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -85,7 +85,7 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -107,7 +107,7 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 
 		subProjectData := &ProjectData{
 			Proj:  &subProject{},
@@ -117,7 +117,7 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 		}
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
