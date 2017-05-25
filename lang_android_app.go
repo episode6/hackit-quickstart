@@ -53,6 +53,11 @@ func (aa *androidApplication) generateLangSpecificFiles(data *ProjectData, subdi
 		aa,
 		data)
 	templateTemplateableToFile(
+		"src_files/MainFragment.java",
+		filepath.Join(mainPath, "MainFragment.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
 		"src_files/MainActivityTest.java",
 		filepath.Join(testPath, "MainActivityTest.java"),
 		aa,
@@ -73,9 +78,14 @@ func (aa *androidApplication) generateLangSpecificFiles(data *ProjectData, subdi
 	values := filepath.Join(resPath, "values")
 	mkdir(layout, mipmapHdpi, mipmapMdpi, mipmapXhdpi, mipmapXxhdpi, mipmapXxxhdpi, values)
 
-	writeRawTemplateAsset(
+	templateTemplateableToFile(
 		"src_files/res/layout/activity_main.xml",
 		filepath.Join(layout, "activity_main.xml"),
+		aa,
+		data)
+	writeRawTemplateAsset(
+		"src_files/res/layout/fragment_main.xml",
+		filepath.Join(layout, "fragment_main.xml"),
 		aa)
 	writeRawTemplateAsset(
 		"src_files/res/mipmap-hdpi/ic_launcher.png",
