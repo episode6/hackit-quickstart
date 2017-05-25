@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
+import {{ .Group }}.main.MainActivity;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 

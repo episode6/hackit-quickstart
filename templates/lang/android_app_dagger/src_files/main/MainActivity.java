@@ -1,7 +1,9 @@
-package {{ .Group }};
+package {{ .Group }}.main;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import {{ .Group }}.R;
 
 public class MainActivity extends AppCompatActivity {
 

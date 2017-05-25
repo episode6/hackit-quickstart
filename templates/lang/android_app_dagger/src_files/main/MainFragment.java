@@ -1,4 +1,4 @@
-package {{ .Group }};
+package {{ .Group }}.main;
 
 import android.app.Fragment;
 import android.os.Bundle;
