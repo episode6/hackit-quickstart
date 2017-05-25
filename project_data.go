@@ -119,6 +119,18 @@ func (data *ProjectData) CamelName() string {
 	return camelCase(data.Name)
 }
 
+// CamelNameWithoutApp is used for templating
+func (data *ProjectData) CamelNameWithoutApp() string {
+	camelName := data.CamelName()
+	if strings.HasSuffix(camelName, "Application") {
+		return camelName[0 : len(camelName)-11]
+	}
+	if strings.HasSuffix(camelName, "App") {
+		return camelName[0 : len(camelName)-3]
+	}
+	return camelName
+}
+
 func (data *ProjectData) getDepResolver() dependencyResolver {
 	if data.depResolver == nil {
 		filename := filepath.Join("gdmc", "gdmc.json")

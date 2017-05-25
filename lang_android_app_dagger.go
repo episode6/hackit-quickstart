@@ -35,7 +35,8 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
 	testPath := pathWithOptSubdir(subdir, "src", "test", "java", data.Group.asPath())
 	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "java", data.Group.asPath())
-	mkdir(mainPath, testPath, androidTestPath)
+	mainAppPath := filepath.Join(mainPath, "app")
+	mkdir(mainPath, testPath, androidTestPath, mainAppPath)
 
 	templateTemplateableToFile(
 		"proguard-rules.pro",
@@ -47,6 +48,28 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 		filepath.Join(mainRoot, "AndroidManifest.xml"),
 		aa,
 		data)
+
+	templateTemplateableToFile(
+		"src_files/app/App.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"App.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/app/AppComponent.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppComponent.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/app/AppModule.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/app/RootBindingModule.java",
+		filepath.Join(mainAppPath, "RootBindingModule.java"),
+		aa,
+		data)
+
 	templateTemplateableToFile(
 		"src_files/MainActivity.java",
 		filepath.Join(mainPath, "MainActivity.java"),
