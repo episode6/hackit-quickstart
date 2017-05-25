@@ -16,11 +16,12 @@ var projectTypes = map[string]projectTemplate{
 }
 
 var projectLangs = map[string]languageTemplate{
-	"java":       &javaLibrary{},
-	"groovy":     &groovyLibrary{},
-	"gradle":     &gradleLibrary{},
-	"android":    &androidLibrary{},
-	"androidApp": &androidApplication{},
+	"java":             &javaLibrary{},
+	"groovy":           &groovyLibrary{},
+	"gradle":           &gradleLibrary{},
+	"android":          &androidLibrary{},
+	"androidApp":       &androidApplication{},
+	"androidAppDagger": &androidApplicationWithDagger{},
 }
 
 func main() {
