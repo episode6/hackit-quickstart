@@ -29,6 +29,9 @@ dependencies {
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
 
+  compile 'com.jakewharton:butterknife'
+  annotationProcessor 'com.jakewharton:butterknife-compiler'
+
   testCompile 'junit:junit'
   testCompile 'org.robolectric:robolectric'
   testCompile 'org.easytesting:fest-assert-core'
