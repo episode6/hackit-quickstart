@@ -27,8 +27,8 @@ public class BaseFragment extends Fragment implements HasFragmentInjector {
 public void onAttach(Activity activity) {
   if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
     AndroidInjection.inject(this);
-    super.onAttach(activity);
   }
+  super.onAttach(activity);
 }
 
   @Override
