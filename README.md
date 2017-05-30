@@ -61,3 +61,6 @@ Generated projects include some or all of the following classpath dependencies b
 - [gdmc](https://github.com/episode6/gdmc) - All projects - dependency manager
 - [deployable](https://github.com/episode6/deployable) - All projects except androidApp - simplified publishing to mavenCentral
 - [android gradle build tools](https://developer.android.com/studio/releases/gradle-plugin.html) - android and androidApp
+
+## License
+MIT: https://github.com/episode6/hackit-quickstart/blob/master/LICENSE
