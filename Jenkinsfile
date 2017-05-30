@@ -20,6 +20,6 @@ node {
 
   def gradleRoot = tool name: 'Gradle 3.5', type: 'gradle'
   withEnv(["PATH+=:${gradleRoot}/bin"]) {
-    goRunner.buildAndTest(srcDir, goName, "30m")
+    goRunner.buildAndTest(srcDir, goName, "60m")
   }
 }
