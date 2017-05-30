@@ -42,11 +42,12 @@ type dependencyResolver interface {
 
 // ProjectData is the object used for our templates
 type ProjectData struct {
-	Proj    projectTemplate
-	Lang    languageTemplate
-	Group   packageName
-	Version string
-	Name    string
+	Proj        projectTemplate
+	Lang        languageTemplate
+	Group       packageName
+	Version     string
+	Name        string
+	LicenseName string
 
 	gdmcRepoURL string
 	depResolver dependencyResolver

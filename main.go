@@ -48,6 +48,9 @@ func main() {
 	noGdmc := flag.Bool(
 		"noGdmcRepo", false,
 		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
+	licenseNameStr := flag.String(
+		"licenseName", "The MIT License (MIT)",
+		"The name of the license you want to use (for deployable libraries)")
 
 	flag.Parse()
 
@@ -61,6 +64,7 @@ func main() {
 		Group:       packageName(*groupStr),
 		Version:     *versionStr,
 		Name:        *nameStr,
+		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
 	}
 

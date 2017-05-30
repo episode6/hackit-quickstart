@@ -37,6 +37,8 @@ Usage of hackit-quickstart:
       android: A deployable android library
       androidApp: An android application
       androidAppDagger: An android application with a default dagger 2 implementation
+-licenseName string
+    The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
 -name string
     The name of the new module to generate (for a multi-module project, this will be the sub-modules name)
 -noGdmcRepo

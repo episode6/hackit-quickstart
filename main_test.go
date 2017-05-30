@@ -25,6 +25,7 @@ func TestSingleProjectGeneration(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
@@ -47,6 +48,7 @@ func TestMultiProjectGeneration(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
@@ -79,6 +81,7 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			depResolver: mavenResolver,
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
@@ -101,6 +104,7 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			depResolver: mavenResolver,
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
