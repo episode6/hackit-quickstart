@@ -28,6 +28,9 @@ dependencies {
   compile 'com.google.dagger:dagger-android'
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
+  
+  compile 'com.episode6.hackit.android.inject:context-annotations'
+  compile 'com.episode6.hackit.android.inject:context-modules'
 
   compile 'com.jakewharton:butterknife'
   annotationProcessor 'com.jakewharton:butterknife-compiler'

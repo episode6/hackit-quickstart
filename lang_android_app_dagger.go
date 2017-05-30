@@ -82,6 +82,11 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 		filepath.Join(mainBasePath, "BaseFragment.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/base/BaseActivityModule.java",
+		filepath.Join(mainBasePath, "BaseActivityModule.java"),
+		aa,
+		data)
 
 	templateTemplateableToFile(
 		"src_files/main/MainActivity.java",
