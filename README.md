@@ -25,28 +25,29 @@ git remote add origin git@github.com:<myusername>/<mynewproject>.git
 Then execute the `hackit-quickstart` command (if you exclude any required flags you'll be asked for them)
 ```bash
 Usage of hackit-quickstart:
-  -gdmc string
-    	Url of a shared gdmc repo to add as a sub-module
-  -group string
-    	GroupId (aka package name) of library to generate
-  -lang string
-    	Language of project to create. Valid values are
-		java: A deployable java library
-		groovy: A deployable groovy library
-		gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
-		android: A deployable android library
-		androidApp: An android application
-  -name string
-    	The name of the new module to generate (for a multi-module project, this will be the sub-modules name)
-  -noGdmcRepo
-    	Dont use a gdmc repo, equivilent to gdmc=""
-  -type string
-    	Type of project to create. Valid values are
-		single: A single-module project
-		multi: A multi-module project with a single sub-module to start
-		sub: A new submodule in an existing multi-module project
-  -version string
-    	Initial version name to use (default "0.0.1-SNAPSHOT")
+-gdmc string
+    Url of a shared gdmc repo to add as a sub-module
+-group string
+    GroupId (aka package name) of library to generate
+-lang string
+    Language of project to create. Valid values are
+      java: A deployable java library
+      groovy: A deployable groovy library
+      gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
+      android: A deployable android library
+      androidApp: An android application
+      androidAppDagger: An android application with a default dagger 2 implementation
+-name string
+    The name of the new module to generate (for a multi-module project, this will be the sub-modules name)
+-noGdmcRepo
+    Dont use a gdmc repo, equivilent to gdmc=""
+-type string
+    Type of project to create. Valid values are
+      single: A single-module project
+      multi: A multi-module project with a single sub-module to start
+      sub: A new submodule in an existing multi-module project
+-version string
+    Initial version name to use (default "0.0.1-SNAPSHOT")
 ```
 
 If you want to use a gdmc repository by default, set it as an environment variable named `GDMC`
