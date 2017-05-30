@@ -25,13 +25,14 @@ func TestSingleProjectGeneration(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -47,13 +48,14 @@ func TestMultiProjectGeneration(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 
 		subProjectData := &ProjectData{
 			Proj:  &subProject{},
@@ -63,7 +65,7 @@ func TestMultiProjectGeneration(t *testing.T) {
 		}
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -79,13 +81,14 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			depResolver: mavenResolver,
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 
@@ -101,13 +104,14 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
 			Version:     "0.1-SNAPSHOT",
+			LicenseName: "The MIT License",
 			depResolver: mavenResolver,
 			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 
 		subProjectData := &ProjectData{
 			Proj:  &subProject{},
@@ -117,7 +121,7 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 		}
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
-		execOrFail("./gradlew clean check", testName, t)
+		execOrFail("./gradlew clean assemble check", testName, t)
 	})
 }
 

@@ -39,6 +39,11 @@ func (al *androidLibrary) generateLangSpecificFiles(data *ProjectData, subdir st
 	mkdir(mainPath, testPath)
 
 	templateTemplateableToFile(
+		"proguard-rules.pro",
+		filepath.Join(subdir, "proguard-rules.pro"),
+		al,
+		data)
+	templateTemplateableToFile(
 		"src_files/AndroidManifest.xml",
 		filepath.Join(mainRoot, "AndroidManifest.xml"),
 		al,

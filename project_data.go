@@ -42,11 +42,12 @@ type dependencyResolver interface {
 
 // ProjectData is the object used for our templates
 type ProjectData struct {
-	Proj    projectTemplate
-	Lang    languageTemplate
-	Group   packageName
-	Version string
-	Name    string
+	Proj        projectTemplate
+	Lang        languageTemplate
+	Group       packageName
+	Version     string
+	Name        string
+	LicenseName string
 
 	gdmcRepoURL string
 	depResolver dependencyResolver
@@ -117,6 +118,18 @@ func (data *ProjectData) GitRepoURL() string {
 // CamelName is used for templating
 func (data *ProjectData) CamelName() string {
 	return camelCase(data.Name)
+}
+
+// CamelNameWithoutApp is used for templating
+func (data *ProjectData) CamelNameWithoutApp() string {
+	camelName := data.CamelName()
+	if strings.HasSuffix(camelName, "Application") {
+		return camelName[0 : len(camelName)-11]
+	}
+	if strings.HasSuffix(camelName, "App") {
+		return camelName[0 : len(camelName)-3]
+	}
+	return camelName
 }
 
 func (data *ProjectData) getDepResolver() dependencyResolver {

@@ -2,40 +2,43 @@ package main
 
 import "path/filepath"
 
-type androidApplication struct{}
+type androidApplicationWithDagger struct{}
 
-func (aa *androidApplication) templateAlias() string {
-	return "lang/android_app"
+func (aa *androidApplicationWithDagger) templateAlias() string {
+	return "lang/android_app_dagger"
 }
 
-func (aa *androidApplication) describe() string {
-	return "An android application"
+func (aa *androidApplicationWithDagger) describe() string {
+	return "An android application with a default dagger 2 implementation"
 }
 
-func (aa *androidApplication) GradlePlugins() []string {
+func (aa *androidApplicationWithDagger) GradlePlugins() []string {
 	return []string{
 		"com.android.application",
 		"com.episode6.hackit.gdmc",
 	}
 }
 
-func (aa *androidApplication) buildscriptDependencies() []string {
+func (aa *androidApplicationWithDagger) buildscriptDependencies() []string {
 	return []string{
 		"com.android.tools.build:gradle",
 		"com.episode6.hackit.gdmc:gdmc",
 	}
 }
 
-func (aa *androidApplication) JenkinsCommands() []string {
+func (aa *androidApplicationWithDagger) JenkinsCommands() []string {
 	return []string{"buildAndTest"}
 }
 
-func (aa *androidApplication) generateLangSpecificFiles(data *ProjectData, subdir string) {
+func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
 	testPath := pathWithOptSubdir(subdir, "src", "test", "java", data.Group.asPath())
 	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "java", data.Group.asPath())
-	mkdir(mainPath, testPath, androidTestPath)
+	mainAppPath := filepath.Join(mainPath, "app")
+	mainMainPath := filepath.Join(mainPath, "main")
+	mainBasePath := filepath.Join(mainPath, "base")
+	mkdir(mainPath, testPath, androidTestPath, mainAppPath, mainMainPath, mainBasePath)
 
 	templateTemplateableToFile(
 		"proguard-rules.pro",
@@ -47,16 +50,60 @@ func (aa *androidApplication) generateLangSpecificFiles(data *ProjectData, subdi
 		filepath.Join(mainRoot, "AndroidManifest.xml"),
 		aa,
 		data)
+
 	templateTemplateableToFile(
-		"src_files/MainActivity.java",
-		filepath.Join(mainPath, "MainActivity.java"),
+		"src_files/app/App.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"App.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
-		"src_files/MainFragment.java",
-		filepath.Join(mainPath, "MainFragment.java"),
+		"src_files/app/AppComponent.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppComponent.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/app/AppModule.java",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/app/RootBindingModule.java",
+		filepath.Join(mainAppPath, "RootBindingModule.java"),
+		aa,
+		data)
+
+	templateTemplateableToFile(
+		"src_files/base/BaseAppCompatActivity.java",
+		filepath.Join(mainBasePath, "BaseAppCompatActivity.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/base/BaseFragment.java",
+		filepath.Join(mainBasePath, "BaseFragment.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/base/BaseActivityModule.java",
+		filepath.Join(mainBasePath, "BaseActivityModule.java"),
+		aa,
+		data)
+
+	templateTemplateableToFile(
+		"src_files/main/MainActivity.java",
+		filepath.Join(mainMainPath, "MainActivity.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/main/MainFragment.java",
+		filepath.Join(mainMainPath, "MainFragment.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/main/MainActivityModule.java",
+		filepath.Join(mainMainPath, "MainActivityModule.java"),
+		aa,
+		data)
+
 	templateTemplateableToFile(
 		"src_files/MainActivityTest.java",
 		filepath.Join(testPath, "MainActivityTest.java"),
