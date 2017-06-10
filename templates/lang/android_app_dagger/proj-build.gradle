@@ -1,6 +1,6 @@
 android {
-  compileSdkVersion 24
-  buildToolsVersion "25.0.2"
+  compileSdkVersion 25
+  buildToolsVersion "26.0.0"
   defaultConfig {
     applicationId project.group
     minSdkVersion 16
@@ -28,7 +28,7 @@ dependencies {
   compile 'com.google.dagger:dagger-android'
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
-  
+
   compile 'com.episode6.hackit.android.inject:context-annotations'
   compile 'com.episode6.hackit.android.inject:context-modules'
 
