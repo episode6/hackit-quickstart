@@ -2,11 +2,11 @@
 package main
 
 import (
-	"flag"
 	"fmt"
-	"os"
 	"reflect"
 	"strings"
+
+	"github.com/namsral/flag"
 )
 
 var projectTypes = map[string]projectTemplate{
@@ -25,7 +25,7 @@ var projectLangs = map[string]languageTemplate{
 }
 
 func main() {
-	defaultGdmcRepo := os.Getenv("GDMC")
+	flag.String(flag.DefaultConfigFlagname, "", "path to config file")
 
 	projectTypeString := flag.String(
 		"type", "",
@@ -43,7 +43,7 @@ func main() {
 		"name", "",
 		"The name of the new module to generate (for a multi-module project, this will be the sub-module's name)")
 	gdmcRepoURLStr := flag.String(
-		"gdmc", defaultGdmcRepo,
+		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
 	noGdmc := flag.Bool(
 		"noGdmcRepo", false,
