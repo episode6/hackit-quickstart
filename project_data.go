@@ -59,6 +59,8 @@ type ProjectData struct {
 	Name        string
 	LicenseName string
 
+	AndroidSdkDir            string
+	AndroidNdkDir            string
 	AndroidCompileSdkVersion string
 	AndroidBuildToolsVersion string
 

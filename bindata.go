@@ -265,7 +265,7 @@ func templatesLangAndroid_appProjGradleProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangAndroid_appProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xca\x4b\xc9\xd6\x4b\xc9\x2c\xb2\xd5\x4f\xcc\x4b\x29\xca\xcf\x4c\xd1\x2f\x4e\xc9\xd6\xcf\x4b\xc9\xd6\x4d\x2a\xcd\x4b\xc9\x49\xe5\x2a\xc6\x22\xcf\x05\x08\x00\x00\xff\xff\xbd\xf9\xcd\x12\x35\x00\x00\x00")
+var _templatesLangAndroid_appProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2a\x4e\xc9\xd6\x4b\xc9\x2c\xb2\xad\xae\x56\xd0\x73\xcc\x4b\x29\xca\xcf\x4c\x09\x4e\xc9\x76\xc9\x2c\x52\xa8\xad\xe5\xaa\xae\x56\xc8\x4c\x83\x8b\xfb\xc1\xc4\xf3\x30\xf5\xc0\xe5\xaa\xab\x15\x52\xf3\x52\x40\x9a\x01\x01\x00\x00\xff\xff\x58\x96\x23\x98\x5a\x00\x00\x00")
 
 func templatesLangAndroid_appProjLocalPropertiesBytes() ([]byte, error) {
 	return bindataRead(
@@ -280,7 +280,7 @@ func templatesLangAndroid_appProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/proj-local.properties", size: 53, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497278029, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -645,7 +645,7 @@ func templatesLangAndroid_app_daggerProjGradleProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangAndroid_app_daggerProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xca\x4b\xc9\xd6\x4b\xc9\x2c\xb2\xd5\x4f\xcc\x4b\x29\xca\xcf\x4c\xd1\x2f\x4e\xc9\xd6\xcf\x4b\xc9\xd6\x4d\x2a\xcd\x4b\xc9\x49\xe5\x2a\xc6\x22\xcf\x05\x08\x00\x00\xff\xff\xbd\xf9\xcd\x12\x35\x00\x00\x00")
+var _templatesLangAndroid_app_daggerProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2a\x4e\xc9\xd6\x4b\xc9\x2c\xb2\xad\xae\x56\xd0\x73\xcc\x4b\x29\xca\xcf\x4c\x09\x4e\xc9\x76\xc9\x2c\x52\xa8\xad\xe5\xaa\xae\x56\xc8\x4c\x83\x8b\xfb\xc1\xc4\xf3\x30\xf5\xc0\xe5\xaa\xab\x15\x52\xf3\x52\x40\x9a\x01\x01\x00\x00\xff\xff\x58\x96\x23\x98\x5a\x00\x00\x00")
 
 func templatesLangAndroid_app_daggerProjLocalPropertiesBytes() ([]byte, error) {
 	return bindataRead(
@@ -660,7 +660,7 @@ func templatesLangAndroid_app_daggerProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-local.properties", size: 53, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497278002, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1185,7 +1185,7 @@ func templatesLangAndroid_libProjGradleProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangAndroid_libProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xca\x4b\xc9\xd6\x4b\xc9\x2c\xb2\xd5\x4f\xcc\x4b\x29\xca\xcf\x4c\xd1\x2f\x4e\xc9\xd6\xcf\x4b\xc9\xd6\x4d\x2a\xcd\x4b\xc9\x49\xe5\x2a\xc6\x22\xcf\x05\x08\x00\x00\xff\xff\xbd\xf9\xcd\x12\x35\x00\x00\x00")
+var _templatesLangAndroid_libProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2a\x4e\xc9\xd6\x4b\xc9\x2c\xb2\xad\xae\x56\xd0\x73\xcc\x4b\x29\xca\xcf\x4c\x09\x4e\xc9\x76\xc9\x2c\x52\xa8\xad\xe5\xaa\xae\x56\xc8\x4c\x83\x8b\xfb\xc1\xc4\xf3\x30\xf5\xc0\xe5\xaa\xab\x15\x52\xf3\x52\x40\x9a\x01\x01\x00\x00\xff\xff\x58\x96\x23\x98\x5a\x00\x00\x00")
 
 func templatesLangAndroid_libProjLocalPropertiesBytes() ([]byte, error) {
 	return bindataRead(
@@ -1200,7 +1200,7 @@ func templatesLangAndroid_libProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_lib/proj-local.properties", size: 53, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_lib/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497277874, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }

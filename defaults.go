@@ -31,3 +31,23 @@ func defaultConfigFilePath() string {
 	}
 	return ""
 }
+
+func defaultAndroidSdkDir() string {
+	return os.Getenv("ANDROID_HOME")
+}
+
+func defaultAndroidNdkDir() string {
+	androidHome := defaultAndroidSdkDir()
+	if androidHome == "" {
+		return ""
+	}
+	ndkBundle := filepath.Join(androidHome, "ndk-bundle")
+	fileInfo, err := os.Stat(ndkBundle)
+	if err != nil {
+		return ""
+	}
+	if fileInfo.Mode().IsDir() {
+		return ndkBundle
+	}
+	return ""
+}

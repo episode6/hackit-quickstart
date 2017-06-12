@@ -53,6 +53,12 @@ func main() {
 	licenseNameStr := flag.String(
 		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
+	androidSdkDirStr := flag.String(
+		"androidSdkDir", defaultAndroidSdkDir(),
+		"Android sdk directory")
+	androidNdkDirStr := flag.String(
+		"androidNdkDir", defaultAndroidNdkDir(),
+		"Android ndk directory")
 	androidCompileSdkVersionStr := flag.String(
 		"androidCompileSdkVersion", defaultAndroidCompileSdkVersion,
 		"For android apps/libs, the value of compileSdkVersion")
@@ -75,6 +81,8 @@ func main() {
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
 
+		AndroidSdkDir:            *androidSdkDirStr,
+		AndroidNdkDir:            *androidNdkDirStr,
 		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
 		AndroidBuildToolsVersion: *androidBuildToolsVersionStr,
 	}

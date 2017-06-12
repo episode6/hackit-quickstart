@@ -139,6 +139,8 @@ func doTestOnEachLang(t *testing.T, testNamePrefix string, testFunc func(testNam
 func makeDefaultProjectData(data *ProjectData) *ProjectData {
 	data.Version = defaultProjectVersion
 	data.LicenseName = defaultLicenseName
+	data.AndroidSdkDir = defaultAndroidSdkDir()
+	data.AndroidNdkDir = defaultAndroidNdkDir()
 	data.AndroidCompileSdkVersion = defaultAndroidCompileSdkVersion
 	data.AndroidBuildToolsVersion = defaultAndroidBuildToolsVersion
 	data.gitRepoURL = testingRepoURL

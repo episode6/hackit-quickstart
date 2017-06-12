@@ -25,39 +25,55 @@ git remote add origin git@github.com:<myusername>/<mynewproject>.git
 Then execute the `hackit-quickstart` command (if you exclude any required flags you'll be asked for them)
 ```bash
 Usage of hackit-quickstart:
+
 -config string
     path to config file (default "~/.hackit-quickstart")
--gdmc string
-    Url of a shared gdmc repo to add as a sub-module
--group string
-    GroupId (aka package name) of library to generate
+
+-type string
+    Type of project to create. Valid values are
+      single: A single-module project
+      multi: A multi-module project with a single sub-module to start
+      sub: A new submodule in an existing multi-module project
 -lang string
     Language of project to create. Valid values are
-      androidApp: An android application
-      androidAppDagger: An android application with a default dagger 2 implementation
       java: A deployable java library
       groovy: A deployable groovy library
       gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
       android: A deployable android library
--licenseName string
-    The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
+      androidApp: An android application
+      androidAppDagger: An android application with a default dagger 2 implementation
+
+-group string
+    GroupId (aka package name) of library to generate
 -name string
     The name of the new module to generate (for a multi-module project, this will be the sub-modules name)
--noGdmcRepo
-    Dont use a gdmc repo, equivilent to gdmc=""
--type string
-    Type of project to create. Valid values are
-      sub: A new submodule in an existing multi-module project
-      single: A single-module project
-      multi: A multi-module project with a single sub-module to start
 -version string
     Initial version name to use (default "0.0.1-SNAPSHOT")
+-licenseName string
+    The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
+
+-gdmc string
+    Url of a shared gdmc repo to add as a sub-module
+-noGdmcRepo
+    Dont use a gdmc repo, equivilent to gdmc=""    
+
+-androidBuildToolsVersion string
+    For android apps/libs, the value of buildToolsVersion (default "\"26.0.0\"")
+-androidCompileSdkVersion string
+    For android apps/libs, the value of compileSdkVersion (default "25")
+-androidNdkDir string
+    Android ndk directory (default "$ANDROID_HOME/ndk-bundle")
+-androidSdkDir string
+    Android sdk directory (default "$ANDROID_HOME")
 ```
 
-If you want to use a gdmc repository by default, set it as an environment variable named `GDMC`
+`hackit-quickstart` can be configured via a config file or environment variables. By default the app checks for a file at `~/.hackit-quickstart`, but that can be overridden using the `-config` flag. For episode6 projects, I use the following config...
 ```bash
-# this repo will be included as a sub-module by default in /gdmc
-export GDMC="git@github.com:episode6/hackit-gdmc.git"
+# hackit-quickstart default config
+
+gdmc git@github.com:episode6/hackit-gdmc.git
+androidCompileSdkVersion gdmcVersion('android.compilesdk') as Integer
+androidBuildToolsVersion gdmcVersion('android.buildtools')
 ```
 
 ## Generated Projects
