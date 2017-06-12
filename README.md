@@ -67,7 +67,7 @@ Usage of hackit-quickstart:
     Android sdk directory (default "$ANDROID_HOME")
 ```
 
-`hackit-quickstart` can be configured via a config file or environment variables. By default the app checks for a file at `~/.hackit-quickstart`, but that can be overridden using the `-config` flag. For episode6 projects, I use the following config...
+`hackit-quickstart` can be configured via a file or environment variables. By default the app checks for a file at `~/.hackit-quickstart`, but that can be overridden using the `-config` flag. For episode6 projects, I use the following config...
 ```bash
 # hackit-quickstart default config
 
