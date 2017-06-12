@@ -53,6 +53,12 @@ func main() {
 	licenseNameStr := flag.String(
 		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
+	androidCompileSdkVersionStr := flag.String(
+		"androidCompileSdkVersion", defaultAndroidCompileSdkVersion,
+		"For android apps/libs, the value of compileSdkVersion")
+	androidBuildToolsVersionStr := flag.String(
+		"androidBuildToolsVersion", defaultAndroidBuildToolsVersion,
+		"For android apps/libs, the value of buildToolsVersion")
 
 	flag.Parse()
 
@@ -68,6 +74,9 @@ func main() {
 		Name:        *nameStr,
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
+
+		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
+		AndroidBuildToolsVersion: *androidBuildToolsVersionStr,
 	}
 
 	performProjectGeneration(data)

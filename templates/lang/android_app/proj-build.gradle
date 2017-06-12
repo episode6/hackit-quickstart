@@ -1,6 +1,6 @@
 android {
-  compileSdkVersion 25
-  buildToolsVersion "26.0.0"
+  compileSdkVersion {{ .AndroidCompileSdkVersion }}
+  buildToolsVersion {{ .AndroidBuildToolsVersion }}
   defaultConfig {
     applicationId project.group
     minSdkVersion 16

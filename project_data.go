@@ -49,6 +49,9 @@ type ProjectData struct {
 	Name        string
 	LicenseName string
 
+	AndroidCompileSdkVersion string
+	AndroidBuildToolsVersion string
+
 	gdmcRepoURL string
 	depResolver dependencyResolver
 
