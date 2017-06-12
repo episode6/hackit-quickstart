@@ -16,10 +16,6 @@ func (sp *subProject) describe() string {
 	return "A new submodule in an existing multi-module project"
 }
 
-func (sp *subProject) validate(data *ProjectData) {
-
-}
-
 func (sp *subProject) generate(data *ProjectData) {
 	mkdir(data.Name)
 	templateAssetToFile(

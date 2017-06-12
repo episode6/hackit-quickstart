@@ -14,8 +14,8 @@ func (mp *multiProject) describe() string {
 }
 
 func (mp *multiProject) validate(data *ProjectData) {
-	mp.rootProject.validate(data)
-	mp.subProject.validate(data)
+	validateIfValidator(mp.rootProject, data)
+	validateIfValidator(mp.subProject, data)
 }
 
 func (mp *multiProject) generate(data *ProjectData) {
