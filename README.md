@@ -28,6 +28,7 @@ Usage of hackit-quickstart:
 
 -config string
     path to config file (default "~/.hackit-quickstart")
+-v	Display hackit-quickstart version
 
 -type string
     Type of project to create. Valid values are

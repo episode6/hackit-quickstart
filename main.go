@@ -3,11 +3,15 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"reflect"
 	"strings"
 
 	"github.com/namsral/flag"
 )
+
+// AppVersion is the current version of this app
+const AppVersion = "0.0.5-SNAPSHOT"
 
 var projectTypes = map[string]projectTemplate{
 	"single": &singleProject{},
@@ -28,6 +32,8 @@ func main() {
 	flag.String(
 		flag.DefaultConfigFlagname, defaultConfigFilePath(),
 		"path to config file")
+
+	versionFlag := flag.Bool("v", false, "Display hackit-quickstart version")
 
 	projectTypeString := flag.String(
 		"type", "",
@@ -67,6 +73,11 @@ func main() {
 		"For android apps/libs, the value of buildToolsVersion")
 
 	flag.Parse()
+
+	if *versionFlag {
+		fmt.Printf("hackit-quickstart v%v\n", AppVersion)
+		os.Exit(0)
+	}
 
 	if *noGdmc {
 		*gdmcRepoURLStr = ""
