@@ -2,7 +2,9 @@ package main
 
 import "path/filepath"
 
-type androidApplication struct{}
+type androidApplication struct {
+	androidAppShared
+}
 
 func (aa *androidApplication) templateAlias() string {
 	return "lang/android_app"
@@ -10,24 +12,6 @@ func (aa *androidApplication) templateAlias() string {
 
 func (aa *androidApplication) describe() string {
 	return "An android application"
-}
-
-func (aa *androidApplication) GradlePlugins() []string {
-	return []string{
-		"com.android.application",
-		"com.episode6.hackit.gdmc",
-	}
-}
-
-func (aa *androidApplication) buildscriptDependencies() []string {
-	return []string{
-		"com.android.tools.build:gradle",
-		"com.episode6.hackit.gdmc:gdmc",
-	}
-}
-
-func (aa *androidApplication) JenkinsCommands() []string {
-	return []string{"buildAndTest"}
 }
 
 func (aa *androidApplication) generateLangSpecificFiles(data *ProjectData, subdir string) {

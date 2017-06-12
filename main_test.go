@@ -11,6 +11,9 @@ import (
 	"github.com/episode6/hackit-quickstart/mavenutil"
 )
 
+const testingRepoURL = "https://git.idevsix.com:ghackett/test"
+const hackitGdmcRepo = "git@github.com:episode6/hackit-gdmc.git"
+
 var mavenResolver = &mavenutil.MavenResolver{}
 
 func TestSingleProjectGeneration(t *testing.T) {
@@ -19,16 +22,14 @@ func TestSingleProjectGeneration(t *testing.T) {
 	}
 
 	doTestOnEachLang(t, "single", func(testName string, testLang languageTemplate) {
-		data := &ProjectData{
-			Proj:        &singleProject{},
-			Lang:        testLang,
-			Group:       packageName("com.g6init.testing"),
-			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
-			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
-		}
+		data := makeDefaultProjectData(&ProjectData{
+			Proj:  &singleProject{},
+			Lang:  testLang,
+			Group: packageName("com.g6init.testing"),
+			Name:  "some-test-product",
+
+			gdmcRepoURL: hackitGdmcRepo,
+		})
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
@@ -42,27 +43,25 @@ func TestMultiProjectGeneration(t *testing.T) {
 	}
 
 	doTestOnEachLang(t, "multi", func(testName string, testLang languageTemplate) {
-		multiProjectData := &ProjectData{
-			Proj:        &multiProject{},
-			Lang:        testLang,
-			Group:       packageName("com.g6init.testing"),
-			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
-			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
-		}
+		multiProjectData := makeDefaultProjectData(&ProjectData{
+			Proj:  &multiProject{},
+			Lang:  testLang,
+			Group: packageName("com.g6init.testing"),
+			Name:  "some-test-product",
+
+			gdmcRepoURL: hackitGdmcRepo,
+		})
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
 		execOrFail("./gradlew clean assemble check", testName, t)
 
-		subProjectData := &ProjectData{
+		subProjectData := makeDefaultProjectData(&ProjectData{
 			Proj:  &subProject{},
 			Lang:  testLang,
 			Group: packageName("com.g6init.testing.submodule"),
 			Name:  "some-submodule",
-		}
+		})
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
 		execOrFail("./gradlew clean assemble check", testName, t)
@@ -75,16 +74,14 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 	}
 
 	doTestOnEachLang(t, "single_nogdmc", func(testName string, testLang languageTemplate) {
-		data := &ProjectData{
-			Proj:        &singleProject{},
-			Lang:        testLang,
-			Group:       packageName("com.g6init.testing"),
-			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
+		data := makeDefaultProjectData(&ProjectData{
+			Proj:  &singleProject{},
+			Lang:  testLang,
+			Group: packageName("com.g6init.testing"),
+			Name:  "some-test-product",
+
 			depResolver: mavenResolver,
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
-		}
+		})
 
 		t.Logf("Generating project: %v", testName)
 		performProjectGeneration(data)
@@ -98,27 +95,25 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 	}
 
 	doTestOnEachLang(t, "multi_nogdmc", func(testName string, testLang languageTemplate) {
-		multiProjectData := &ProjectData{
-			Proj:        &multiProject{},
-			Lang:        testLang,
-			Group:       packageName("com.g6init.testing"),
-			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
+		multiProjectData := makeDefaultProjectData(&ProjectData{
+			Proj:  &multiProject{},
+			Lang:  testLang,
+			Group: packageName("com.g6init.testing"),
+			Name:  "some-test-product",
+
 			depResolver: mavenResolver,
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
-		}
+		})
 
 		t.Logf("Generating root project for project: %v", testName)
 		performProjectGeneration(multiProjectData)
 		execOrFail("./gradlew clean assemble check", testName, t)
 
-		subProjectData := &ProjectData{
+		subProjectData := makeDefaultProjectData(&ProjectData{
 			Proj:  &subProject{},
 			Lang:  testLang,
 			Group: packageName("com.g6init.testing.submodule"),
 			Name:  "some-submodule",
-		}
+		})
 		t.Logf("Generating sub project for project: %v", testName)
 		performProjectGeneration(subProjectData)
 		execOrFail("./gradlew clean assemble check", testName, t)
@@ -139,6 +134,17 @@ func doTestOnEachLang(t *testing.T, testNamePrefix string, testFunc func(testNam
 		prepAndChToProjectTestDir(dir)
 		testFunc(testName, testLang)
 	}
+}
+
+func makeDefaultProjectData(data *ProjectData) *ProjectData {
+	data.Version = defaultProjectVersion
+	data.LicenseName = defaultLicenseName
+	data.AndroidSdkDir = defaultAndroidSdkDir()
+	data.AndroidNdkDir = defaultAndroidNdkDir()
+	data.AndroidCompileSdkVersion = defaultAndroidCompileSdkVersion
+	data.AndroidBuildToolsVersion = defaultAndroidBuildToolsVersion
+	data.gitRepoURL = testingRepoURL
+	return data
 }
 
 func getwd() string {

@@ -13,10 +13,20 @@ type describable interface {
 	describe() string
 }
 
+type validator interface {
+	validate(data *ProjectData)
+}
+
+func validateIfValidator(i interface{}, data *ProjectData) {
+	switch v := i.(type) {
+	case validator:
+		v.validate(data)
+	}
+}
+
 type projectTemplate interface {
 	templatableConfig
 	describable
-	validate(data *ProjectData)
 	generate(data *ProjectData)
 }
 
@@ -49,6 +59,11 @@ type ProjectData struct {
 	Name        string
 	LicenseName string
 
+	AndroidSdkDir            string
+	AndroidNdkDir            string
+	AndroidCompileSdkVersion string
+	AndroidBuildToolsVersion string
+
 	gdmcRepoURL string
 	depResolver dependencyResolver
 
@@ -75,7 +90,8 @@ func (data *ProjectData) validate() {
 	})
 
 	require(&data.Name, "name")
-	data.Proj.validate(data)
+	validateIfValidator(data.Proj, data)
+	validateIfValidator(data.Lang, data)
 }
 
 func (data *ProjectData) generate() {

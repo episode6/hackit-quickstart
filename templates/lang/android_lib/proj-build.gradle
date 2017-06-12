@@ -2,8 +2,8 @@ sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
 android {
-  compileSdkVersion 24
-  buildToolsVersion "25.0.2"
+  compileSdkVersion {{ .AndroidCompileSdkVersion }}
+  buildToolsVersion {{ .AndroidBuildToolsVersion }}
 
   buildTypes {
     release {

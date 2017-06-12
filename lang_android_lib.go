@@ -2,7 +2,9 @@ package main
 
 import "path/filepath"
 
-type androidLibrary struct{}
+type androidLibrary struct {
+	androidShared
+}
 
 func (al *androidLibrary) templateAlias() string {
 	return "lang/android_lib"

@@ -2,12 +2,16 @@
 package main
 
 import (
-	"flag"
 	"fmt"
 	"os"
 	"reflect"
 	"strings"
+
+	"github.com/namsral/flag"
 )
+
+// AppVersion is the current version of this app
+const AppVersion = "0.0.5"
 
 var projectTypes = map[string]projectTemplate{
 	"single": &singleProject{},
@@ -25,7 +29,11 @@ var projectLangs = map[string]languageTemplate{
 }
 
 func main() {
-	defaultGdmcRepo := os.Getenv("GDMC")
+	flag.String(
+		flag.DefaultConfigFlagname, defaultConfigFilePath(),
+		"path to config file")
+
+	versionFlag := flag.Bool("v", false, "Display hackit-quickstart version")
 
 	projectTypeString := flag.String(
 		"type", "",
@@ -37,22 +45,39 @@ func main() {
 		"group", "",
 		"GroupId (aka package name) of library to generate")
 	versionStr := flag.String(
-		"version", "0.0.1-SNAPSHOT",
+		"version", defaultProjectVersion,
 		"Initial version name to use")
 	nameStr := flag.String(
 		"name", "",
 		"The name of the new module to generate (for a multi-module project, this will be the sub-module's name)")
 	gdmcRepoURLStr := flag.String(
-		"gdmc", defaultGdmcRepo,
+		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
 	noGdmc := flag.Bool(
 		"noGdmcRepo", false,
 		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
 	licenseNameStr := flag.String(
-		"licenseName", "The MIT License (MIT)",
+		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
+	androidSdkDirStr := flag.String(
+		"androidSdkDir", defaultAndroidSdkDir(),
+		"Android sdk directory")
+	androidNdkDirStr := flag.String(
+		"androidNdkDir", defaultAndroidNdkDir(),
+		"Android ndk directory")
+	androidCompileSdkVersionStr := flag.String(
+		"androidCompileSdkVersion", defaultAndroidCompileSdkVersion,
+		"For android apps/libs, the value of compileSdkVersion")
+	androidBuildToolsVersionStr := flag.String(
+		"androidBuildToolsVersion", defaultAndroidBuildToolsVersion,
+		"For android apps/libs, the value of buildToolsVersion")
 
 	flag.Parse()
+
+	if *versionFlag {
+		fmt.Printf("hackit-quickstart v%v\n", AppVersion)
+		os.Exit(0)
+	}
 
 	if *noGdmc {
 		*gdmcRepoURLStr = ""
@@ -66,6 +91,11 @@ func main() {
 		Name:        *nameStr,
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
+
+		AndroidSdkDir:            *androidSdkDirStr,
+		AndroidNdkDir:            *androidNdkDirStr,
+		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
+		AndroidBuildToolsVersion: *androidBuildToolsVersionStr,
 	}
 
 	performProjectGeneration(data)

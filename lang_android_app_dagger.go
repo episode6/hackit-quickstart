@@ -2,7 +2,9 @@ package main
 
 import "path/filepath"
 
-type androidApplicationWithDagger struct{}
+type androidApplicationWithDagger struct {
+	androidAppShared
+}
 
 func (aa *androidApplicationWithDagger) templateAlias() string {
 	return "lang/android_app_dagger"
@@ -10,24 +12,6 @@ func (aa *androidApplicationWithDagger) templateAlias() string {
 
 func (aa *androidApplicationWithDagger) describe() string {
 	return "An android application with a default dagger 2 implementation"
-}
-
-func (aa *androidApplicationWithDagger) GradlePlugins() []string {
-	return []string{
-		"com.android.application",
-		"com.episode6.hackit.gdmc",
-	}
-}
-
-func (aa *androidApplicationWithDagger) buildscriptDependencies() []string {
-	return []string{
-		"com.android.tools.build:gradle",
-		"com.episode6.hackit.gdmc:gdmc",
-	}
-}
-
-func (aa *androidApplicationWithDagger) JenkinsCommands() []string {
-	return []string{"buildAndTest"}
 }
 
 func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectData, subdir string) {
