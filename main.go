@@ -3,12 +3,9 @@ package main
 
 import (
 	"fmt"
-	"os"
-	"path/filepath"
 	"reflect"
 	"strings"
 
-	"github.com/mitchellh/go-homedir"
 	"github.com/namsral/flag"
 )
 
@@ -126,23 +123,4 @@ func readMissingParam(flagName string) string {
 		panic(err)
 	}
 	return strings.TrimSpace(input)
-}
-
-func defaultConfigFilePath() string {
-	userdir, err := homedir.Dir()
-	if err != nil {
-		return ""
-	}
-	configFilePath, err := homedir.Expand(filepath.Join(userdir, ".hackit-quickstart"))
-	if err != nil {
-		return ""
-	}
-	fileInfo, err := os.Stat(configFilePath)
-	if err != nil {
-		return ""
-	}
-	if fileInfo.Mode().IsRegular() {
-		return configFilePath
-	}
-	return ""
 }
