@@ -11,8 +11,8 @@ import (
 	"github.com/episode6/hackit-quickstart/mavenutil"
 )
 
-const testing_repo_url = "https://git.idevsix.com:ghackett/test"
-const hackit_gdmc_repo = "git@github.com:episode6/hackit-gdmc.git"
+const testingRepoURL = "https://git.idevsix.com:ghackett/test"
+const hackitGdmcRepo = "git@github.com:episode6/hackit-gdmc.git"
 
 var mavenResolver = &mavenutil.MavenResolver{}
 
@@ -29,8 +29,8 @@ func TestSingleProjectGeneration(t *testing.T) {
 			Name:        "some-test-product",
 			Version:     defaultProjectVersion,
 			LicenseName: defaultLicenseName,
-			gdmcRepoURL: hackit_gdmc_repo,
-			gitRepoURL:  testing_repo_url,
+			gdmcRepoURL: hackitGdmcRepo,
+			gitRepoURL:  testingRepoURL,
 		}
 
 		t.Logf("Generating project: %v", testName)
@@ -52,8 +52,8 @@ func TestMultiProjectGeneration(t *testing.T) {
 			Name:        "some-test-product",
 			Version:     defaultProjectVersion,
 			LicenseName: defaultLicenseName,
-			gdmcRepoURL: hackit_gdmc_repo,
-			gitRepoURL:  testing_repo_url,
+			gdmcRepoURL: hackitGdmcRepo,
+			gitRepoURL:  testingRepoURL,
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
@@ -86,7 +86,7 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 			Version:     defaultProjectVersion,
 			LicenseName: defaultLicenseName,
 			depResolver: mavenResolver,
-			gitRepoURL:  testing_repo_url,
+			gitRepoURL:  testingRepoURL,
 		}
 
 		t.Logf("Generating project: %v", testName)
@@ -109,7 +109,7 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 			Version:     defaultProjectVersion,
 			LicenseName: defaultLicenseName,
 			depResolver: mavenResolver,
-			gitRepoURL:  testing_repo_url,
+			gitRepoURL:  testingRepoURL,
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
