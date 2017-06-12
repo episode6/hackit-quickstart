@@ -240,7 +240,7 @@ func templatesLangAndroid_appProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1137, mode: os.FileMode(420), modTime: time.Unix(1497271724, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1137, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -280,7 +280,7 @@ func templatesLangAndroid_appProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497278029, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -620,7 +620,7 @@ func templatesLangAndroid_app_daggerProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1578, mode: os.FileMode(420), modTime: time.Unix(1497271715, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1578, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -660,7 +660,7 @@ func templatesLangAndroid_app_daggerProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497278002, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1160,7 +1160,7 @@ func templatesLangAndroid_libProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_lib/proj-build.gradle", size: 583, mode: os.FileMode(420), modTime: time.Unix(1497271708, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_lib/proj-build.gradle", size: 583, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1200,7 +1200,7 @@ func templatesLangAndroid_libProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_lib/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497277874, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_lib/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
