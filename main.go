@@ -42,7 +42,7 @@ func main() {
 		"group", "",
 		"GroupId (aka package name) of library to generate")
 	versionStr := flag.String(
-		"version", "0.0.1-SNAPSHOT",
+		"version", defaultProjectVersion,
 		"Initial version name to use")
 	nameStr := flag.String(
 		"name", "",
@@ -54,7 +54,7 @@ func main() {
 		"noGdmcRepo", false,
 		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
 	licenseNameStr := flag.String(
-		"licenseName", "The MIT License (MIT)",
+		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
 
 	flag.Parse()

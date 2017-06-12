@@ -11,6 +11,9 @@ import (
 	"github.com/episode6/hackit-quickstart/mavenutil"
 )
 
+const testing_repo_url = "https://git.idevsix.com:ghackett/test"
+const hackit_gdmc_repo = "git@github.com:episode6/hackit-gdmc.git"
+
 var mavenResolver = &mavenutil.MavenResolver{}
 
 func TestSingleProjectGeneration(t *testing.T) {
@@ -24,10 +27,10 @@ func TestSingleProjectGeneration(t *testing.T) {
 			Lang:        testLang,
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
-			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
+			Version:     defaultProjectVersion,
+			LicenseName: defaultLicenseName,
+			gdmcRepoURL: hackit_gdmc_repo,
+			gitRepoURL:  testing_repo_url,
 		}
 
 		t.Logf("Generating project: %v", testName)
@@ -47,10 +50,10 @@ func TestMultiProjectGeneration(t *testing.T) {
 			Lang:        testLang,
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
-			gdmcRepoURL: "git@github.com:episode6/hackit-gdmc.git",
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
+			Version:     defaultProjectVersion,
+			LicenseName: defaultLicenseName,
+			gdmcRepoURL: hackit_gdmc_repo,
+			gitRepoURL:  testing_repo_url,
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
@@ -80,10 +83,10 @@ func TestSingleProjectGenerationNoGdmc(t *testing.T) {
 			Lang:        testLang,
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
+			Version:     defaultProjectVersion,
+			LicenseName: defaultLicenseName,
 			depResolver: mavenResolver,
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
+			gitRepoURL:  testing_repo_url,
 		}
 
 		t.Logf("Generating project: %v", testName)
@@ -103,10 +106,10 @@ func TestMultiProjectGenerationNoGdmc(t *testing.T) {
 			Lang:        testLang,
 			Group:       packageName("com.g6init.testing"),
 			Name:        "some-test-product",
-			Version:     "0.1-SNAPSHOT",
-			LicenseName: "The MIT License",
+			Version:     defaultProjectVersion,
+			LicenseName: defaultLicenseName,
 			depResolver: mavenResolver,
-			gitRepoURL:  "https://git.idevsix.com:ghackett/test",
+			gitRepoURL:  testing_repo_url,
 		}
 
 		t.Logf("Generating root project for project: %v", testName)
