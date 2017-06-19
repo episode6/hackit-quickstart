@@ -36,6 +36,8 @@ dependencies {
   annotationProcessor 'com.jakewharton:butterknife-compiler'
 
   testCompile 'junit:junit'
+  testCompile 'org.mockito:mockito-inline'
+  testCompile 'com.episode6.hackit.mockspresso:mockspresso-core'
   testCompile 'org.robolectric:robolectric'
   testCompile 'org.easytesting:fest-assert-core'
   androidTestCompile 'com.google.code.findbugs:jsr305'
