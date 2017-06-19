@@ -22,7 +22,10 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 	mainAppPath := filepath.Join(mainPath, "app")
 	mainMainPath := filepath.Join(mainPath, "main")
 	mainBasePath := filepath.Join(mainPath, "base")
-	mkdir(mainPath, testPath, androidTestPath, mainAppPath, mainMainPath, mainBasePath)
+	testAppPath := filepath.Join(testPath, "app")
+	testMainPath := filepath.Join(testPath, "main")
+	testBasePath := filepath.Join(testPath, "base")
+	mkdir(androidTestPath, mainAppPath, mainMainPath, mainBasePath, testAppPath, testMainPath, testBasePath)
 
 	templateTemplateableToFile(
 		"proguard-rules.pro",
@@ -90,7 +93,7 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 
 	templateTemplateableToFile(
 		"src_files/MainActivityTest.java",
-		filepath.Join(testPath, "MainActivityTest.java"),
+		filepath.Join(testMainPath, "MainActivityTest.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
