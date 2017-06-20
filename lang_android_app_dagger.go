@@ -92,27 +92,27 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 		data)
 
 	templateTemplateableToFile(
-		"src_files/test/BuildMockspresso.java",
+		"src_files/test/ut/BuildMockspresso.java",
 		filepath.Join(testPath, "BuildMockspresso.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/MainActivityTest.java",
+		"src_files/test/ut/main/MainActivityTest.java",
 		filepath.Join(testMainPath, "MainActivityTest.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/MainFragmentTest.java",
+		"src_files/test/ut/main/MainFragmentTest.java",
 		filepath.Join(testMainPath, "MainFragmentTest.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/MockspressoTestApp.java",
+		"src_files/test/ut/app/MockspressoTestApp.java",
 		filepath.Join(testAppPath, "MockspressoTestApp.java"),
 		aa,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/MainActivityInstrumentedTest.java",
+		"src_files/test/it/MainActivityInstrumentedTest.java",
 		filepath.Join(androidTestPath, "MainActivityInstrumentedTest.java"),
 		aa,
 		data)
