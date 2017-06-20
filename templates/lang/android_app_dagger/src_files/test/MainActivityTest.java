@@ -11,6 +11,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
+import org.robolectric.android.controller.ActivityController;
 import org.robolectric.annotation.Config;
 
 import static org.fest.assertions.api.Assertions.assertThat;
@@ -26,10 +27,13 @@ public class MainActivityTest {
       .buildRule();
 
   @Test
-  public void placeholderTest() {
-    MainActivity activity = Robolectric.setupActivity(MainActivity.class);
+  public void sanityCheck() {
+    ActivityController<MainActivity> controller = Robolectric.buildActivity(MainActivity.class).setup();
+    MainActivity activity = controller.get();
 
     assertThat(activity.getTitle())
         .isEqualTo("{{ .CamelName }}");
+
+    controller.pause().stop().destroy();
   }
 }
