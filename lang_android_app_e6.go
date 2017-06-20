@@ -23,12 +23,23 @@ func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir stri
 	mainAppPath := filepath.Join(mainPath, "app")
 	mainMainPath := filepath.Join(mainPath, "main")
 	mainBasePath := filepath.Join(mainPath, "base")
+	mainExecutorPath := filepath.Join(mainPath, "executor")
 	testAppPath := filepath.Join(testPath, "app")
 	testMainPath := filepath.Join(testPath, "main")
 	testBasePath := filepath.Join(testPath, "base")
 	debugAppPath := pathWithOptSubdir(subdir, "src", "debug", "java", data.Group.asPath(), "app")
 	releaseAppPath := pathWithOptSubdir(subdir, "src", "release", "java", data.Group.asPath(), "app")
-	mkdir(androidTestPath, mainAppPath, mainMainPath, mainBasePath, testAppPath, testMainPath, testBasePath, debugAppPath, releaseAppPath)
+	mkdir(
+		androidTestPath,
+		mainAppPath,
+		mainMainPath,
+		mainBasePath,
+		testAppPath,
+		testMainPath,
+		testBasePath,
+		debugAppPath,
+		releaseAppPath,
+		mainExecutorPath)
 
 	templateTemplateableToFile(
 		"proguard-rules.pro",
@@ -101,6 +112,11 @@ func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir stri
 	templateTemplateableToFile(
 		"src_files/main/MainActivityModule.java",
 		filepath.Join(mainMainPath, "MainActivityModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/executor/RootExecutorsModule.java",
+		filepath.Join(mainExecutorPath, "RootExecutorsModule.java"),
 		aa,
 		data)
 

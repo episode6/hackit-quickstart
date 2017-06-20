@@ -31,6 +31,7 @@ dependencies {
 
   compile 'com.episode6.hackit.android.inject:context-annotations'
   compile 'com.episode6.hackit.android.inject:context-modules'
+  compile 'com.episode6.hackit.android.inject:more-annotations'
 
   compile 'com.episode6.hackit.chop:chop-core'
   compile 'com.episode6.hackit.chop:chop-android'
