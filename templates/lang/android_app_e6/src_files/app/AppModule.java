@@ -9,7 +9,9 @@ import javax.inject.Singleton;
 import dagger.Binds;
 import dagger.Module;
 
-@Module(includes = {ApplicationContextModule.class})
+@Module(includes = {
+  ApplicationContextModule.class,
+  DebugAppModule.class})
 abstract class {{ .CamelNameWithoutApp }}AppModule {
 
   @Binds
