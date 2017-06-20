@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
@@ -15,14 +16,21 @@ func execOrPanic(command string) string {
 }
 
 func execOrPanicWithMessage(command string, errMessage string) string {
-	val, err := exec.Command("bash", "-c", command).Output()
-	if err != nil {
-		if errMessage == "" {
-			panic(err)
-		}
-		panic(errMessage)
+	val, err := exec.Command("bash", "-c", command).CombinedOutput()
+	if err == nil {
+		return string(val)
 	}
-	return string(val)
+
+	if errMessage != "" {
+		errMessage = fmt.Sprintf("%v\n", errMessage)
+	}
+	errMessage = fmt.Sprintf(
+		"%vError executing bash command\ncommand: %v\nerror: %v\noutput: %v",
+		errMessage,
+		command,
+		err,
+		string(val))
+	panic(errMessage)
 }
 
 func mkdir(paths ...string) {
