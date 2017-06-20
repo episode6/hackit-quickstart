@@ -26,6 +26,7 @@ var projectLangs = map[string]languageTemplate{
 	"android":          &androidLibrary{},
 	"androidApp":       &androidApplication{},
 	"androidAppDagger": &androidApplicationWithDagger{},
+	"e6AndroidApp":     &e6AndroidApp{},
 }
 
 func main() {
