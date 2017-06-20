@@ -67,18 +67,18 @@ public class MockspressoTestApp extends {{ .CamelNameWithoutApp }}App {
     @Mock DispatchingAndroidInjector<ContentProvider> contentProviderInjector;
 
     void setupInjectors(final Mockspresso mockspresso) {
-      Answer<Object> answer = new Answer<Object>() {
+      Answer<Object> injectAnswer = new Answer<Object>() {
         @Override
         public Object answer(InvocationOnMock invocation) throws Throwable {
           mockspresso.inject(invocation.getArgument(0));
-          return true;
+          return null;
         }
       };
-      doAnswer(answer).when(activityInjector).inject(any(Activity.class));
-      doAnswer(answer).when(broadcastReceiverInjector).inject(any(BroadcastReceiver.class));
-      doAnswer(answer).when(fragmentInjector).inject(any(Fragment.class));
-      doAnswer(answer).when(serviceInjector).inject(any(Service.class));
-      doAnswer(answer).when(contentProviderInjector).inject(any(ContentProvider.class));
+      doAnswer(injectAnswer).when(activityInjector).inject(any(Activity.class));
+      doAnswer(injectAnswer).when(broadcastReceiverInjector).inject(any(BroadcastReceiver.class));
+      doAnswer(injectAnswer).when(fragmentInjector).inject(any(Fragment.class));
+      doAnswer(injectAnswer).when(serviceInjector).inject(any(Service.class));
+      doAnswer(injectAnswer).when(contentProviderInjector).inject(any(ContentProvider.class));
     }
   }
 }
