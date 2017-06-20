@@ -20,6 +20,7 @@ android {
 
 dependencies {
   compile 'com.google.code.findbugs:jsr305'
+  
   testCompile 'junit:junit'
   testCompile 'org.easytesting:fest-assert-core'
 }
