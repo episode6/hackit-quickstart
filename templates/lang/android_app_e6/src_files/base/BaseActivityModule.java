@@ -8,6 +8,7 @@ import com.episode6.hackit.android.inject.context.qualifier.ForContextScope;
 import com.episode6.hackit.android.inject.context.scope.ContextScope;
 import com.episode6.hackit.disposable.DisposableManager;
 import com.episode6.hackit.pausable.PausableDisposableManager;
+import com.episode6.hackit.pausable.PausableManager;
 import com.episode6.hackit.pausable.Pausables;
 
 import dagger.Binds;
@@ -29,6 +30,11 @@ public abstract class BaseActivityModule {
 
   @Binds
   @ContextScope
-  abstract @ForContextScope DisposableManager bindScopedDisposableManage(
+  abstract @ForContextScope DisposableManager bindScopedDisposableManager(
+      @ForContextScope PausableDisposableManager mgr);
+
+  @Binds
+  @ContextScope
+  abstract @ForContextScope PausableManager bindScopedPausableManager(
       @ForContextScope PausableDisposableManager mgr);
 }

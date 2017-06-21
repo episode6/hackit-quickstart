@@ -5,6 +5,7 @@ import com.episode6.hackit.android.inject.context.scope.FragmentScope;
 import com.episode6.hackit.disposable.DisposableManager;
 import com.episode6.hackit.disposable.Disposables;
 import com.episode6.hackit.pausable.PausableDisposableManager;
+import com.episode6.hackit.pausable.PausableManager;
 import com.episode6.hackit.pausable.Pausables;
 
 import javax.inject.Named;
@@ -29,6 +30,11 @@ public abstract class BaseFragmentModule {
 
   @Binds
   @FragmentScope
-  abstract @ForFragment DisposableManager bindScopedDisposableManage(
+  abstract @ForFragment DisposableManager bindScopedDisposableManager(
+      @ForFragment PausableDisposableManager mgr);
+
+  @Binds
+  @FragmentScope
+  abstract @ForFragment PausableManager bindScopedPausableManager(
       @ForFragment PausableDisposableManager mgr);
 }
