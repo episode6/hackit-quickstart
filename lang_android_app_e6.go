@@ -98,6 +98,11 @@ func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir stri
 		filepath.Join(mainBasePath, "BaseActivityModule.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/base/BaseFragmentModule.java",
+		filepath.Join(mainBasePath, "BaseFragmentModule.java"),
+		aa,
+		data)
 
 	templateTemplateableToFile(
 		"src_files/main/MainActivity.java",

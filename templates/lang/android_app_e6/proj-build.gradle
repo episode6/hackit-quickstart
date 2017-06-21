@@ -42,6 +42,10 @@ dependencies {
   compile 'com.episode6.hackit.chop:chop-core'
   compile 'com.episode6.hackit.chop:chop-android'
 
+  compile 'com.episode6.hackit.disposable:disposables-core'
+  compile 'com.episode6.hackit.disposable:pausables-core'
+  compile 'com.episode6.hackit.disposable:disposable-butterknife'
+
   testCompile 'junit:junit'
   testCompile 'org.easytesting:fest-assert-core'
   testCompile 'com.episode6.hackit.chop:chop-junit'

@@ -1,0 +1,34 @@
+package {{ .Group }}.base;
+
+import com.episode6.hackit.android.inject.context.qualifier.ForFragment;
+import com.episode6.hackit.android.inject.context.scope.FragmentScope;
+import com.episode6.hackit.disposable.DisposableManager;
+import com.episode6.hackit.disposable.Disposables;
+import com.episode6.hackit.pausable.PausableDisposableManager;
+import com.episode6.hackit.pausable.Pausables;
+
+import javax.inject.Named;
+
+import dagger.Binds;
+import dagger.Module;
+import dagger.Provides;
+
+@Module
+public abstract class BaseFragmentModule {
+
+  @Provides
+  static @Named("forFragmentUi") DisposableManager provideUiDisposableManager() {
+    return Disposables.newManager();
+  }
+
+  @Provides
+  @FragmentScope
+  static @ForFragment PausableDisposableManager providePausableDisposableManager() {
+    return Pausables.newDisposableManager();
+  }
+
+  @Binds
+  @FragmentScope
+  abstract @ForFragment DisposableManager bindScopedDisposableManage(
+      @ForFragment PausableDisposableManager mgr);
+}
