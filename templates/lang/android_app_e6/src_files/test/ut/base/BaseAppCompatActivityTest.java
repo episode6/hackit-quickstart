@@ -61,5 +61,6 @@ public class BaseAppCompatActivityTest {
 
     controller.stop().destroy();
     inOrder.verify(mDisposables).dispose();
+    inOrder.verifyNoMoreInteractions();
   }
 }

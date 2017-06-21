@@ -27,10 +27,9 @@ public class MainFragment extends BaseFragment {
     return inflater.inflate(R.layout.fragment_main, container, false);
   }
 
-
   @Override
   public void onViewCreated(final View view, @Nullable Bundle savedInstanceState) {
-    ButterKnife.bind(this, view);
+    super.onViewCreated(view, savedInstanceState);
     mTextView.setText("Hello Earth!");
   }
 }
