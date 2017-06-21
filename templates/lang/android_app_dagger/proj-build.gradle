@@ -21,6 +21,7 @@ android {
 dependencies {
   compile fileTree(dir: 'libs', include: ['*.jar'])
   compile 'com.google.code.findbugs:jsr305'
+
   compile 'com.android.support:appcompat-v7'
   compile 'com.android.support.constraint:constraint-layout'
 
@@ -29,17 +30,17 @@ dependencies {
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
 
-  compile 'com.episode6.hackit.android.inject:context-annotations'
-  compile 'com.episode6.hackit.android.inject:context-modules'
-
   compile 'com.jakewharton:butterknife'
   annotationProcessor 'com.jakewharton:butterknife-compiler'
 
+  compile 'com.episode6.hackit.android.inject:context-annotations'
+  compile 'com.episode6.hackit.android.inject:context-modules'
+
   testCompile 'junit:junit'
-  testCompile 'org.mockito:mockito-inline'
-  testCompile 'com.episode6.hackit.mockspresso:mockspresso-core'
-  testCompile 'org.robolectric:robolectric'
   testCompile 'org.easytesting:fest-assert-core'
+  testCompile 'com.episode6.hackit.mockspresso:mockspresso-core'
+  testCompile 'org.mockito:mockito-inline'
+  testCompile 'org.robolectric:robolectric'
 
   androidTestCompile 'com.google.code.findbugs:jsr305'
   androidTestCompile 'org.easytesting:fest-assert-core'
