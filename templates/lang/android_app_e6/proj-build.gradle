@@ -51,6 +51,10 @@ dependencies {
   testCompile 'com.episode6.hackit.chop:chop-junit'
   testCompile 'com.episode6.hackit.mockspresso:mockspresso-core'
   testCompile 'org.mockito:mockito-inline'
+  testCompile 'org.powermock:powermock-api-mockito2'
+  testCompile 'org.powermock:powermock-module-junit4'
+  testCompile 'org.powermock:powermock-module-junit4-rule'
+  testCompile 'org.powermock:powermock-classloading-xstream'
   testCompile 'org.robolectric:robolectric'
 
   androidTestCompile 'com.google.code.findbugs:jsr305'

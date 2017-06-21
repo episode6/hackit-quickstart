@@ -31,6 +31,7 @@ import org.robolectric.annotation.Config;
 import javax.inject.Named;
 
 import static org.fest.assertions.api.Assertions.assertThat;
+import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.inOrder;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
 
@@ -88,6 +89,7 @@ public class BaseFragmentTest {
         .visible();
     BaseFragment fragment = controller.get();
 
+    inOrder.verify(mUiDisposables).addDisposable(any(Disposable.class)); // butterknife
     inOrder.verify(mDisposables).resume();
     assertThat(fragment.fragmentInjector()).isNotNull();
 
