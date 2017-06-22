@@ -17,5 +17,5 @@ func (rp *rootProject) generate(data *ProjectData) {
 	templateTemplateableToFile("proj-gradle.properties", "gradle.properties", data.Lang, data)
 	templateTemplateableToFile("proj-local.properties", "local.properties", data.Lang, data)
 	templateAssetToFile("Jenkinsfile", "Jenkinsfile", data)
-	execOrPanic("gradle --refresh-dependencies -Dorg.gradle.daemon=false -Pgdmc.forceResolve=true wrapper")
+	execOrPanic("gradle -Dorg.gradle.daemon=false -Pgdmc.forceResolve=true wrapper")
 }
