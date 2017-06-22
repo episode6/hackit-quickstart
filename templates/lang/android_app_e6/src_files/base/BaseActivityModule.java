@@ -11,11 +11,15 @@ import com.episode6.hackit.pausable.PausableDisposableManager;
 import com.episode6.hackit.pausable.PausableManager;
 import com.episode6.hackit.pausable.Pausables;
 
+import {{ .Group }}.executor.ScopedExecutorsModule;
+
 import dagger.Binds;
 import dagger.Module;
 import dagger.Provides;
 
-@Module(includes = {ScopedContextModule.class})
+@Module(includes = {
+    ScopedContextModule.class,
+    ScopedExecutorsModule.class})
 public abstract class BaseActivityModule {
 
   @Binds

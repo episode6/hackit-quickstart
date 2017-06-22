@@ -124,6 +124,11 @@ func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir stri
 		filepath.Join(mainExecutorPath, "RootExecutorsModule.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/executor/ScopedExecutorsModule.java",
+		filepath.Join(mainExecutorPath, "ScopedExecutorsModule.java"),
+		aa,
+		data)
 
 	templateTemplateableToFile(
 		"src_files/test/ut/BuildMockspresso.java",

@@ -44,6 +44,7 @@ dependencies {
 
   compile 'com.episode6.hackit.disposable:disposables-core'
   compile 'com.episode6.hackit.disposable:pausables-core'
+  compile 'com.episode6.hackit.disposable:disposable-android'
   compile 'com.episode6.hackit.disposable:disposable-butterknife'
 
   testCompile 'junit:junit'
