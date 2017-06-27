@@ -32,6 +32,9 @@ dependencies {
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
 
+  provided 'com.episode6.hackit.auto.factory:auto-factory-annotations'
+  annotationProcessor 'com.google.auto.factory:auto-factory'
+
   compile 'com.jakewharton:butterknife'
   annotationProcessor 'com.jakewharton:butterknife-compiler'
 
