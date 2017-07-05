@@ -43,6 +43,7 @@ Usage of hackit-quickstart:
       android: A deployable android library
       androidApp: An android application
       androidAppDagger: An android application with a default dagger 2 implementation
+      e6AndroidApp: An android application with dagger 2 and episode6 libs included (experimental)
 
 -group string
     GroupId (aka package name) of library to generate

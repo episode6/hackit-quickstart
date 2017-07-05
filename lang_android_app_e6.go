@@ -11,7 +11,7 @@ func (aa *e6AndroidApp) templateAlias() string {
 }
 
 func (aa *e6AndroidApp) describe() string {
-	return "An android application with dagger 2 and episode6 libs bound and included"
+	return "An android application with dagger 2 and episode6 libs included (experimental)"
 }
 
 func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir string) {
