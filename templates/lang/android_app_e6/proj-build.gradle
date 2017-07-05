@@ -23,6 +23,8 @@ dependencies {
   compile 'com.google.code.findbugs:jsr305'
 
   compile 'com.android.support:appcompat-v7'
+  compile 'com.android.support:cardview-v7'
+  compile 'com.android.support:design'
   compile 'com.android.support.constraint:constraint-layout'
 
   compile 'com.google.dagger:dagger'
@@ -30,16 +32,36 @@ dependencies {
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
 
+  provided 'com.episode6.hackit.auto.factory:auto-factory-annotations'
+  annotationProcessor 'com.google.auto.factory:auto-factory'
+
   compile 'com.jakewharton:butterknife'
   annotationProcessor 'com.jakewharton:butterknife-compiler'
 
   compile 'com.episode6.hackit.android.inject:context-annotations'
   compile 'com.episode6.hackit.android.inject:context-modules'
+  compile 'com.episode6.hackit.android.inject:more-annotations'
+
+  compile 'com.episode6.hackit.chop:chop-core'
+  compile 'com.episode6.hackit.chop:chop-android'
+
+  compile 'com.episode6.hackit.disposable:disposables-core'
+  compile 'com.episode6.hackit.disposable:pausables-core'
+  compile 'com.episode6.hackit.disposable:disposable-android'
+  compile 'com.episode6.hackit.disposable:disposable-butterknife'
+
+  compile 'com.episode6.hackit.typed:typed-bundles'
+  compile 'com.episode6.hackit.typed:typed-preferences'
 
   testCompile 'junit:junit'
   testCompile 'org.easytesting:fest-assert-core'
+  testCompile 'com.episode6.hackit.chop:chop-junit'
   testCompile 'com.episode6.hackit.mockspresso:mockspresso-core'
   testCompile 'org.mockito:mockito-inline'
+  testCompile 'org.powermock:powermock-api-mockito2'
+  testCompile 'org.powermock:powermock-module-junit4'
+  testCompile 'org.powermock:powermock-module-junit4-rule'
+  testCompile 'org.powermock:powermock-classloading-xstream'
   testCompile 'org.robolectric:robolectric'
 
   androidTestCompile 'com.google.code.findbugs:jsr305'

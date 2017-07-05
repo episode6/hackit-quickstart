@@ -180,7 +180,7 @@ func chdir(dir string) {
 
 func execOrFail(command string, testName string, t *testing.T) string {
 	t.Logf("Running command \"%v\" on project %v...", command, testName)
-	output, err := exec.Command("bash", "-c", command).Output()
+	output, err := exec.Command("bash", "-c", command).CombinedOutput()
 	outputStr := string(output)
 	if err != nil {
 		t.Errorf("Failed to execute \"%v\" on project %v\nOuput:\n%v", command, testName, outputStr)

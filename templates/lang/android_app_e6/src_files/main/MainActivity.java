@@ -1,9 +1,11 @@
-package {{ .Group }};
+package {{ .Group }}.main;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends AppCompatActivity {
+import {{ .Group }}.R;
+import {{ .Group }}.base.BaseAppCompatActivity;
+
+public class MainActivity extends BaseAppCompatActivity {
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {

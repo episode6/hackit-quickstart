@@ -2,19 +2,19 @@ package main
 
 import "path/filepath"
 
-type androidApplicationWithDagger struct {
+type e6AndroidApp struct {
 	androidAppShared
 }
 
-func (aa *androidApplicationWithDagger) templateAlias() string {
-	return "lang/android_app_dagger"
+func (aa *e6AndroidApp) templateAlias() string {
+	return "lang/android_app_e6"
 }
 
-func (aa *androidApplicationWithDagger) describe() string {
-	return "An android application with a default dagger 2 implementation"
+func (aa *e6AndroidApp) describe() string {
+	return "An android application with dagger 2 and episode6 libs included (experimental)"
 }
 
-func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectData, subdir string) {
+func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	aa.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
@@ -23,10 +23,25 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 	mainAppPath := filepath.Join(mainPath, "app")
 	mainMainPath := filepath.Join(mainPath, "main")
 	mainBasePath := filepath.Join(mainPath, "base")
+	mainExecutorPath := filepath.Join(mainPath, "executor")
+	mainPreferencePath := filepath.Join(mainPath, "preference")
 	testAppPath := filepath.Join(testPath, "app")
 	testMainPath := filepath.Join(testPath, "main")
 	testBasePath := filepath.Join(testPath, "base")
-	mkdir(androidTestPath, mainAppPath, mainMainPath, mainBasePath, testAppPath, testMainPath, testBasePath)
+	debugAppPath := pathWithOptSubdir(subdir, "src", "debug", "java", data.Group.asPath(), "app")
+	releaseAppPath := pathWithOptSubdir(subdir, "src", "release", "java", data.Group.asPath(), "app")
+	mkdir(
+		androidTestPath,
+		mainAppPath,
+		mainMainPath,
+		mainBasePath,
+		testAppPath,
+		testMainPath,
+		testBasePath,
+		debugAppPath,
+		releaseAppPath,
+		mainExecutorPath,
+		mainPreferencePath)
 
 	templateTemplateableToFile(
 		"proguard-rules.pro",
@@ -59,6 +74,16 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 		filepath.Join(mainAppPath, "RootBindingModule.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/app/DebugAppModule.java",
+		filepath.Join(debugAppPath, "DebugAppModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/app/ReleaseDebugAppModule.java",
+		filepath.Join(releaseAppPath, "DebugAppModule.java"),
+		aa,
+		data)
 
 	templateTemplateableToFile(
 		"src_files/base/BaseAppCompatActivity.java",
@@ -75,6 +100,11 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 		filepath.Join(mainBasePath, "BaseActivityModule.java"),
 		aa,
 		data)
+	templateTemplateableToFile(
+		"src_files/base/BaseFragmentModule.java",
+		filepath.Join(mainBasePath, "BaseFragmentModule.java"),
+		aa,
+		data)
 
 	templateTemplateableToFile(
 		"src_files/main/MainActivity.java",
@@ -89,6 +119,21 @@ func (aa *androidApplicationWithDagger) generateLangSpecificFiles(data *ProjectD
 	templateTemplateableToFile(
 		"src_files/main/MainActivityModule.java",
 		filepath.Join(mainMainPath, "MainActivityModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/executor/RootExecutorsModule.java",
+		filepath.Join(mainExecutorPath, "RootExecutorsModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/executor/ScopedExecutorsModule.java",
+		filepath.Join(mainExecutorPath, "ScopedExecutorsModule.java"),
+		aa,
+		data)
+	templateTemplateableToFile(
+		"src_files/preference/RootPreferencesModule.java",
+		filepath.Join(mainPreferencePath, "RootPreferencesModule.java"),
 		aa,
 		data)
 
