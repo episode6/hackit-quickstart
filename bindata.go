@@ -343,7 +343,7 @@ func templatesLangAndroid_appSrc_filesMainactivityJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivity.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1497973780, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivity.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -403,7 +403,7 @@ func templatesLangAndroid_appSrc_filesMainfragmentJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainFragment.java", size: 722, mode: os.FileMode(420), modTime: time.Unix(1497973993, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainFragment.java", size: 722, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -423,7 +423,7 @@ func templatesLangAndroid_appSrc_filesResLayoutActivity_mainXml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/activity_main.xml", size: 233, mode: os.FileMode(420), modTime: time.Unix(1497973720, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/activity_main.xml", size: 233, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -443,7 +443,7 @@ func templatesLangAndroid_appSrc_filesResLayoutFragment_mainXml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/fragment_main.xml", size: 676, mode: os.FileMode(420), modTime: time.Unix(1497973732, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/fragment_main.xml", size: 676, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -643,7 +643,7 @@ func templatesLangAndroid_app_daggerProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1688, mode: os.FileMode(420), modTime: time.Unix(1498066406, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1688, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -843,7 +843,7 @@ func templatesLangAndroid_app_daggerSrc_filesBaseBasefragmentJava() (*asset, err
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/base/BaseFragment.java", size: 953, mode: os.FileMode(420), modTime: time.Unix(1497995072, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/base/BaseFragment.java", size: 953, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1063,7 +1063,7 @@ func templatesLangAndroid_app_e6ProguardRulesPro() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1083,7 +1083,7 @@ func templatesLangAndroid_app_e6ProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-build.gradle", size: 2701, mode: os.FileMode(420), modTime: time.Unix(1498576610, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-build.gradle", size: 2701, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1103,7 +1103,7 @@ func templatesLangAndroid_app_e6ProjGradleProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1123,7 +1123,7 @@ func templatesLangAndroid_app_e6ProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1143,7 +1143,7 @@ func templatesLangAndroid_app_e6Src_filesAndroidmanifestXml() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1163,7 +1163,7 @@ func templatesLangAndroid_app_e6Src_filesAppAppJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/App.java", size: 556, mode: os.FileMode(420), modTime: time.Unix(1497975258, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/App.java", size: 556, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1183,7 +1183,7 @@ func templatesLangAndroid_app_e6Src_filesAppAppcomponentJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/AppComponent.java", size: 536, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/AppComponent.java", size: 536, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1203,7 +1203,7 @@ func templatesLangAndroid_app_e6Src_filesAppAppmoduleJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/AppModule.java", size: 618, mode: os.FileMode(420), modTime: time.Unix(1498152942, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/AppModule.java", size: 618, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1223,7 +1223,7 @@ func templatesLangAndroid_app_e6Src_filesAppDebugappmoduleJava() (*asset, error)
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/DebugAppModule.java", size: 421, mode: os.FileMode(420), modTime: time.Unix(1497974925, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/DebugAppModule.java", size: 421, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1243,7 +1243,7 @@ func templatesLangAndroid_app_e6Src_filesAppReleasedebugappmoduleJava() (*asset,
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/ReleaseDebugAppModule.java", size: 548, mode: os.FileMode(420), modTime: time.Unix(1497974902, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/ReleaseDebugAppModule.java", size: 548, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1263,7 +1263,7 @@ func templatesLangAndroid_app_e6Src_filesAppRootbindingmoduleJava() (*asset, err
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/RootBindingModule.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/app/RootBindingModule.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1283,7 +1283,7 @@ func templatesLangAndroid_app_e6Src_filesBaseBaseactivitymoduleJava() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseActivityModule.java", size: 1340, mode: os.FileMode(420), modTime: time.Unix(1498146841, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseActivityModule.java", size: 1340, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1303,7 +1303,7 @@ func templatesLangAndroid_app_e6Src_filesBaseBaseappcompatactivityJava() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseAppCompatActivity.java", size: 1604, mode: os.FileMode(420), modTime: time.Unix(1498074918, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseAppCompatActivity.java", size: 1604, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1323,7 +1323,7 @@ func templatesLangAndroid_app_e6Src_filesBaseBasefragmentJava() (*asset, error) 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseFragment.java", size: 2726, mode: os.FileMode(420), modTime: time.Unix(1498075381, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseFragment.java", size: 2726, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1343,7 +1343,7 @@ func templatesLangAndroid_app_e6Src_filesBaseBasefragmentmoduleJava() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseFragmentModule.java", size: 1690, mode: os.FileMode(420), modTime: time.Unix(1498146960, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/base/BaseFragmentModule.java", size: 1690, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1363,7 +1363,7 @@ func templatesLangAndroid_app_e6Src_filesExecutorRootexecutorsmoduleJava() (*ass
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/executor/RootExecutorsModule.java", size: 859, mode: os.FileMode(420), modTime: time.Unix(1497985519, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/executor/RootExecutorsModule.java", size: 859, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1383,7 +1383,7 @@ func templatesLangAndroid_app_e6Src_filesExecutorScopedexecutorsmoduleJava() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/executor/ScopedExecutorsModule.java", size: 1592, mode: os.FileMode(420), modTime: time.Unix(1498146742, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/executor/ScopedExecutorsModule.java", size: 1592, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1403,7 +1403,7 @@ func templatesLangAndroid_app_e6Src_filesMainMainactivityJava() (*asset, error) 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainActivity.java", size: 547, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainActivity.java", size: 547, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1423,7 +1423,7 @@ func templatesLangAndroid_app_e6Src_filesMainMainactivitymoduleJava() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainActivityModule.java", size: 692, mode: os.FileMode(420), modTime: time.Unix(1498067303, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainActivityModule.java", size: 692, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1443,7 +1443,7 @@ func templatesLangAndroid_app_e6Src_filesMainMainfragmentJava() (*asset, error) 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainFragment.java", size: 867, mode: os.FileMode(420), modTime: time.Unix(1498075863, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/main/MainFragment.java", size: 867, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1463,7 +1463,7 @@ func templatesLangAndroid_app_e6Src_filesPreferenceRootpreferencesmoduleJava() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/preference/RootPreferencesModule.java", size: 794, mode: os.FileMode(420), modTime: time.Unix(1498152886, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/preference/RootPreferencesModule.java", size: 794, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1483,12 +1483,12 @@ func templatesLangAndroid_app_e6Src_filesTestItMainactivityinstrumentedtestJava(
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/it/MainActivityInstrumentedTest.java", size: 1312, mode: os.FileMode(420), modTime: time.Unix(1496171293, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/it/MainActivityInstrumentedTest.java", size: 1312, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _templatesLangAndroid_app_e6Src_filesTestUtBuildmockspressoJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x90\x3f\x4f\xc4\x30\x0c\xc5\xf7\x7c\x0a\x8f\xed\xe2\x91\xa5\x13\x08\x89\xe9\x16\x04\x1f\x20\x4d\x7d\xbd\xd0\x3f\xb6\x1c\x47\x0c\x55\xbf\x3b\x4a\x75\xa8\x55\x19\xb8\x4c\x96\xfd\xde\xef\x3d\x45\x7c\x18\x7c\x4f\xb0\x2c\x80\x6f\xca\x59\x60\x5d\x1b\xe7\xe2\x24\xac\x06\x81\x27\x24\x89\x89\x3b\x7a\xc2\x9b\x0f\x43\x34\x9c\x38\x0c\x49\x94\x52\x62\xbc\xec\xf3\x6e\x3a\xa2\xd0\x8b\x1c\x55\x1f\x94\xec\x59\x64\x17\x27\xf3\x16\xc3\xbf\x41\x2f\x39\x8e\xdd\x81\x83\xdf\xd1\x6e\x8d\x73\x92\xdb\xb1\xd8\x47\x9f\x12\x9c\x45\xb0\x38\x80\xbb\xe2\x9e\x73\x39\x33\x49\xa1\xa0\x5e\xe9\xea\xf3\x68\xa9\xaa\x37\x13\x80\x92\x65\x9d\xb7\x5b\x55\x6f\x9b\xf2\x30\xce\x5f\x14\x8c\xb5\xaa\xb1\xf3\x7d\x4f\x7a\x3c\x96\xc2\x65\xb3\x0d\xd1\xb8\xaa\x1b\x07\xb0\xba\x87\x5a\x5c\x59\xdf\xb9\xe5\x91\x82\x69\x0c\xe7\x1e\x7f\xbf\x10\x7b\xb2\xaa\xc6\xb6\xd8\x3f\x85\xe7\xdf\xb0\xd5\xfd\x04\x00\x00\xff\xff\xab\x62\x78\x0f\xd3\x01\x00\x00")
+var _templatesLangAndroid_app_e6Src_filesTestUtBuildmockspressoJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x51\xb1\x8e\xdb\x30\x0c\xdd\xf5\x15\x1c\xe5\x45\x63\x17\x2f\x6d\x5a\xa0\x53\x50\x20\x68\x3e\x40\x96\x19\x47\x89\x2d\x0a\x22\xd5\x0c\x81\xff\xbd\x90\x63\xc4\xba\x1c\x0e\x77\x9a\x08\xf2\xf1\xbd\xa7\xc7\x68\xdd\xd5\x0e\x08\xf7\x3b\x98\xdf\x89\x72\x84\x79\x6e\x95\xf2\x53\xa4\x24\xe0\x68\x32\x18\x3d\x53\x8f\xdf\xcc\xd9\xba\xab\x17\x33\x91\xbb\x72\x4c\xc8\x4c\x66\xbf\xd5\xdb\x52\x4d\x65\x6c\x8c\x35\xea\x2f\xb2\xfc\x88\x71\x03\x53\x1a\xcc\x25\x07\x2f\x66\x87\x27\x4a\xb8\x4d\x58\xac\x78\xf7\xa9\x85\x5d\xf6\x63\x5f\x29\x98\x9b\x97\x73\xab\x54\xcc\xdd\x58\xd6\x47\xcb\x0c\xaf\x20\xb8\x2b\x80\x15\xb1\xea\xec\x5f\x39\x31\x41\xa1\xfa\x85\x27\x9b\x47\x61\xdd\x2c\x4b\x00\x09\x25\xa7\xb0\xcc\x74\xb3\x74\xca\x33\x3e\x5c\xd0\x09\x25\xdd\x98\xde\x0e\x03\xa6\x7a\x58\x0c\x97\xce\x52\x78\x21\xdd\xb4\x0a\x60\x56\x5f\x72\x71\xa2\x74\xa0\x8e\x46\x74\x92\xbc\x7b\xf5\xf1\x3e\x5c\x33\xa0\xe8\xa6\x24\x3f\x7a\x67\xc5\x53\xa8\x30\xba\x31\x5d\xe1\x3d\x46\x0a\xb5\x43\x41\x96\x03\x32\xe5\xe4\x90\x75\xc0\x1b\xfc\xe9\xca\x87\x9e\x72\x8f\xf7\xfd\x71\xa5\xaa\xb3\xfa\xff\x47\xbe\x07\x46\xc9\x51\xd7\x39\x57\x97\x7a\x4b\x04\x1f\x1b\x7f\x24\xf9\x93\xa6\x48\x01\x83\xf0\x91\x7d\x18\x74\xcd\xd4\x56\x44\xf3\xb3\x9e\xd7\x50\x67\xf5\x3f\x00\x00\xff\xff\xfa\x59\x72\x31\xd5\x02\x00\x00")
 
 func templatesLangAndroid_app_e6Src_filesTestUtBuildmockspressoJavaBytes() ([]byte, error) {
 	return bindataRead(
@@ -1503,12 +1503,12 @@ func templatesLangAndroid_app_e6Src_filesTestUtBuildmockspressoJava() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/BuildMockspresso.java", size: 467, mode: os.FileMode(420), modTime: time.Unix(1497915669, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/BuildMockspresso.java", size: 725, mode: os.FileMode(420), modTime: time.Unix(1500302790, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _templatesLangAndroid_app_e6Src_filesTestUtAppMockspressotestappJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x94\x56\xc1\x72\xe3\x36\x0c\xbd\xeb\x2b\x70\x94\x32\x53\x6e\x4f\xbd\x24\xeb\x46\x49\xda\xce\x1e\xd2\x74\xd2\xed\xf4\x4c\x53\xb0\xcc\x8d\x44\x72\x48\xc8\xe9\x8e\xc7\xff\xde\xa1\x24\x8a\x12\x2d\x67\xd6\xb9\x88\x26\x1f\x1e\x40\xe0\x81\x88\xe1\xe2\x8d\xd7\x08\xc7\x23\xb0\x3f\xac\xee\x0c\x9c\x4e\x8c\x1b\x73\x9b\x65\xb2\x35\xda\x12\x70\x55\x59\x2d\x2b\xbf\xc9\x4a\x41\xf2\x20\xe9\xfb\xed\xda\xe1\xef\x96\xd7\x2d\x2a\x5a\x3d\xfc\x1b\xed\x41\x0a\x3c\x3b\x13\x5a\x11\x2a\x62\x0f\x56\xf3\x4a\x70\x47\xaf\x28\x50\x1e\xd0\x5e\x44\x3e\x0e\xdf\xbf\xac\x3e\xc8\xca\xe3\x02\x50\xe8\x96\xa1\x91\x4e\x57\xf8\x0b\xdb\x73\xf1\x26\x89\xb5\x5a\xbc\x39\x63\xd1\x39\xcd\x9e\xe3\x3a\x1a\x2d\xee\xfd\xd0\xc9\xa6\x5a\x85\x69\x5b\xb3\x6f\x9d\x92\xc4\x1e\x70\xa7\x6d\xbc\x87\x3f\xf0\x4e\x24\x0d\x0e\x56\x0f\xa4\x3a\x68\xc1\x49\x6a\xc5\xbe\x4c\xcb\x17\x75\x11\xef\xa8\xdb\x6e\xa5\xaa\x59\xa9\xdc\xfb\x2c\x15\x1e\x63\xf5\x56\x37\x28\xc8\x4a\xc1\x5e\x3b\x45\xb2\xc5\xdf\xd4\x41\x5a\xad\x86\xdc\x07\x6c\xc5\xeb\x1a\x2d\x0b\xd9\x2b\x87\xef\x17\xf5\x0d\x05\xe9\x48\x99\xc0\x9e\xfa\x9f\xa5\x31\x8d\x1c\xa2\xbc\x08\x94\xce\x70\x12\x7b\xa9\xea\x33\xea\x60\xe2\x88\x93\x14\x8b\x9b\x95\xb6\xee\x7c\x9c\xcf\xde\x16\xad\x63\x5c\x45\x31\xad\xe0\x9f\xc7\x6f\xa5\x43\x2a\xb2\x4f\x37\x37\x19\xdc\x40\xa9\x40\xb6\xa6\x41\xcf\xd6\x47\x0a\x7a\x07\xc7\xfb\x46\xaa\xb7\xbe\xa8\x8f\xbc\xc5\xe6\x4f\xde\xe2\xbf\x92\xf6\xba\xa3\xd2\xf8\x12\x97\xc6\x9c\x80\xf6\x9c\x40\xf6\xe1\x3a\x70\xdd\xf6\x27\xa1\x5b\xa3\x15\x2a\x72\xd0\x39\xa9\x6a\xcf\x3f\x93\x01\x83\x27\x74\xb2\x56\x58\xc1\x4e\x5b\xe8\x1c\xc2\xbb\xa4\x3d\xbc\xce\x4a\x91\xc1\xcd\xa7\xcc\x74\xdb\x46\x0a\x10\x0d\x77\x6e\x4e\xf0\x15\x5d\xef\x1f\xff\x23\x54\x95\xfb\x38\x3e\x38\x66\x19\xc0\x48\x35\xa6\x64\x85\xab\x46\xca\x0b\x38\x66\x00\x00\x16\xa9\xb3\x0a\xf2\x73\x58\x01\xe7\x1a\xf1\xfd\x18\xcb\x0b\x70\xea\xfd\x59\x79\xe0\x84\xb0\x93\x8a\x37\x30\xab\x6e\x28\xab\x83\x36\x2e\x3f\x83\xc2\xf7\x55\x54\x5e\xdc\x9e\xb1\xcd\xc2\x82\xb6\x34\x66\xfe\xfb\x33\xa4\x4d\xc7\x7c\x6e\x9f\x70\xc7\xbb\x86\x5c\x5e\xf4\x17\x04\x60\x84\xfe\x6d\x70\xba\xb3\x02\x5d\x1e\x63\x99\x00\x5b\xcf\xe3\xdd\x67\x00\xf7\x2f\x07\xb4\x56\x56\xd8\xc7\xa2\x09\x05\x61\x05\x89\x50\xef\x7e\x9d\x0a\x72\x26\xfb\x0d\xcc\x92\x14\x0c\xd2\x7c\xfb\x1c\x7c\x58\xca\xc7\xa0\xab\xc9\x72\x19\x9a\xff\x1b\x0b\x7d\xd0\xb2\x1a\x35\x99\x7f\x2c\x0f\xa9\x1c\x71\x25\x30\x52\x42\x9a\x55\x36\x12\x4d\xd0\xdb\x11\x79\xea\xbf\xa7\x58\xf5\xc1\xf9\xdc\xb4\x2f\x07\x5a\xe8\xd3\xf9\x8f\xd1\x2a\xbd\x75\xea\x6b\x06\x4c\x8a\xe4\xf3\x13\x72\x57\x12\x71\xdf\xf1\x79\x51\x4c\xde\x87\x3e\x49\x11\xa3\xb7\xfb\xe1\xa1\xed\xd7\x7d\x72\x1c\x52\x67\xf2\x85\x96\xe2\x3a\x26\x23\x2a\x83\xf5\x16\x51\x99\x73\xf8\x90\x90\x53\xaa\xfe\xb1\xdd\x86\xc0\x56\x9b\x60\x0c\xce\x87\x01\x97\xdf\xc0\xbb\x30\x28\x37\xc0\xc7\x55\x7c\x1e\x7f\x88\xe0\x6c\x1e\x6e\x60\x9b\x6e\x5d\x49\x19\xe6\xf3\x06\x76\xe3\xea\x4a\x82\x71\x86\x6f\xc0\x0d\x8b\x2b\xcd\x93\xc1\xbd\x01\xb1\xdc\x98\x0d\x90\x65\xd1\x63\x09\x57\xde\x93\x35\x0d\x0c\xb3\xe2\xee\x65\xeb\xed\x36\x63\x5b\x0d\x9b\xe3\xd3\xb5\x44\xe4\xf3\x5e\x4a\x1b\x74\xea\x92\x01\x0c\xbc\x37\xcd\xd3\x41\x0e\x71\xc8\x17\x40\x7b\xab\xdf\x1d\x7c\xf5\x1f\xbe\x6d\x70\x46\x0f\xf3\x90\x63\xa3\x4e\xff\x20\xd4\x48\x61\x48\xe6\x3f\x17\x53\xe7\xce\x9f\x9d\xae\x69\xe2\xf6\x29\xb4\x76\xd8\x0a\xa3\x32\x9f\x5f\xbb\x60\xef\x7b\x54\x79\x2a\xc6\x22\x04\xc0\xd5\xf7\x3c\x68\x96\xf5\xf2\x8f\xae\x3f\x22\xbc\xa8\xc9\x05\xf3\x99\x98\xaf\x71\x91\x8a\x75\xc1\x1c\x34\x7d\x0d\x61\xa2\xde\x05\xdf\x28\xf1\x6b\xe8\x2e\xa8\x78\x41\x9b\x48\x7f\x49\x3f\xbc\x42\xa7\xec\xff\x00\x00\x00\xff\xff\x40\xee\xb8\x0d\x8b\x0b\x00\x00")
+var _templatesLangAndroid_app_e6Src_filesTestUtAppMockspressotestappJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x94\x55\x4d\x6f\xe3\x36\x10\xbd\xeb\x57\xcc\x51\x0e\x50\x6e\x4f\xbd\x24\xeb\xc6\x9b\xb4\xc5\x1e\xd2\x14\xe9\x16\x3d\x53\xd4\x58\x66\x23\x91\x04\x39\x92\xbb\x30\xf4\xdf\x0b\x4a\xa2\x44\x7d\x38\xa8\x7d\x21\x4d\x3d\x3e\xce\xc7\x9b\x19\xc3\xc5\x3b\x2f\x10\x2e\x17\x60\xbf\x59\x5d\x1b\x68\x5b\xc6\x8d\xb9\x4f\x12\x59\x19\x6d\x09\xb8\xca\xad\x96\xb9\x3f\x64\x07\x41\xb2\x91\xf4\xfd\x7e\xeb\xe3\xaf\x96\x17\x15\x2a\xda\xfc\xf8\x27\xda\x46\x0a\x5c\x7d\x13\x5a\x11\x2a\x62\x5f\xac\xe6\xb9\xe0\x8e\xde\x50\xa0\x6c\xd0\x5e\x45\x3e\xf5\xeb\x1f\x56\x37\x32\xf7\xb8\x00\x14\xba\x62\x68\xa4\xd3\x39\xfe\xc4\x4e\x5c\xbc\x4b\x62\x95\x16\xef\xce\x58\x74\x4e\xb3\x97\x69\x3f\x5d\x9a\xf9\xfd\xa5\x96\x65\xbe\x09\xd3\xb6\xe8\xb8\x24\xf5\x3c\xf7\x5b\x1f\xa4\x6a\xb4\xe0\x24\xb5\x62\x5f\xc7\xed\xab\xba\x8a\x77\x54\x67\x99\x54\x05\x3b\x28\x77\x8e\x3c\xf6\x18\xab\x33\x5d\xa2\x20\x2b\x05\x7b\xab\x15\xc9\x0a\x7f\x51\x8d\xb4\x5a\xf5\x21\x0e\xd8\x9c\x17\x05\x5a\x16\x82\x74\xe8\xd7\xaf\xea\x1f\x14\xa4\x27\xca\x05\xec\xb9\xfb\x7b\x30\xa6\x94\xbd\x95\x57\x81\xd2\x19\x4e\xe2\x24\x55\xb1\xa2\x0e\x57\x1c\x71\x92\x62\xe6\xd9\xc1\x16\xb5\xb7\xf3\xc5\xdf\x45\xeb\x18\x57\x93\x66\x36\xf0\x2f\xc3\x9a\xeb\x10\x8a\xe4\xd3\xdd\x5d\x02\x77\x70\x50\x20\x2b\x53\xa2\x67\xeb\x2c\x05\x7d\x84\xcb\x63\x29\xd5\x7b\x97\xbb\x27\x5e\x61\xf9\x3b\xaf\xf0\x6f\x49\x27\x5d\xd3\xc1\xf8\x4c\x1e\x8c\x69\x81\x4e\x9c\x40\x76\xe6\x3a\x70\x75\xf6\x83\xd0\x95\xd1\x0a\x15\x39\xa8\x9d\x54\x85\xe7\x8f\xb2\xcd\xe0\x19\x9d\x2c\x14\xe6\x70\xd4\x16\x6a\x87\x70\x96\x74\x82\xb7\x28\x15\x09\xdc\x7d\x4a\x4c\x9d\x95\x52\x80\x28\xb9\x73\x31\xc1\x37\x74\xdd\xfb\xf8\x2f\xa1\xca\xdd\xc7\xf6\xc1\x25\x49\x00\x06\xaa\x21\x24\x1b\x5c\x05\x52\xba\x83\x4b\x02\x00\x60\x91\x6a\xab\x20\x5d\xc3\x76\xb0\xd6\x88\x2f\xbb\x29\xbd\x00\x6d\xf7\x9e\x95\x0d\x27\x84\xa3\x54\xbc\x84\x28\xbb\x21\xad\x0e\xaa\x69\xfb\x19\x14\x9e\x37\x51\xe9\xee\x7e\xc5\x16\x99\x05\xd5\xc1\x98\xf8\xff\x67\x58\xd6\x16\xf3\xb1\x7d\xc6\x23\xaf\x4b\x72\xe9\xae\x73\x10\x80\x11\xfa\x16\xe0\x74\x6d\x05\xba\x74\xb2\x65\x04\x64\x9e\xc7\x3f\x9f\x00\x3c\xbe\x36\x68\xad\xcc\xb1\xb3\x45\x13\x0a\xc2\x1c\x16\x42\x7d\xf8\x79\x4c\xc8\x4a\xf6\x7b\x88\x82\x14\x2e\x2c\xe3\xed\x63\xf0\x61\x2a\x9f\x82\xae\xc6\x9b\x73\xd3\xfc\x6f\x48\x74\xa3\x65\x3e\x68\x32\xfd\x58\x1e\x52\x39\xe2\x4a\xe0\x44\x09\xcb\xa8\xb2\x81\x68\x84\xde\x0f\xc8\xb6\x5b\xdb\x29\xeb\xfd\xe3\x71\x42\x22\xbf\xa3\xe3\xa5\xeb\x8b\x07\x97\x84\x91\x37\x63\x0c\xdc\x5f\xbe\xb4\xd2\x99\x18\xa6\x7d\xe0\x9f\x12\xcb\x1c\x52\x6d\x26\x61\xc5\xe0\x95\x6c\x87\x3a\xe9\x2b\x6f\x53\xbd\x3d\xfd\xa3\x7f\x1e\xae\x37\xaf\x87\x30\xc8\xf6\xc0\x87\xdd\xd4\xd7\xfe\x17\xc1\x6a\x5e\xed\x21\x5b\x1e\xdd\x48\x19\xe6\xe7\x1e\x8e\xc3\xee\x46\x82\x61\xc6\xee\xc1\xf5\x9b\x1b\xaf\x2f\x06\xeb\x1e\xc4\xfc\x20\xea\xfc\x9e\xaf\x4b\xfe\x22\x79\x1b\x8d\x60\x9d\x7b\x80\xbe\xc9\x3f\xbc\x66\xfe\xde\x7e\x50\x50\x7f\x38\xf4\x9c\x39\x22\x8d\x8b\x60\x59\x59\xa3\x1a\x7b\x30\xf0\xee\x6a\xba\x9c\xc0\x30\x4d\xe7\x1d\xd0\xc9\xea\xb3\x83\x6f\x7e\xe1\x59\x89\x11\x3d\xc4\x26\x4f\x15\x36\x4e\xf6\x02\x29\x4c\xb7\xf4\xc7\xdd\x58\x72\x71\xbf\xa8\xcb\x72\x3a\x6e\x43\x4d\x86\xa3\x30\xe3\xd2\xd8\xed\x1d\x3b\x9f\x50\xa5\x4b\x31\xee\x82\x01\x5c\x7d\x4f\x83\x66\x59\x27\xff\xe9\xe9\x8f\x08\xaf\x6a\x72\xc6\xbc\x12\xf3\x2d\x4f\x2c\xc5\x3a\x63\x0e\x9a\xbe\x85\x70\xa1\xde\x19\xdf\x20\xf1\x5b\xe8\xae\xa8\x78\x46\xbb\x90\xfe\x9c\xbe\xed\xba\x50\x9b\xfc\x17\x00\x00\xff\xff\x0d\x72\xaf\xea\x2b\x0b\x00\x00")
 
 func templatesLangAndroid_app_e6Src_filesTestUtAppMockspressotestappJavaBytes() ([]byte, error) {
 	return bindataRead(
@@ -1523,7 +1523,7 @@ func templatesLangAndroid_app_e6Src_filesTestUtAppMockspressotestappJava() (*ass
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/app/MockspressoTestApp.java", size: 2955, mode: os.FileMode(420), modTime: time.Unix(1497966846, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/app/MockspressoTestApp.java", size: 2859, mode: os.FileMode(420), modTime: time.Unix(1500301257, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1543,7 +1543,7 @@ func templatesLangAndroid_app_e6Src_filesTestUtBaseBaseappcompatactivitytestJava
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 2149, mode: os.FileMode(420), modTime: time.Unix(1498075575, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 2149, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1563,7 +1563,7 @@ func templatesLangAndroid_app_e6Src_filesTestUtBaseBasefragmenttestJava() (*asse
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/base/BaseFragmentTest.java", size: 3776, mode: os.FileMode(420), modTime: time.Unix(1498079032, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/base/BaseFragmentTest.java", size: 3776, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1583,7 +1583,7 @@ func templatesLangAndroid_app_e6Src_filesTestUtMainMainactivitytestJava() (*asse
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/main/MainActivityTest.java", size: 1135, mode: os.FileMode(420), modTime: time.Unix(1497918998, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/main/MainActivityTest.java", size: 1135, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1603,7 +1603,7 @@ func templatesLangAndroid_app_e6Src_filesTestUtMainMainfragmenttestJava() (*asse
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/main/MainFragmentTest.java", size: 1194, mode: os.FileMode(420), modTime: time.Unix(1497919260, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_e6/src_files/test/ut/main/MainFragmentTest.java", size: 1194, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }

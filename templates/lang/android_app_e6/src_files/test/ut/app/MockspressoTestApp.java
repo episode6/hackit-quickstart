@@ -10,7 +10,6 @@ import com.episode6.hackit.mockspresso.Mockspresso;
 
 import {{ .Group }}.BuildMockspresso;
 
-import org.junit.Before;
 import org.mockito.Mock;
 import org.mockito.invocation.InvocationOnMock;
 import org.mockito.stubbing.Answer;
@@ -48,15 +47,12 @@ public class MockspressoTestApp extends {{ .CamelNameWithoutApp }}App {
     };
   }
 
-  public Mockspresso.Builder buildUpon() {
-    return mAppMockspresso.buildUpon().testResources(new InjectorAttacher());
+  public Mockspresso applicationMockspresso() {
+    return mAppMockspresso;
   }
 
-  class InjectorAttacher {
-    @Before
-    void setup(Mockspresso mockspresso) {
-      mInjectors.setupInjectors(mockspresso);
-    }
+  public void injectComponentsUsing(Mockspresso mockspresso) {
+    mInjectors.setupInjectors(mockspresso);
   }
 
   private static class DispatchingInjectors {
