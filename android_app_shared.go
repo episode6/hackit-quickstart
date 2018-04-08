@@ -40,6 +40,14 @@ func (aas *androidAppShared) generateAppResources(data *ProjectData, subdir stri
 	values := filepath.Join(resPath, "values")
 	mkdir(layout, mipmapHdpi, mipmapMdpi, mipmapXhdpi, mipmapXxhdpi, mipmapXxxhdpi, values)
 
+	if data.gdmcRepoURL == "" && subdir == "" {
+		templateTemplateableToFile(
+			"root-gdmc.json",
+			"gdmc.json",
+			aas,
+			data)
+	}
+
 	templateTemplateableToFile(
 		"src_files/res/layout/activity_main.xml",
 		filepath.Join(layout, "activity_main.xml"),

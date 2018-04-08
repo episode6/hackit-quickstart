@@ -8,7 +8,7 @@ import (
 )
 
 func execGdmcResolve() {
-	execOrPanic("./gradlew -Pgdmc.forceResolve=true gdmcResolve")
+	execOrPanic("./gradlew gdmcResolve")
 }
 
 func execOrPanic(command string) string {

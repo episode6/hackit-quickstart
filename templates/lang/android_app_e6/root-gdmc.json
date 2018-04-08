@@ -1,0 +1,7 @@
+{
+  "com.android.support:appcompat-v7": {
+    "groupId": "com.android.support",
+    "artifactId": "appcompat-v7",
+    "version": "27.1.0"
+  }
+}
