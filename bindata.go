@@ -27,7 +27,6 @@
 // templates/lang/android_app_dagger/proj-build.gradle
 // templates/lang/android_app_dagger/proj-gradle.properties
 // templates/lang/android_app_dagger/proj-local.properties
-// templates/lang/android_app_dagger/root-gdmc.json
 // templates/lang/android_app_dagger/src_files/AndroidManifest.xml
 // templates/lang/android_app_dagger/src_files/app/App.java
 // templates/lang/android_app_dagger/src_files/app/AppComponent.java
@@ -50,7 +49,6 @@
 // templates/lang/android_app_e6/proj-build.gradle
 // templates/lang/android_app_e6/proj-gradle.properties
 // templates/lang/android_app_e6/proj-local.properties
-// templates/lang/android_app_e6/root-gdmc.json
 // templates/lang/android_app_e6/src_files/AndroidManifest.xml
 // templates/lang/android_app_e6/src_files/app/App.java
 // templates/lang/android_app_e6/src_files/app/AppComponent.java
@@ -311,7 +309,7 @@ func templatesLangAndroid_appProjLocalProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangAndroid_appRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\x52\x50\x50\x4a\xce\xcf\xd5\x4b\xcc\x4b\x29\xca\xcf\x4c\xd1\x2b\x2e\x2d\x28\xc8\x2f\x2a\xb1\x4a\x2c\x28\x48\xce\xcf\x2d\x48\x2c\xd1\x2d\x33\x57\xb2\x52\x00\xa9\x53\x50\x50\x4a\x2f\xca\x2f\x2d\xf0\x4c\x51\xb2\xc2\xaa\x49\x49\x07\xa2\x2a\xb1\xa8\x24\x33\x2d\x31\xb9\x04\xa2\x10\xc5\x24\xa8\x8a\xb2\xd4\xa2\xe2\xcc\xfc\x3c\x90\xb4\x91\xb9\x9e\xa1\x9e\x81\x12\x97\x82\x42\x2d\x57\x2d\x17\x20\x00\x00\xff\xff\x8d\x43\x82\x41\x90\x00\x00\x00")
+var _templatesLangAndroid_appRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xbc\x95\xc1\x6a\xc3\x30\x0c\x86\xef\x79\x0a\xe3\x73\x1d\xb6\x5d\x0a\x79\x83\xbd\xc0\xee\x9a\xad\x76\x82\xc4\x32\x8a\x92\x32\x46\xdf\x7d\x94\x64\x59\x18\xcd\x2e\xb1\xeb\x8b\x2f\xbf\x3f\xbe\x5f\x08\xfc\x55\x19\x63\x3d\x77\x35\xc4\x20\x4c\xa1\xee\x87\x94\x58\xb4\x81\x48\x1d\x28\x06\x37\xa2\x57\x16\x17\x04\x2e\xf0\xde\xa2\x6d\xcc\xed\xcd\xed\xd8\xb3\xf0\x90\x5e\x83\x6d\xee\x22\xec\xe1\x27\x07\xa2\x74\x02\xaf\x53\x74\x93\xbc\xe4\x29\x7e\xa0\x90\xbe\xa1\xf4\xc4\x71\x03\xdf\x40\x4a\x9e\xbb\x04\xea\xc6\xa3\xad\x8c\xb9\x1e\x36\xbb\xac\x93\xfb\xfd\xd7\xb4\x25\x33\xfe\xca\xbe\x1c\xeb\xe7\xfa\xe9\x7f\x25\x0f\x12\x46\xc2\x4b\x16\xa3\x35\xac\xd8\x10\x03\xf6\x74\x8e\xfb\x65\x67\x4e\x31\x4f\x41\xff\xe9\x5b\x94\x6c\xd3\xfd\x0b\x2c\x66\x3e\xdf\x0e\x62\x64\x05\x25\x8e\xfd\x7e\xfb\x7b\xd0\xe2\x0d\xa6\x78\x3e\xf9\x99\xf7\x00\x6f\x41\x37\x50\x4e\xf1\x09\xf8\x20\x73\xa5\x36\xe3\xca\xac\x98\xc5\xfd\x4f\x02\xe7\x0e\x63\xc6\x9d\x59\x88\xc5\xdd\xb3\xff\x90\x5b\xe0\xbd\x4d\xaa\x6b\xf5\x1d\x00\x00\xff\xff\x62\x86\x67\x31\xf0\x07\x00\x00")
 
 func templatesLangAndroid_appRootGdmcJsonBytes() ([]byte, error) {
 	return bindataRead(
@@ -326,7 +324,7 @@ func templatesLangAndroid_appRootGdmcJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 144, mode: os.FileMode(420), modTime: time.Unix(1523224894, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2032, mode: os.FileMode(420), modTime: time.Unix(1523231421, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -707,26 +705,6 @@ func templatesLangAndroid_app_daggerProjLocalProperties() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1497283555, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _templatesLangAndroid_app_daggerRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\x52\x50\x50\x4a\xce\xcf\xd5\x4b\xcc\x4b\x29\xca\xcf\x4c\xd1\x2b\x2e\x2d\x28\xc8\x2f\x2a\xb1\x4a\x2c\x28\x48\xce\xcf\x2d\x48\x2c\xd1\x2d\x33\x57\xb2\x52\x00\xa9\x53\x50\x50\x4a\x2f\xca\x2f\x2d\xf0\x4c\x51\xb2\xc2\xaa\x49\x49\x07\xa2\x2a\xb1\xa8\x24\x33\x2d\x31\xb9\x04\xa2\x10\xc5\x24\xa8\x8a\xb2\xd4\xa2\xe2\xcc\xfc\x3c\x90\xb4\x91\xb9\x9e\xa1\x9e\x81\x12\x97\x82\x42\x2d\x57\x2d\x17\x20\x00\x00\xff\xff\x8d\x43\x82\x41\x90\x00\x00\x00")
-
-func templatesLangAndroid_app_daggerRootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangAndroid_app_daggerRootGdmcJson,
-		"templates/lang/android_app_dagger/root-gdmc.json",
-	)
-}
-
-func templatesLangAndroid_app_daggerRootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangAndroid_app_daggerRootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/root-gdmc.json", size: 144, mode: os.FileMode(420), modTime: time.Unix(1523224877, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1167,26 +1145,6 @@ func templatesLangAndroid_app_e6ProjLocalProperties() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/lang/android_app_e6/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _templatesLangAndroid_app_e6RootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\x52\x50\x50\x4a\xce\xcf\xd5\x4b\xcc\x4b\x29\xca\xcf\x4c\xd1\x2b\x2e\x2d\x28\xc8\x2f\x2a\xb1\x4a\x2c\x28\x48\xce\xcf\x2d\x48\x2c\xd1\x2d\x33\x57\xb2\x52\x00\xa9\x53\x50\x50\x4a\x2f\xca\x2f\x2d\xf0\x4c\x51\xb2\xc2\xaa\x49\x49\x07\xa2\x2a\xb1\xa8\x24\x33\x2d\x31\xb9\x04\xa2\x10\xc5\x24\xa8\x8a\xb2\xd4\xa2\xe2\xcc\xfc\x3c\x90\xb4\x91\xb9\x9e\xa1\x9e\x81\x12\x97\x82\x42\x2d\x57\x2d\x17\x20\x00\x00\xff\xff\x8d\x43\x82\x41\x90\x00\x00\x00")
-
-func templatesLangAndroid_app_e6RootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangAndroid_app_e6RootGdmcJson,
-		"templates/lang/android_app_e6/root-gdmc.json",
-	)
-}
-
-func templatesLangAndroid_app_e6RootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangAndroid_app_e6RootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/android_app_e6/root-gdmc.json", size: 144, mode: os.FileMode(420), modTime: time.Unix(1523224839, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2330,7 +2288,6 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/android_app_dagger/proj-build.gradle": templatesLangAndroid_app_daggerProjBuildGradle,
 	"templates/lang/android_app_dagger/proj-gradle.properties": templatesLangAndroid_app_daggerProjGradleProperties,
 	"templates/lang/android_app_dagger/proj-local.properties": templatesLangAndroid_app_daggerProjLocalProperties,
-	"templates/lang/android_app_dagger/root-gdmc.json": templatesLangAndroid_app_daggerRootGdmcJson,
 	"templates/lang/android_app_dagger/src_files/AndroidManifest.xml": templatesLangAndroid_app_daggerSrc_filesAndroidmanifestXml,
 	"templates/lang/android_app_dagger/src_files/app/App.java": templatesLangAndroid_app_daggerSrc_filesAppAppJava,
 	"templates/lang/android_app_dagger/src_files/app/AppComponent.java": templatesLangAndroid_app_daggerSrc_filesAppAppcomponentJava,
@@ -2353,7 +2310,6 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/android_app_e6/proj-build.gradle": templatesLangAndroid_app_e6ProjBuildGradle,
 	"templates/lang/android_app_e6/proj-gradle.properties": templatesLangAndroid_app_e6ProjGradleProperties,
 	"templates/lang/android_app_e6/proj-local.properties": templatesLangAndroid_app_e6ProjLocalProperties,
-	"templates/lang/android_app_e6/root-gdmc.json": templatesLangAndroid_app_e6RootGdmcJson,
 	"templates/lang/android_app_e6/src_files/AndroidManifest.xml": templatesLangAndroid_app_e6Src_filesAndroidmanifestXml,
 	"templates/lang/android_app_e6/src_files/app/App.java": templatesLangAndroid_app_e6Src_filesAppAppJava,
 	"templates/lang/android_app_e6/src_files/app/AppComponent.java": templatesLangAndroid_app_e6Src_filesAppAppcomponentJava,
@@ -2499,7 +2455,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangAndroid_app_daggerProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangAndroid_app_daggerProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangAndroid_app_daggerProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangAndroid_app_daggerRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"AndroidManifest.xml": &bintree{templatesLangAndroid_app_daggerSrc_filesAndroidmanifestXml, map[string]*bintree{}},
 					"app": &bintree{nil, map[string]*bintree{
@@ -2544,7 +2499,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangAndroid_app_e6ProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangAndroid_app_e6ProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangAndroid_app_e6ProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangAndroid_app_e6RootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"AndroidManifest.xml": &bintree{templatesLangAndroid_app_e6Src_filesAndroidmanifestXml, map[string]*bintree{}},
 					"app": &bintree{nil, map[string]*bintree{
