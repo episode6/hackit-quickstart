@@ -7,6 +7,8 @@ import (
 	"net/http"
 	"regexp"
 	"strings"
+
+	version "github.com/hashicorp/go-version"
 )
 
 // MavenResolver is an object that can resolve versions for maven dependencies
@@ -25,6 +27,11 @@ type metadataVersions struct {
 	Versions []string `xml:"version"`
 }
 
+var mavenRepos = []string{
+	"https://jcenter.bintray.com/",
+	"https://maven.google.com/",
+}
+
 // FormatKeys formats a slice of maven dependency keys and applies versions to them
 func (mr *MavenResolver) FormatKeys(keys []string) []string {
 	formattedDeps := make([]string, len(keys))
@@ -41,9 +48,21 @@ func (mr *MavenResolver) formatKey(key string) string {
 		return fmt.Sprintf("%v:%v", key, cachedVersion)
 	}
 
+	foundVersion := ""
+	for _, mavenUrl := range mavenRepos {
+		foundVersion = highestVersion(foundVersion, mr.findBestVersion(key, mavenUrl))
+	}
+	if foundVersion == "" {
+		panic("Could not find version for key: " + key)
+	}
+	cachedVersionMap[key] = foundVersion
+	return fmt.Sprintf("%v:%v", key, foundVersion)
+}
+
+func (mr *MavenResolver) findBestVersion(key string, metadataUrlBase string) string {
 	keyAsPath := strings.Replace(key, ":", "/", -1)
 	keyAsPath = strings.Replace(keyAsPath, ".", "/", -1)
-	metadataURL := "https://jcenter.bintray.com/" + keyAsPath + "/maven-metadata.xml"
+	metadataURL := metadataUrlBase + keyAsPath + "/maven-metadata.xml"
 	resp, err := http.Get(metadataURL)
 	if err != nil {
 		panic("Could not load url: " + metadataURL)
@@ -57,12 +76,7 @@ func (mr *MavenResolver) formatKey(key string) string {
 
 	var md metadata
 	xml.Unmarshal(xmlData, &md)
-	version := md.findBestVersion()
-	if version == "" {
-		panic("Could not find version for key: " + key)
-	}
-	cachedVersionMap[key] = version
-	return fmt.Sprintf("%v:%v", key, version)
+	return md.findBestVersion()
 }
 
 func (md *metadata) findBestVersion() string {
@@ -75,4 +89,25 @@ func (md *metadata) findBestVersion() string {
 		}
 	}
 	return md.Version
+}
+
+func highestVersion(version1 string, version2 string) string {
+	if version1 == "" {
+		return version2
+	}
+	if version2 == "" {
+		return version1
+	}
+	v1, err := version.NewVersion(version1)
+	if err != nil {
+		return ""
+	}
+	v2, err := version.NewVersion(version2)
+	if err != nil {
+		return ""
+	}
+	if v1.GreaterThan(v2) {
+		return version1
+	}
+	return version2
 }
