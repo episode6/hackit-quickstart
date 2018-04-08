@@ -3,7 +3,6 @@ targetCompatibility = 1.7
 
 android {
   compileSdkVersion {{ .AndroidCompileSdkVersion }}
-  buildToolsVersion {{ .AndroidBuildToolsVersion }}
 
   buildTypes {
     release {
@@ -19,8 +18,8 @@ android {
 }
 
 dependencies {
-  compile 'com.google.code.findbugs:jsr305'
-  
-  testCompile 'junit:junit'
-  testCompile 'org.easytesting:fest-assert-core'
+  implementation 'com.google.code.findbugs:jsr305'
+
+  testImplementation 'junit:junit'
+  testImplementation 'org.easytesting:fest-assert-core'
 }

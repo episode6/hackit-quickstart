@@ -1,6 +1,7 @@
 buildscript {
   repositories {
     jcenter()
+    google()
   }
   dependencies { {{ range $index, $dep := .BuildScriptDeps }}
     classpath '{{ $dep }}'{{ end }}
@@ -8,7 +9,7 @@ buildscript {
 }
 
 task wrapper(type: Wrapper) {
-  gradleVersion = "3.3"
+  gradleVersion = "4.4"
   distributionType = "all"
 }
 

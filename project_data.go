@@ -62,7 +62,6 @@ type ProjectData struct {
 	AndroidSdkDir            string
 	AndroidNdkDir            string
 	AndroidCompileSdkVersion string
-	AndroidBuildToolsVersion string
 
 	gdmcRepoURL string
 	depResolver dependencyResolver

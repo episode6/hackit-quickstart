@@ -6,7 +6,7 @@ import {{ .Group }}.app.MockspressoTestApp;
 
 import org.junit.Before;
 
-import static com.episode6.hackit.mockspresso.BuildMockspresso.with;
+import static com.episode6.hackit.mockspresso.quick.QuickBuildMockspresso.with;
 
 public class BuildMockspresso {
   public static Mockspresso.Builder withDefaults() {

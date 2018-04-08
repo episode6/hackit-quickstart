@@ -16,7 +16,7 @@ func (jl *javaLibrary) describe() string {
 
 func (jl *javaLibrary) GradlePlugins() []string {
 	return []string{
-		"java",
+		"java-library",
 		"com.episode6.hackit.deployable.jar",
 		"com.episode6.hackit.gdmc",
 	}
