@@ -142,6 +142,7 @@ func makeDefaultProjectData(data *ProjectData) *ProjectData {
 	data.AndroidSdkDir = defaultAndroidSdkDir()
 	data.AndroidNdkDir = defaultAndroidNdkDir()
 	data.AndroidCompileSdkVersion = defaultAndroidCompileSdkVersion
+	data.GradleVersion = defaultGradleVersion
 	data.gitRepoURL = testingRepoURL
 	return data
 }

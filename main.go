@@ -60,6 +60,9 @@ func main() {
 	licenseNameStr := flag.String(
 		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
+	gradleVersion := flag.String(
+		"gradleVersion", defaultGradleVersion,
+		"Gradle version to apply to the project (root project only)")
 	androidSdkDirStr := flag.String(
 		"androidSdkDir", defaultAndroidSdkDir(),
 		"Android sdk directory")
@@ -90,6 +93,7 @@ func main() {
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
 
+		GradleVersion:            *gradleVersion,
 		AndroidSdkDir:            *androidSdkDirStr,
 		AndroidNdkDir:            *androidNdkDirStr,
 		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
