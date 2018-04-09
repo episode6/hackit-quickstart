@@ -10,7 +10,10 @@ func (rp *rootProject) validate(data *ProjectData) {
 func (rp *rootProject) generate(data *ProjectData) {
 	if data.gdmcRepoURL != "" {
 		addGitSubmodule(data.gdmcRepoURL, "gdmc")
+	} else {
+		templateTemplateableToFile("root-gdmc.json", "gdmc.json", data.Lang, data)
 	}
+
 	templateAssetToFile("gitignore", ".gitignore", data)
 	templateAssetToFile("root-build.gradle", "build.gradle", data)
 	templateTemplateableToFile("settings.gradle", "settings.gradle", data.Proj, data)
