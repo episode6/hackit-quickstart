@@ -28,6 +28,12 @@ func (aas *androidAppShared) JenkinsCommands() []string {
 	return []string{"buildAndTest"}
 }
 
+func (aas *androidAppShared) generateExtraRootProjectFiles(data *ProjectData) {
+	if data.gdmcRepoURL == "" {
+		templateTemplateableToFile("root-gdmc.json", "gdmc.json", aas, data)
+	}
+}
+
 func (aas *androidAppShared) generateAppResources(data *ProjectData, subdir string) {
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	resPath := filepath.Join(mainRoot, "res")

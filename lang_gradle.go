@@ -33,6 +33,10 @@ func (gl *gradleLibrary) JenkinsCommands() []string {
 	return []string{"buildAndTest", "maybeDeploy"}
 }
 
+func (gl *gradleLibrary) generateExtraRootProjectFiles(data *ProjectData) {
+
+}
+
 func (gl *gradleLibrary) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	mainPath := filepath.Join(mainRoot, "groovy", data.Group.asPath())

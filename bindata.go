@@ -77,27 +77,23 @@
 // templates/lang/android_lib/proj-build.gradle
 // templates/lang/android_lib/proj-gradle.properties
 // templates/lang/android_lib/proj-local.properties
-// templates/lang/android_lib/root-gdmc.json
 // templates/lang/android_lib/src_files/AndroidManifest.xml
 // templates/lang/android_lib/src_files/SomeClass.java
 // templates/lang/android_lib/src_files/SomeClassTest.java
 // templates/lang/gradle/proj-build.gradle
 // templates/lang/gradle/proj-gradle.properties
 // templates/lang/gradle/proj-local.properties
-// templates/lang/gradle/root-gdmc.json
 // templates/lang/gradle/src_files/SomePlugin.groovy
 // templates/lang/gradle/src_files/SomePluginTest.groovy
 // templates/lang/gradle/src_files/plugin.properties
 // templates/lang/groovy/proj-build.gradle
 // templates/lang/groovy/proj-gradle.properties
 // templates/lang/groovy/proj-local.properties
-// templates/lang/groovy/root-gdmc.json
 // templates/lang/groovy/src_files/SomeClass.groovy
 // templates/lang/groovy/src_files/SomeClassTest.groovy
 // templates/lang/java/proj-build.gradle
 // templates/lang/java/proj-gradle.properties
 // templates/lang/java/proj-local.properties
-// templates/lang/java/root-gdmc.json
 // templates/lang/java/src_files/SomeClass.java
 // templates/lang/java/src_files/SomeClassTest.java
 // templates/proj/multi/root-build.gradle
@@ -1713,26 +1709,6 @@ func templatesLangAndroid_libProjLocalProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangAndroid_libRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\xaa\xe5\x02\x04\x00\x00\xff\xff\xf2\x93\xa9\xea\x04\x00\x00\x00")
-
-func templatesLangAndroid_libRootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangAndroid_libRootGdmcJson,
-		"templates/lang/android_lib/root-gdmc.json",
-	)
-}
-
-func templatesLangAndroid_libRootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangAndroid_libRootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/android_lib/root-gdmc.json", size: 4, mode: os.FileMode(420), modTime: time.Unix(1523234576, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
 var _templatesLangAndroid_libSrc_filesAndroidmanifestXml = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x54\xce\x41\x0a\xc3\x20\x10\x46\xe1\x7d\x4e\x31\x78\x00\x67\x1f\x4c\xb6\x3d\xc7\x8f\xb1\x8d\x24\xea\xe0\x58\x28\x04\xef\x5e\x28\x76\x91\xed\xf7\x36\xcf\x25\xe4\xf8\x0c\xda\xe8\x93\xce\xac\x33\xf2\x56\x4b\xdc\x16\xb3\xb7\x26\x33\xb3\xfa\x3d\x24\xa8\x1d\x6e\x7d\x49\x0c\x39\xb8\x06\xe5\x61\x66\x22\x22\x12\xf8\x03\xaf\xb0\x98\xeb\x22\xfb\xa8\xe5\x2d\xd4\xbb\x59\x7f\xcd\x41\xe4\x8c\x1e\x2d\x96\x3c\x84\x6f\xe4\xf8\xbf\xb1\x4e\xdf\x00\x00\x00\xff\xff\x5c\x70\xfe\x10\x92\x00\x00\x00")
 
 func templatesLangAndroid_libSrc_filesAndroidmanifestXmlBytes() ([]byte, error) {
@@ -1849,26 +1825,6 @@ func templatesLangGradleProjLocalProperties() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/lang/gradle/proj-local.properties", size: 0, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _templatesLangGradleRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\xaa\xe5\x02\x04\x00\x00\xff\xff\xf2\x93\xa9\xea\x04\x00\x00\x00")
-
-func templatesLangGradleRootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangGradleRootGdmcJson,
-		"templates/lang/gradle/root-gdmc.json",
-	)
-}
-
-func templatesLangGradleRootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangGradleRootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/gradle/root-gdmc.json", size: 4, mode: os.FileMode(420), modTime: time.Unix(1523234584, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1993,26 +1949,6 @@ func templatesLangGroovyProjLocalProperties() (*asset, error) {
 	return a, nil
 }
 
-var _templatesLangGroovyRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\xaa\xe5\x02\x04\x00\x00\xff\xff\xf2\x93\xa9\xea\x04\x00\x00\x00")
-
-func templatesLangGroovyRootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangGroovyRootGdmcJson,
-		"templates/lang/groovy/root-gdmc.json",
-	)
-}
-
-func templatesLangGroovyRootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangGroovyRootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/groovy/root-gdmc.json", size: 4, mode: os.FileMode(420), modTime: time.Unix(1523234590, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
 var _templatesLangGroovySrc_filesSomeclassGroovy = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2a\x48\x4c\xce\x4e\x4c\x4f\x55\xa8\xae\x56\xd0\x73\x2f\xca\x2f\x2d\x50\xa8\xad\xe5\xe2\x4a\xce\x49\x2c\x2e\x56\x08\xce\xcf\x4d\x75\x06\xb3\xaa\xb9\x14\x14\x8a\x4b\x12\x4b\x32\x93\x15\x32\xf3\x4a\x14\x32\xf3\x92\x8b\x52\x73\x53\xf3\x4a\x34\xc0\x3c\x4d\xb0\xbc\x82\x42\xa6\xb6\x21\x97\x82\x42\x2d\x57\x2d\x17\x20\x00\x00\xff\xff\xcc\x74\x2f\x6a\x56\x00\x00\x00")
 
 func templatesLangGroovySrc_filesSomeclassGroovyBytes() ([]byte, error) {
@@ -2109,26 +2045,6 @@ func templatesLangJavaProjLocalProperties() (*asset, error) {
 	}
 
 	info := bindataFileInfo{name: "templates/lang/java/proj-local.properties", size: 0, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
-	a := &asset{bytes: bytes, info: info}
-	return a, nil
-}
-
-var _templatesLangJavaRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xe6\xaa\xe5\x02\x04\x00\x00\xff\xff\xf2\x93\xa9\xea\x04\x00\x00\x00")
-
-func templatesLangJavaRootGdmcJsonBytes() ([]byte, error) {
-	return bindataRead(
-		_templatesLangJavaRootGdmcJson,
-		"templates/lang/java/root-gdmc.json",
-	)
-}
-
-func templatesLangJavaRootGdmcJson() (*asset, error) {
-	bytes, err := templatesLangJavaRootGdmcJsonBytes()
-	if err != nil {
-		return nil, err
-	}
-
-	info := bindataFileInfo{name: "templates/lang/java/root-gdmc.json", size: 4, mode: os.FileMode(420), modTime: time.Unix(1523234594, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2422,27 +2338,23 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/android_lib/proj-build.gradle": templatesLangAndroid_libProjBuildGradle,
 	"templates/lang/android_lib/proj-gradle.properties": templatesLangAndroid_libProjGradleProperties,
 	"templates/lang/android_lib/proj-local.properties": templatesLangAndroid_libProjLocalProperties,
-	"templates/lang/android_lib/root-gdmc.json": templatesLangAndroid_libRootGdmcJson,
 	"templates/lang/android_lib/src_files/AndroidManifest.xml": templatesLangAndroid_libSrc_filesAndroidmanifestXml,
 	"templates/lang/android_lib/src_files/SomeClass.java": templatesLangAndroid_libSrc_filesSomeclassJava,
 	"templates/lang/android_lib/src_files/SomeClassTest.java": templatesLangAndroid_libSrc_filesSomeclasstestJava,
 	"templates/lang/gradle/proj-build.gradle": templatesLangGradleProjBuildGradle,
 	"templates/lang/gradle/proj-gradle.properties": templatesLangGradleProjGradleProperties,
 	"templates/lang/gradle/proj-local.properties": templatesLangGradleProjLocalProperties,
-	"templates/lang/gradle/root-gdmc.json": templatesLangGradleRootGdmcJson,
 	"templates/lang/gradle/src_files/SomePlugin.groovy": templatesLangGradleSrc_filesSomepluginGroovy,
 	"templates/lang/gradle/src_files/SomePluginTest.groovy": templatesLangGradleSrc_filesSomeplugintestGroovy,
 	"templates/lang/gradle/src_files/plugin.properties": templatesLangGradleSrc_filesPluginProperties,
 	"templates/lang/groovy/proj-build.gradle": templatesLangGroovyProjBuildGradle,
 	"templates/lang/groovy/proj-gradle.properties": templatesLangGroovyProjGradleProperties,
 	"templates/lang/groovy/proj-local.properties": templatesLangGroovyProjLocalProperties,
-	"templates/lang/groovy/root-gdmc.json": templatesLangGroovyRootGdmcJson,
 	"templates/lang/groovy/src_files/SomeClass.groovy": templatesLangGroovySrc_filesSomeclassGroovy,
 	"templates/lang/groovy/src_files/SomeClassTest.groovy": templatesLangGroovySrc_filesSomeclasstestGroovy,
 	"templates/lang/java/proj-build.gradle": templatesLangJavaProjBuildGradle,
 	"templates/lang/java/proj-gradle.properties": templatesLangJavaProjGradleProperties,
 	"templates/lang/java/proj-local.properties": templatesLangJavaProjLocalProperties,
-	"templates/lang/java/root-gdmc.json": templatesLangJavaRootGdmcJson,
 	"templates/lang/java/src_files/SomeClass.java": templatesLangJavaSrc_filesSomeclassJava,
 	"templates/lang/java/src_files/SomeClassTest.java": templatesLangJavaSrc_filesSomeclasstestJava,
 	"templates/proj/multi/root-build.gradle": templatesProjMultiRootBuildGradle,
@@ -2641,7 +2553,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangAndroid_libProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangAndroid_libProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangAndroid_libProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangAndroid_libRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"AndroidManifest.xml": &bintree{templatesLangAndroid_libSrc_filesAndroidmanifestXml, map[string]*bintree{}},
 					"SomeClass.java": &bintree{templatesLangAndroid_libSrc_filesSomeclassJava, map[string]*bintree{}},
@@ -2652,7 +2563,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangGradleProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangGradleProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangGradleProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangGradleRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"SomePlugin.groovy": &bintree{templatesLangGradleSrc_filesSomepluginGroovy, map[string]*bintree{}},
 					"SomePluginTest.groovy": &bintree{templatesLangGradleSrc_filesSomeplugintestGroovy, map[string]*bintree{}},
@@ -2663,7 +2573,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangGroovyProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangGroovyProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangGroovyProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangGroovyRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"SomeClass.groovy": &bintree{templatesLangGroovySrc_filesSomeclassGroovy, map[string]*bintree{}},
 					"SomeClassTest.groovy": &bintree{templatesLangGroovySrc_filesSomeclasstestGroovy, map[string]*bintree{}},
@@ -2673,7 +2582,6 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangJavaProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangJavaProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangJavaProjLocalProperties, map[string]*bintree{}},
-				"root-gdmc.json": &bintree{templatesLangJavaRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"SomeClass.java": &bintree{templatesLangJavaSrc_filesSomeclassJava, map[string]*bintree{}},
 					"SomeClassTest.java": &bintree{templatesLangJavaSrc_filesSomeclasstestJava, map[string]*bintree{}},

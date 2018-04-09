@@ -32,6 +32,10 @@ func (gl *groovyLibrary) JenkinsCommands() []string {
 	return []string{"buildAndTest", "maybeDeploy"}
 }
 
+func (gl *groovyLibrary) generateExtraRootProjectFiles(data *ProjectData) {
+
+}
+
 func (gl *groovyLibrary) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	mainPath := pathWithOptSubdir(subdir, "src", "main", "groovy", data.Group.asPath())
 	testPath := pathWithOptSubdir(subdir, "src", "test", "groovy", data.Group.asPath())

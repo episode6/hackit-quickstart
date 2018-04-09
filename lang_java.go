@@ -33,6 +33,10 @@ func (jl *javaLibrary) JenkinsCommands() []string {
 	return []string{"buildAndTest", "maybeDeploy"}
 }
 
+func (jl *javaLibrary) generateExtraRootProjectFiles(data *ProjectData) {
+
+}
+
 func (jl *javaLibrary) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	mainPath := pathWithOptSubdir(subdir, "src", "main", "java", data.Group.asPath())
 	testPath := pathWithOptSubdir(subdir, "src", "test", "java", data.Group.asPath())

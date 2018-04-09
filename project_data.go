@@ -34,6 +34,7 @@ type languageTemplate interface {
 	templatableConfig
 	describable
 	buildscriptDependencies() []string
+	generateExtraRootProjectFiles(data *ProjectData)
 	generateLangSpecificFiles(data *ProjectData, subdir string)
 
 	GradlePlugins() []string
