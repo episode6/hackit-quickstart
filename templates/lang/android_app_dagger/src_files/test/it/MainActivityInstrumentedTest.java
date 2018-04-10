@@ -10,7 +10,7 @@ import {{ .Group }}.main.MainActivity;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import static org.fest.assertions.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 
 /**

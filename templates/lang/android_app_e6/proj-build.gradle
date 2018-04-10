@@ -59,7 +59,7 @@ dependencies {
   implementation 'com.episode6.hackit.typed:typed-preferences'
 
   testImplementation 'junit:junit'
-  testImplementation 'org.easytesting:fest-assert-core'
+  testImplementation 'org.assertj:assertj-core'
   testImplementation 'com.episode6.hackit.chop:chop-junit'
   testImplementation 'com.episode6.hackit.mockspresso:mockspresso-quick'
   testImplementation 'org.mockito:mockito-inline'
@@ -70,6 +70,6 @@ dependencies {
   testImplementation 'org.robolectric:robolectric'
 
   androidTestImplementation 'com.google.code.findbugs:jsr305'
-  androidTestImplementation 'org.easytesting:fest-assert-core'
+  androidTestImplementation 'com.squareup.assertj:assertj-android'
   androidTestImplementation 'com.android.support.test.espresso:espresso-core'
 }

@@ -42,12 +42,12 @@ dependencies {
   implementation 'com.episode6.hackit.android.inject:context-modules'
 
   testImplementation 'junit:junit'
-  testImplementation 'org.easytesting:fest-assert-core'
+  testImplementation 'org.assertj:assertj-core'
   testImplementation 'com.episode6.hackit.mockspresso:mockspresso-quick'
   testImplementation 'org.mockito:mockito-inline'
   testImplementation 'org.robolectric:robolectric'
 
   androidTestImplementation 'com.google.code.findbugs:jsr305'
-  androidTestImplementation 'org.easytesting:fest-assert-core'
+  androidTestImplementation 'com.squareup.assertj:assertj-android'
   androidTestImplementation 'com.android.support.test.espresso:espresso-core'
 }

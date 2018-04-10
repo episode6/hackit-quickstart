@@ -31,9 +31,9 @@ dependencies {
 
   testImplementation 'junit:junit'
   testImplementation 'org.robolectric:robolectric'
-  testImplementation 'org.easytesting:fest-assert-core'
+  testImplementation 'org.assertj:assertj-core'
 
   androidTestImplementation 'com.google.code.findbugs:jsr305'
-  androidTestImplementation 'org.easytesting:fest-assert-core'
+  androidTestImplementation 'com.squareup.assertj:assertj-android'
   androidTestImplementation 'com.android.support.test.espresso:espresso-core'
 }
