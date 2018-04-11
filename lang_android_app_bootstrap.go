@@ -2,19 +2,19 @@ package main
 
 import "path/filepath"
 
-type e6AndroidApp struct {
+type androidApplicationWithBootstrap struct {
 	androidAppShared
 }
 
-func (aa *e6AndroidApp) templateAlias() string {
-	return "lang/android_app_e6"
+func (aa *androidApplicationWithBootstrap) templateAlias() string {
+	return "lang/android_app_bootstrap"
 }
 
-func (aa *e6AndroidApp) describe() string {
-	return "An android application with dagger 2 and episode6 libs included (experimental)"
+func (aa *androidApplicationWithBootstrap) describe() string {
+	return "An android application with dagger 2 and some bootstrapping included (experimental)"
 }
 
-func (aa *e6AndroidApp) generateLangSpecificFiles(data *ProjectData, subdir string) {
+func (aa *androidApplicationWithBootstrap) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	aa.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
