@@ -11,7 +11,7 @@ func (aa *androidApplicationWithBootstrap) templateAlias() string {
 }
 
 func (aa *androidApplicationWithBootstrap) describe() string {
-	return "An android application with dagger 2 and episode6 libs included (experimental)"
+	return "An android application with dagger 2 and some bootstrapping included (experimental)"
 }
 
 func (aa *androidApplicationWithBootstrap) generateLangSpecificFiles(data *ProjectData, subdir string) {
