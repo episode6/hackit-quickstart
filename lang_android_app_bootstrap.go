@@ -7,7 +7,7 @@ type e6AndroidApp struct {
 }
 
 func (aa *e6AndroidApp) templateAlias() string {
-	return "lang/android_app_e6"
+	return "lang/android_app_bootstrap"
 }
 
 func (aa *e6AndroidApp) describe() string {
