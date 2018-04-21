@@ -145,6 +145,7 @@ func makeDefaultProjectData(data *ProjectData) *ProjectData {
 	data.AndroidSupportLibVersion = defaultAndroidSupportLibVersion
 	data.GradleVersion = defaultGradleVersion
 	data.gitRepoURL = testingRepoURL
+	data.deployable = true
 	return data
 }
 

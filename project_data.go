@@ -25,6 +25,8 @@ func validateIfValidator(i interface{}, data *ProjectData) {
 }
 
 type deployableConfig interface {
+	deployableBuildscriptDependencies() []string
+	deployableGradlePlugins() []string
 }
 
 type projectTemplate interface {
@@ -72,10 +74,16 @@ type ProjectData struct {
 	AndroidCompileSdkVersion string
 	AndroidSupportLibVersion string
 
+	deployable bool
+
 	gdmcRepoURL string
 	depResolver dependencyResolver
 
 	gitRepoURL string
+}
+
+func (data *ProjectData) IsDeployable() bool {
+	return data.deployable && data.Lang.deployableConfig() != nil
 }
 
 func (data *ProjectData) validate() {
