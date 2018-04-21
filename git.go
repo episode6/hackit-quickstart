@@ -20,11 +20,13 @@ func assertGitRepo() {
 }
 
 func addGitSubmodule(submodule string, directory string) {
+	assertGitRepo()
 	execOrPanic(fmt.Sprintf("git submodule add \"%v\" ./%v", submodule, directory))
 	execOrPanic("git submodule update --init")
 }
 
 func readGitOriginURL() string {
+	assertGitRepo()
 	repoURL, err := execNoPanic("git config --get remote.origin.url")
 	if err != nil {
 		repoURL = readConsolStringInput("Could not find remote 'origin', please enter origin url")

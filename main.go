@@ -107,7 +107,6 @@ func main() {
 }
 
 func performProjectGeneration(data *ProjectData) {
-	assertGitRepo()
 	data.validate()
 	data.generate()
 }
@@ -163,7 +162,7 @@ func readConsolStringInput(prompt string) string {
 	var input string
 	_, err := fmt.Scanln(&input)
 	if err != nil {
-		panic(err)
+		return ""
 	}
 	return strings.TrimSpace(input)
 }
@@ -186,7 +185,7 @@ func readConsoleOptionInput(prompt string, defaultOption string, options []strin
 	var input string
 	_, err := fmt.Scanln(&input)
 	if err != nil {
-		panic(err)
+		return defaultOption
 	}
 
 	input = strings.TrimSpace(input)
