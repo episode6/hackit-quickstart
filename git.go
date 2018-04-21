@@ -5,20 +5,46 @@ import (
 	"strings"
 )
 
+var isGitRepoAsserted = false
+
 func assertGitRepo() {
-	val := execOrPanicWithMessage("git rev-parse --is-inside-work-tree", "Not in a git repo")
-	if strings.TrimSpace(val) != "true" {
-		panic("Not in a git repo")
+	if isGitRepoAsserted {
+		return
 	}
+
+	val, err := execNoPanic("git rev-parse --is-inside-work-tree")
+	if err == nil && strings.TrimSpace(val) == "true" {
+		isGitRepoAsserted = true
+		return
+	}
+
+	shouldGitInit := readConsoleOptionInput("This is not a valid git repo, do you want to 'git init'?", "n", []string{"y", "n"})
+	if shouldGitInit == "y" {
+		execOrPanic("git init")
+	} else {
+		panic("hackit-quickstart needs to be called from a valid git repo.")
+	}
+	assertGitRepo()
 }
 
 func addGitSubmodule(submodule string, directory string) {
+	assertGitRepo()
 	execOrPanic(fmt.Sprintf("git submodule add \"%v\" ./%v", submodule, directory))
 	execOrPanic("git submodule update --init")
 }
 
 func readGitOriginURL() string {
-	repoURL := strings.TrimSpace(execOrPanic("git config --get remote.origin.url"))
+	assertGitRepo()
+	repoURL, err := execNoPanic("git config --get remote.origin.url")
+	if err != nil {
+		repoURL = readConsolStringInput("Could not find remote 'origin', please enter origin url")
+		if repoURL == "" {
+			panic("git origin url required")
+		}
+		execOrPanicWithMessage("git remote add origin "+repoURL, "Failed to add origin to git repo")
+		return readGitOriginURL()
+	}
+
 	if strings.HasPrefix(repoURL, "git@") {
 		repoURL = "https://" + strings.Replace(repoURL[4:len(repoURL)], ":", "/", -1)
 	}

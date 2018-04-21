@@ -170,6 +170,7 @@ func prepAndChToProjectTestDir(dir string) {
 	mkdir(dir)
 	chdir(dir)
 	execOrPanic("git init")
+	isGitRepoAsserted = false
 }
 
 func chdir(dir string) {
