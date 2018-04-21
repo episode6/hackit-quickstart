@@ -7,7 +7,7 @@ import (
 
 func assertGitRepo() {
 	val, err := execNoPanic("git rev-parse --is-inside-work-tree")
-	if err == nil && strings.TrimSpace(val) != "true" {
+	if err == nil && strings.TrimSpace(val) == "true" {
 		return
 	}
 
