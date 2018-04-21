@@ -13,28 +13,37 @@ func (gl *gradleLibrary) describe() string {
 }
 
 func (gl *gradleLibrary) deployableConfig() deployableConfig {
-	return nil
+	return gl
 }
 
 func (gl *gradleLibrary) GradlePlugins() []string {
 	return []string{
 		"groovy",
 		"java-gradle-plugin",
-		"com.episode6.hackit.deployable.jar",
-		"com.episode6.hackit.deployable.addon.groovydocs",
-		"com.episode6.hackit.gdmc",
 	}
 }
 
 func (gl *gradleLibrary) buildscriptDependencies() []string {
-	return []string{
-		"com.episode6.hackit.deployable:deployable",
-		"com.episode6.hackit.gdmc:gdmc",
-	}
+	return []string{}
 }
 
 func (gl *gradleLibrary) JenkinsCommands() []string {
-	return []string{"buildAndTest", "maybeDeploy"}
+	return []string{"buildAndTest"}
+}
+
+func (gl *gradleLibrary) deployableBuildscriptDependencies() []string {
+	return []string{}
+}
+
+func (gl *gradleLibrary) deployableGradlePlugins() []string {
+	return []string{
+		"com.episode6.hackit.deployable.jar",
+		"com.episode6.hackit.deployable.addon.groovydocs",
+	}
+}
+
+func (gl *gradleLibrary) deployableJenkinsCommands() []string {
+	return []string{"maybeDeploy"}
 }
 
 func (gl *gradleLibrary) generateExtraRootProjectFiles(data *ProjectData) {

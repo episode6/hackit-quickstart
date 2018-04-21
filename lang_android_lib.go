@@ -15,27 +15,37 @@ func (al *androidLibrary) describe() string {
 }
 
 func (al *androidLibrary) deployableConfig() deployableConfig {
-	return nil
+	return al
 }
 
 func (al *androidLibrary) GradlePlugins() []string {
 	return []string{
 		"com.android.library",
-		"com.episode6.hackit.deployable.aar",
-		"com.episode6.hackit.gdmc",
 	}
 }
 
 func (al *androidLibrary) buildscriptDependencies() []string {
 	return []string{
 		"com.android.tools.build:gradle",
-		"com.episode6.hackit.deployable:deployable",
-		"com.episode6.hackit.gdmc:gdmc",
 	}
 }
 
 func (al *androidLibrary) JenkinsCommands() []string {
 	return []string{"buildAndTest", "maybeDeploy"}
+}
+
+func (al *androidLibrary) deployableBuildscriptDependencies() []string {
+	return []string{}
+}
+
+func (al *androidLibrary) deployableGradlePlugins() []string {
+	return []string{
+		"com.episode6.hackit.deployable.aar",
+	}
+}
+
+func (al *androidLibrary) deployableJenkinsCommands() []string {
+	return []string{"maybeDeploy"}
 }
 
 func (al *androidLibrary) generateLangSpecificFiles(data *ProjectData, subdir string) {
