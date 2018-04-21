@@ -158,7 +158,17 @@ func readMissingParam(flagName string) string {
 	return strings.TrimSpace(input)
 }
 
-func readConsoleInput(prompt string, defaultOption string, options []string) string {
+func readConsolStringInput(prompt string) string {
+	fmt.Printf("%v\n: ", prompt)
+	var input string
+	_, err := fmt.Scanln(&input)
+	if err != nil {
+		panic(err)
+	}
+	return strings.TrimSpace(input)
+}
+
+func readConsoleOptionInput(prompt string, defaultOption string, options []string) string {
 	var fullPrompt = prompt + "\n("
 	for i, opt := range options {
 		if defaultOption == opt {
@@ -189,5 +199,5 @@ func readConsoleInput(prompt string, defaultOption string, options []string) str
 			return opt
 		}
 	}
-	return readConsoleInput(prompt, defaultOption, options)
+	return readConsoleOptionInput(prompt, defaultOption, options)
 }

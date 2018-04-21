@@ -11,7 +11,7 @@ func assertGitRepo() {
 		return
 	}
 
-	shouldGitInit := readConsoleInput("This is not a valid git repo, do you want to 'git init'?", "n", []string{"y", "n"})
+	shouldGitInit := readConsoleOptionInput("This is not a valid git repo, do you want to 'git init'?", "n", []string{"y", "n"})
 	if shouldGitInit == "y" {
 		execOrPanic("git init")
 	} else {
@@ -25,7 +25,16 @@ func addGitSubmodule(submodule string, directory string) {
 }
 
 func readGitOriginURL() string {
-	repoURL := strings.TrimSpace(execOrPanic("git config --get remote.origin.url"))
+	repoURL, err := execNoPanic("git config --get remote.origin.url")
+	if err != nil {
+		repoURL = readConsolStringInput("Could not find remote 'origin', please enter origin url")
+		if repoURL == "" {
+			panic("git origin url required")
+		}
+		execOrPanicWithMessage("git remote add origin "+repoURL, "Failed to add origin to git repo")
+		return readGitOriginURL()
+	}
+
 	if strings.HasPrefix(repoURL, "git@") {
 		repoURL = "https://" + strings.Replace(repoURL[4:len(repoURL)], ":", "/", -1)
 	}
