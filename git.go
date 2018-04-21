@@ -5,9 +5,16 @@ import (
 	"strings"
 )
 
+var isGitRepoAsserted = false
+
 func assertGitRepo() {
+	if isGitRepoAsserted {
+		return
+	}
+
 	val, err := execNoPanic("git rev-parse --is-inside-work-tree")
 	if err == nil && strings.TrimSpace(val) == "true" {
+		isGitRepoAsserted = true
 		return
 	}
 
@@ -17,6 +24,7 @@ func assertGitRepo() {
 	} else {
 		panic("hackit-quickstart needs to be called from a valid git repo.")
 	}
+	assertGitRepo()
 }
 
 func addGitSubmodule(submodule string, directory string) {
