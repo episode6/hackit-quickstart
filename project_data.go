@@ -24,6 +24,9 @@ func validateIfValidator(i interface{}, data *ProjectData) {
 	}
 }
 
+type deployableConfig interface {
+}
+
 type projectTemplate interface {
 	templatableConfig
 	describable
@@ -33,6 +36,9 @@ type projectTemplate interface {
 type languageTemplate interface {
 	templatableConfig
 	describable
+
+	deployableConfig() deployableConfig
+
 	buildscriptDependencies() []string
 	generateExtraRootProjectFiles(data *ProjectData)
 	generateLangSpecificFiles(data *ProjectData, subdir string)

@@ -6,6 +6,10 @@ type androidAppShared struct {
 	androidShared
 }
 
+func (aas *androidAppShared) deployableConfig() deployableConfig {
+	return nil
+}
+
 func (aas *androidAppShared) templateAlias() string {
 	return "lang/android_app"
 }

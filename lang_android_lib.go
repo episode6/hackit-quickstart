@@ -11,7 +11,11 @@ func (al *androidLibrary) templateAlias() string {
 }
 
 func (al *androidLibrary) describe() string {
-	return "A deployable android library"
+	return "An android library"
+}
+
+func (al *androidLibrary) deployableConfig() deployableConfig {
+	return nil
 }
 
 func (al *androidLibrary) GradlePlugins() []string {

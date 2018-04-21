@@ -14,6 +14,10 @@ func (jl *javaLibrary) describe() string {
 	return "A deployable java library"
 }
 
+func (jl *javaLibrary) deployableConfig() deployableConfig {
+	return nil
+}
+
 func (jl *javaLibrary) GradlePlugins() []string {
 	return []string{
 		"java-library",

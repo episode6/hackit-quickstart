@@ -12,6 +12,10 @@ func (gl *groovyLibrary) describe() string {
 	return "A deployable groovy library"
 }
 
+func (gl *groovyLibrary) deployableConfig() deployableConfig {
+	return nil
+}
+
 func (gl *groovyLibrary) GradlePlugins() []string {
 	return []string{
 		"groovy",
