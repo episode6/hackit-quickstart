@@ -16,9 +16,9 @@ func execOrPanic(command string) string {
 }
 
 func execOrPanicWithMessage(command string, errMessage string) string {
-	val, err := exec.Command("bash", "-c", command).CombinedOutput()
+	val, err := execNoPanic(command)
 	if err == nil {
-		return string(val)
+		return val
 	}
 
 	if errMessage != "" {
@@ -31,6 +31,11 @@ func execOrPanicWithMessage(command string, errMessage string) string {
 		err,
 		string(val))
 	panic(errMessage)
+}
+
+func execNoPanic(command string) (string, error) {
+	val, err := exec.Command("bash", "-c", command).CombinedOutput()
+	return string(val), err
 }
 
 func mkdir(paths ...string) {

@@ -6,9 +6,16 @@ import (
 )
 
 func assertGitRepo() {
-	val := execOrPanicWithMessage("git rev-parse --is-inside-work-tree", "Not in a git repo")
-	if strings.TrimSpace(val) != "true" {
-		panic("Not in a git repo")
+	val, err := execNoPanic("git rev-parse --is-inside-work-tree")
+	if err == nil && strings.TrimSpace(val) != "true" {
+		return
+	}
+
+	shouldGitInit := readConsoleInput("This is not a valid git repo, do you want to 'git init'?", "n", []string{"y", "n"})
+	if shouldGitInit == "y" {
+		execOrPanic("git init")
+	} else {
+		panic("hackit-quickstart needs to be called from a valid git repo.")
 	}
 }
 
