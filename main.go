@@ -75,9 +75,6 @@ func main() {
 	androidCompileSdkVersionStr := flag.String(
 		"androidCompileSdkVersion", defaultAndroidCompileSdkVersion,
 		"For android apps/libs, the value of compileSdkVersion")
-	androidSupportLibVersion := flag.String(
-		"androidSupportLibsVersion", defaultAndroidSupportLibVersion,
-		"For android apps/libs, version of the android support libraries")
 
 	flag.Parse()
 
@@ -104,7 +101,6 @@ func main() {
 		AndroidSdkDir:            *androidSdkDirStr,
 		AndroidNdkDir:            *androidNdkDirStr,
 		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
-		AndroidSupportLibVersion: *androidSupportLibVersion,
 	}
 
 	performProjectGeneration(data)

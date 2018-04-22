@@ -76,7 +76,6 @@ type ProjectData struct {
 	AndroidSdkDir            string
 	AndroidNdkDir            string
 	AndroidCompileSdkVersion string
-	AndroidSupportLibVersion string
 
 	deployable bool
 
