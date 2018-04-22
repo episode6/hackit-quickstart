@@ -24,6 +24,14 @@ func (jl *javaLibrary) GradlePlugins() []string {
 	}
 }
 
+func (jl *javaLibrary) buildscriptRepos() []string {
+	return []string{}
+}
+
+func (jl *javaLibrary) projectRepos() []string {
+	return []string{}
+}
+
 func (jl *javaLibrary) buildscriptDependencies() []string {
 	return []string{}
 }

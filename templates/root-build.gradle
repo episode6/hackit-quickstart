@@ -1,7 +1,6 @@
 buildscript {
-  repositories {
-    jcenter()
-    google()
+  repositories { {{ range $index, $repo := .BuildscriptRepos }}
+    {{ $repo }} {{ end }}
   }
   dependencies { {{ range $index, $dep := .BuildScriptDeps }}
     classpath '{{ $dep }}'{{ end }}

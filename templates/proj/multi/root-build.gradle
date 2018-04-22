@@ -1,7 +1,6 @@
 allprojects {
-  repositories {
-    jcenter()
-    google()
+  repositories {{{ range $index, $repo := .ProjectRepos }}
+    {{ $repo }} {{ end }}
   }
 
   group = '{{ .Group }}'

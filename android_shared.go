@@ -10,3 +10,11 @@ func (as *androidShared) validate(data *ProjectData) {
 func (as *androidShared) generateExtraRootProjectFiles(data *ProjectData) {
 
 }
+
+func (as *androidShared) buildscriptRepos() []string {
+	return []string{"google()"}
+}
+
+func (as *androidShared) projectRepos() []string {
+	return []string{"google()"}
+}
