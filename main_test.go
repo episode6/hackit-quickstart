@@ -46,6 +46,7 @@ func TestSingleProjectGenerationDeployable(t *testing.T) {
 	doTestOnEachLang(t, "single_deployable", true, func(testName string, testLang languageTemplate) {
 		if testLang.deployableConfig() == nil {
 			t.Logf("Skipping non-deployable test: %v", testName)
+			return
 		}
 		data := makeDefaultProjectData(&ProjectData{
 			Proj:  &singleProject{},
@@ -104,6 +105,7 @@ func TestMultiProjectGenerationDeployable(t *testing.T) {
 	doTestOnEachLang(t, "multi_deployable", true, func(testName string, testLang languageTemplate) {
 		if testLang.deployableConfig() == nil {
 			t.Logf("Skipping non-deployable test: %v", testName)
+			return
 		}
 		multiProjectData := makeDefaultProjectData(&ProjectData{
 			Proj:  &multiProject{},
@@ -162,6 +164,7 @@ func TestSingleProjectGenerationNoGdmcDeployable(t *testing.T) {
 	doTestOnEachLang(t, "single_nogdmc_deployable", true, func(testName string, testLang languageTemplate) {
 		if testLang.deployableConfig() == nil {
 			t.Logf("Skipping non-deployable test: %v", testName)
+			return
 		}
 		data := makeDefaultProjectData(&ProjectData{
 			Proj:  &singleProject{},
@@ -220,6 +223,7 @@ func TestMultiProjectGenerationNoGdmcDeployable(t *testing.T) {
 	doTestOnEachLang(t, "multi_nogdmc_deployable", true, func(testName string, testLang languageTemplate) {
 		if testLang.deployableConfig() == nil {
 			t.Logf("Skipping non-deployable test: %v", testName)
+			return
 		}
 		multiProjectData := makeDefaultProjectData(&ProjectData{
 			Proj:  &multiProject{},

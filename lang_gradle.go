@@ -23,6 +23,14 @@ func (gl *gradleLibrary) GradlePlugins() []string {
 	}
 }
 
+func (gl *gradleLibrary) buildscriptRepos() []string {
+	return []string{}
+}
+
+func (gl *gradleLibrary) projectRepos() []string {
+	return []string{}
+}
+
 func (gl *gradleLibrary) buildscriptDependencies() []string {
 	return []string{}
 }

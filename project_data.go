@@ -42,6 +42,8 @@ type languageTemplate interface {
 
 	deployableConfig() deployableConfig
 
+	buildscriptRepos() []string
+	projectRepos() []string
 	buildscriptDependencies() []string
 	generateExtraRootProjectFiles(data *ProjectData)
 	generateLangSpecificFiles(data *ProjectData, subdir string)
@@ -129,6 +131,16 @@ func (data *ProjectData) ProjGradleBody() string {
 // LangSpecProjGradleBody is used for templating
 func (data *ProjectData) LangSpecProjGradleBody() string {
 	return templateTemplateable("proj-build.gradle", data.Lang, data)
+}
+
+// BuildscriptRepos is used for templating
+func (data *ProjectData) BuildscriptRepos() []string {
+	return append([]string{"jcenter()"}, data.Lang.buildscriptRepos()...)
+}
+
+// ProjectRepos is used for templating
+func (data *ProjectData) ProjectRepos() []string {
+	return append([]string{"jcenter()"}, data.Lang.projectRepos()...)
 }
 
 // BuildScriptDeps is used for templating

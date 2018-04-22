@@ -22,6 +22,14 @@ func (gl *groovyLibrary) GradlePlugins() []string {
 	}
 }
 
+func (gl *groovyLibrary) buildscriptRepos() []string {
+	return []string{}
+}
+
+func (gl *groovyLibrary) projectRepos() []string {
+	return []string{}
+}
+
 func (gl *groovyLibrary) buildscriptDependencies() []string {
 	return []string{}
 }
