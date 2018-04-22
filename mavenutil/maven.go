@@ -42,11 +42,11 @@ func (mr *MavenResolver) FormatKeys(keys []string) []string {
 }
 
 func (mr *MavenResolver) formatKey(key string) string {
-	return fmt.Sprintf("%v:%v", key, mr.FindBestVersion(key))
+	return fmt.Sprintf("%v:%v", key, mr.FindVersion(key))
 }
 
-// FindBestVersion returns just the version for the provided key
-func (mr *MavenResolver) FindBestVersion(key string) string {
+// FindVersion returns just the version for the provided key
+func (mr *MavenResolver) FindVersion(key string) string {
 	cachedVersionMap := *mr
 	cachedVersion := cachedVersionMap[key]
 	if cachedVersion != "" {

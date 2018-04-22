@@ -13,7 +13,7 @@ const defaultLicenseName = "The MIT License (MIT)"
 const defaultGradleVersion = "4.4"
 
 const defaultAndroidCompileSdkVersion = "26"
-const defaultAndroidSupportLibVersion = "27.1.1"
+const defaultAndroidSupportLibVersion = "STOPIT"
 
 func defaultConfigFilePath() string {
 	userdir, err := homedir.Dir()
