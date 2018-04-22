@@ -6,6 +6,10 @@ type androidAppShared struct {
 	androidShared
 }
 
+func (aas *androidAppShared) deployableConfig() deployableConfig {
+	return nil
+}
+
 func (aas *androidAppShared) templateAlias() string {
 	return "lang/android_app"
 }
@@ -13,14 +17,12 @@ func (aas *androidAppShared) templateAlias() string {
 func (aas *androidAppShared) GradlePlugins() []string {
 	return []string{
 		"com.android.application",
-		"com.episode6.hackit.gdmc",
 	}
 }
 
 func (aas *androidAppShared) buildscriptDependencies() []string {
 	return []string{
 		"com.android.tools.build:gradle",
-		"com.episode6.hackit.gdmc:gdmc",
 	}
 }
 

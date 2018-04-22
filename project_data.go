@@ -24,6 +24,12 @@ func validateIfValidator(i interface{}, data *ProjectData) {
 	}
 }
 
+type deployableConfig interface {
+	deployableBuildscriptDependencies() []string
+	deployableGradlePlugins() []string
+	deployableJenkinsCommands() []string
+}
+
 type projectTemplate interface {
 	templatableConfig
 	describable
@@ -33,6 +39,9 @@ type projectTemplate interface {
 type languageTemplate interface {
 	templatableConfig
 	describable
+
+	deployableConfig() deployableConfig
+
 	buildscriptDependencies() []string
 	generateExtraRootProjectFiles(data *ProjectData)
 	generateLangSpecificFiles(data *ProjectData, subdir string)
@@ -66,10 +75,17 @@ type ProjectData struct {
 	AndroidCompileSdkVersion string
 	AndroidSupportLibVersion string
 
+	deployable bool
+
 	gdmcRepoURL string
 	depResolver dependencyResolver
 
 	gitRepoURL string
+}
+
+// IsDeployable returns true if the project is deployable
+func (data *ProjectData) IsDeployable() bool {
+	return data.deployable && data.Lang.deployableConfig() != nil
 }
 
 func (data *ProjectData) validate() {
@@ -117,12 +133,31 @@ func (data *ProjectData) LangSpecProjGradleBody() string {
 
 // BuildScriptDeps is used for templating
 func (data *ProjectData) BuildScriptDeps() []string {
-	return data.getDepResolver().FormatKeys(data.Lang.buildscriptDependencies())
+	deps := data.Lang.buildscriptDependencies()
+	if data.IsDeployable() {
+		deps = append(deps, "com.episode6.hackit.deployable:deployable")
+		deps = append(deps, data.Lang.deployableConfig().deployableBuildscriptDependencies()...)
+	}
+	deps = append(deps, "com.episode6.hackit.gdmc:gdmc")
+	return data.getDepResolver().FormatKeys(deps)
+}
+
+// GradlePlugins is used for templating
+func (data *ProjectData) GradlePlugins() []string {
+	plugins := data.Lang.GradlePlugins()
+	if data.IsDeployable() {
+		plugins = append(plugins, data.Lang.deployableConfig().deployableGradlePlugins()...)
+	}
+	plugins = append(plugins, "com.episode6.hackit.gdmc")
+	return plugins
 }
 
 // DeployableGradleProperties is used for templating
 func (data *ProjectData) DeployableGradleProperties() string {
-	return templateAsset("deployable-gradle.properties", data)
+	if data.IsDeployable() {
+		return templateAsset("deployable-gradle.properties", data)
+	}
+	return ""
 }
 
 // GitRepoURL is used for templating

@@ -14,23 +14,36 @@ func (jl *javaLibrary) describe() string {
 	return "A deployable java library"
 }
 
+func (jl *javaLibrary) deployableConfig() deployableConfig {
+	return jl
+}
+
 func (jl *javaLibrary) GradlePlugins() []string {
 	return []string{
 		"java-library",
-		"com.episode6.hackit.deployable.jar",
-		"com.episode6.hackit.gdmc",
 	}
 }
 
 func (jl *javaLibrary) buildscriptDependencies() []string {
-	return []string{
-		"com.episode6.hackit.deployable:deployable",
-		"com.episode6.hackit.gdmc:gdmc",
-	}
+	return []string{}
 }
 
 func (jl *javaLibrary) JenkinsCommands() []string {
-	return []string{"buildAndTest", "maybeDeploy"}
+	return []string{"buildAndTest"}
+}
+
+func (jl *javaLibrary) deployableBuildscriptDependencies() []string {
+	return []string{}
+}
+
+func (jl *javaLibrary) deployableGradlePlugins() []string {
+	return []string{
+		"com.episode6.hackit.deployable.jar",
+	}
+}
+
+func (jl *javaLibrary) deployableJenkinsCommands() []string {
+	return []string{"maybeDeploy"}
 }
 
 func (jl *javaLibrary) generateExtraRootProjectFiles(data *ProjectData) {

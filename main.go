@@ -57,6 +57,9 @@ func main() {
 	noGdmc := flag.Bool(
 		"noGdmcRepo", false,
 		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
+	deployable := flag.Bool(
+		"deployable", false,
+		"Make a deployable library (has no effect on apps)")
 	licenseNameStr := flag.String(
 		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
@@ -95,6 +98,7 @@ func main() {
 		Name:        *nameStr,
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
+		deployable:  *deployable,
 
 		GradleVersion:            *gradleVersion,
 		AndroidSdkDir:            *androidSdkDirStr,

@@ -1,4 +1,4 @@
-{{ range $index, $plugin := .Lang.GradlePlugins }}
+{{ range $index, $plugin := .GradlePlugins }}
 apply plugin: '{{ $plugin }}'{{ end }}
 
 {{ .LangSpecProjGradleBody }}
