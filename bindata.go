@@ -2184,7 +2184,7 @@ func templatesProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/proj-build.gradle", size: 116, mode: os.FileMode(420), modTime: time.Unix(1524348751, 0)}
+	info := bindataFileInfo{name: "templates/proj-build.gradle", size: 116, mode: os.FileMode(420), modTime: time.Unix(1524360773, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
