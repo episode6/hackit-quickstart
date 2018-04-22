@@ -59,6 +59,7 @@ func (pkg *packageName) asPath() string {
 }
 
 type dependencyResolver interface {
+	FindVersion(key string) string
 	FormatKeys(keys []string) []string
 }
 
@@ -75,7 +76,6 @@ type ProjectData struct {
 	AndroidSdkDir            string
 	AndroidNdkDir            string
 	AndroidCompileSdkVersion string
-	AndroidSupportLibVersion string
 
 	deployable bool
 
@@ -195,6 +195,11 @@ func (data *ProjectData) CamelNameWithoutApp() string {
 		return camelName[0 : len(camelName)-3]
 	}
 	return camelName
+}
+
+// LookupVersion is used for templating
+func (data *ProjectData) LookupVersion(key string) string {
+	return data.getDepResolver().FindVersion(key)
 }
 
 func (data *ProjectData) getDepResolver() dependencyResolver {
