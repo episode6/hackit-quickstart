@@ -1,5 +1,5 @@
 allprojects {
-  repositories {{{ range $index, $repo := .ProjectRepos }}
+  repositories { {{ range $index, $repo := .ProjectRepos }}
     {{ $repo }} {{ end }}
   }
 
