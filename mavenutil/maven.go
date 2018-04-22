@@ -42,27 +42,32 @@ func (mr *MavenResolver) FormatKeys(keys []string) []string {
 }
 
 func (mr *MavenResolver) formatKey(key string) string {
+	return fmt.Sprintf("%v:%v", key, mr.FindBestVersion(key))
+}
+
+// FindBestVersion returns just the version for the provided key
+func (mr *MavenResolver) FindBestVersion(key string) string {
 	cachedVersionMap := *mr
 	cachedVersion := cachedVersionMap[key]
 	if cachedVersion != "" {
-		return fmt.Sprintf("%v:%v", key, cachedVersion)
+		return cachedVersion
 	}
 
 	foundVersion := ""
-	for _, mavenUrl := range mavenRepos {
-		foundVersion = highestVersion(foundVersion, mr.findBestVersion(key, mavenUrl))
+	for _, mavenURL := range mavenRepos {
+		foundVersion = highestVersion(foundVersion, mr.findBestVersionFromRepo(key, mavenURL))
 	}
 	if foundVersion == "" {
 		panic("Could not find version for key: " + key)
 	}
 	cachedVersionMap[key] = foundVersion
-	return fmt.Sprintf("%v:%v", key, foundVersion)
+	return foundVersion
 }
 
-func (mr *MavenResolver) findBestVersion(key string, metadataUrlBase string) string {
+func (mr *MavenResolver) findBestVersionFromRepo(key string, metadataURLBase string) string {
 	keyAsPath := strings.Replace(key, ":", "/", -1)
 	keyAsPath = strings.Replace(keyAsPath, ".", "/", -1)
-	metadataURL := metadataUrlBase + keyAsPath + "/maven-metadata.xml"
+	metadataURL := metadataURLBase + keyAsPath + "/maven-metadata.xml"
 	resp, err := http.Get(metadataURL)
 	if err != nil {
 		panic("Could not load url: " + metadataURL)
