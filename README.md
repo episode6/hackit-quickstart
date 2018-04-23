@@ -8,21 +8,9 @@ I wanted a faster way to create new libraries and apps using the episode6/hackit
 Install with
 ```bash
 # You'll also need a relatively modern version of gradle to run the initial wrapper task
-go get -u github.com/episode6/hackit-quickstart
+go get -u github.com/episode6/hackit-quickstart/...
 ```
-First, ensure you `cd` to a git repo with a remote named origin (url is used to pre-populate some of [deployable](https://github.com/episode6/deployable)'s properties)
-```bash
-git clone git@github.com:<myusername>/<mynewproject>.git
-cd <mynewproject>
-
-# OR
-
-mkdir <mynewproject>
-cd <mynewproject>
-git init
-git remote add origin git@github.com:<myusername>/<mynewproject>.git
-```
-Then execute the `hackit-quickstart` command (if you exclude any required flags you'll be asked for them)
+`cd` to the root directory of your project (or a new directory) and execute the `hackit-quickstart` command (if you exclude any required flags you'll be asked for them). Some features will require your working dir to be a git repo with a valid remote.
 ```bash
 Usage of hackit-quickstart:
 
@@ -75,7 +63,6 @@ Usage of hackit-quickstart:
 
 gdmc git@github.com:episode6/hackit-gdmc.git
 androidCompileSdkVersion gdmcVersion('android.compilesdk') as Integer
-androidBuildToolsVersion gdmcVersion('android.buildtools')
 ```
 
 ## Generated Projects
