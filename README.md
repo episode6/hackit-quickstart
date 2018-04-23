@@ -38,7 +38,6 @@ Usage of hackit-quickstart:
   android: An android library
   androidApp: An android application
   androidAppDagger: An android application with a default dagger 2 implementation
-  androidAppBootstrap: An android application with dagger 2 and some bootstrapping included (experimental)
 -licenseName string
     The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
 -name string
