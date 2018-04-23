@@ -324,7 +324,7 @@ func templatesLangAndroid_appRootGdmcJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2081, mode: os.FileMode(420), modTime: time.Unix(1524413381, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2081, mode: os.FileMode(420), modTime: time.Unix(1524422265, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }

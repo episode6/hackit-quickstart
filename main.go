@@ -54,9 +54,6 @@ func main() {
 	gdmcRepoURLStr := flag.String(
 		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
-	noGdmc := flag.Bool(
-		"noGdmcRepo", false,
-		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
 	deployable := flag.Bool(
 		"deployable", false,
 		"Make a deployable library (has no effect on apps)")
@@ -81,10 +78,6 @@ func main() {
 	if *versionFlag {
 		fmt.Printf("hackit-quickstart v%v\n", AppVersion)
 		os.Exit(0)
-	}
-
-	if *noGdmc {
-		*gdmcRepoURLStr = ""
 	}
 
 	data := &ProjectData{
