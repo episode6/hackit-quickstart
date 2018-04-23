@@ -1,7 +1,8 @@
 dependencies {
-  compile localGroovy()
-  compile 'com.google.code.findbugs:jsr305'
-  testCompile("org.spockframework:spock-core")  {
+  implementation localGroovy()
+  implementation 'com.google.code.findbugs:jsr305'
+
+  testImplementation("org.spockframework:spock-core")  {
     exclude module: 'groovy-all'
   }
 }

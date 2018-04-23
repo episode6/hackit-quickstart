@@ -22,14 +22,14 @@ public class BaseFragment extends Fragment implements HasFragmentInjector {
     super.onAttach(context);
   }
 
-@SuppressWarnings("deprecation")
-@Override
-public void onAttach(Activity activity) {
-  if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-    AndroidInjection.inject(this);
+  @SuppressWarnings("deprecation")
+  @Override
+  public void onAttach(Activity activity) {
+    if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
+      AndroidInjection.inject(this);
+    }
+    super.onAttach(activity);
   }
-  super.onAttach(activity);
-}
 
   @Override
   public AndroidInjector<Fragment> fragmentInjector() {

@@ -45,6 +45,11 @@ func (gdmcMap *GdmcMap) FormatKey(depKey string) string {
 	return fmt.Sprintf("%v:%v", depKey, dep.Version)
 }
 
+//FindVersion returns just the version for the supplied key
+func (gdmcMap *GdmcMap) FindVersion(key string) string {
+	return gdmcMap.GetDep(key).Version
+}
+
 // FormatKeys executes FormatKey on a slice of keys
 func (gdmcMap *GdmcMap) FormatKeys(keys []string) []string {
 	formattedDeps := make([]string, len(keys))

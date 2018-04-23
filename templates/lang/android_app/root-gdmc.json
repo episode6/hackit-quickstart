@@ -1,0 +1,57 @@
+{
+  "com.android.support:animated-vector-drawable": {
+      "groupId": "com.android.support",
+      "artifactId": "animated-vector-drawable",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:appcompat-v7": {
+      "groupId": "com.android.support",
+      "artifactId": "appcompat-v7",
+      "version": "{{ .LookupVersion "com.android.support:appcompat-v7" }}"
+  },
+  "com.android.support:cardview-v7": {
+      "groupId": "com.android.support",
+      "artifactId": "cardview-v7",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:design": {
+      "groupId": "com.android.support",
+      "artifactId": "design",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:recyclerview-v7": {
+      "groupId": "com.android.support",
+      "artifactId": "recyclerview-v7",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-annotations": {
+      "groupId": "com.android.support",
+      "artifactId": "support-annotations",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-compat": {
+      "groupId": "com.android.support",
+      "artifactId": "support-compat",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-core-ui": {
+      "groupId": "com.android.support",
+      "artifactId": "support-core-ui",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-core-utils": {
+      "groupId": "com.android.support",
+      "artifactId": "support-core-utils",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-fragment": {
+      "groupId": "com.android.support",
+      "artifactId": "support-fragment",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "com.android.support:support-vector-drawable": {
+      "groupId": "com.android.support",
+      "artifactId": "support-vector-drawable",
+      "inheritVersion": "com.android.support:appcompat-v7"
+  }
+}

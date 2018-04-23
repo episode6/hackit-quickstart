@@ -24,6 +24,12 @@ func validateIfValidator(i interface{}, data *ProjectData) {
 	}
 }
 
+type deployableConfig interface {
+	deployableBuildscriptDependencies() []string
+	deployableGradlePlugins() []string
+	deployableJenkinsCommands() []string
+}
+
 type projectTemplate interface {
 	templatableConfig
 	describable
@@ -33,7 +39,13 @@ type projectTemplate interface {
 type languageTemplate interface {
 	templatableConfig
 	describable
+
+	deployableConfig() deployableConfig
+
+	buildscriptRepos() []string
+	projectRepos() []string
 	buildscriptDependencies() []string
+	generateExtraRootProjectFiles(data *ProjectData)
 	generateLangSpecificFiles(data *ProjectData, subdir string)
 
 	GradlePlugins() []string
@@ -47,6 +59,7 @@ func (pkg *packageName) asPath() string {
 }
 
 type dependencyResolver interface {
+	FindVersion(key string) string
 	FormatKeys(keys []string) []string
 }
 
@@ -59,15 +72,22 @@ type ProjectData struct {
 	Name        string
 	LicenseName string
 
+	GradleVersion            string
 	AndroidSdkDir            string
 	AndroidNdkDir            string
 	AndroidCompileSdkVersion string
-	AndroidBuildToolsVersion string
+
+	deployable bool
 
 	gdmcRepoURL string
 	depResolver dependencyResolver
 
 	gitRepoURL string
+}
+
+// IsDeployable returns true if the project is deployable
+func (data *ProjectData) IsDeployable() bool {
+	return data.deployable && data.Lang.deployableConfig() != nil
 }
 
 func (data *ProjectData) validate() {
@@ -113,14 +133,43 @@ func (data *ProjectData) LangSpecProjGradleBody() string {
 	return templateTemplateable("proj-build.gradle", data.Lang, data)
 }
 
+// BuildscriptRepos is used for templating
+func (data *ProjectData) BuildscriptRepos() []string {
+	return append([]string{"jcenter()"}, data.Lang.buildscriptRepos()...)
+}
+
+// ProjectRepos is used for templating
+func (data *ProjectData) ProjectRepos() []string {
+	return append([]string{"jcenter()"}, data.Lang.projectRepos()...)
+}
+
 // BuildScriptDeps is used for templating
 func (data *ProjectData) BuildScriptDeps() []string {
-	return data.getDepResolver().FormatKeys(data.Lang.buildscriptDependencies())
+	deps := data.Lang.buildscriptDependencies()
+	if data.IsDeployable() {
+		deps = append(deps, "com.episode6.hackit.deployable:deployable")
+		deps = append(deps, data.Lang.deployableConfig().deployableBuildscriptDependencies()...)
+	}
+	deps = append(deps, "com.episode6.hackit.gdmc:gdmc")
+	return data.getDepResolver().FormatKeys(deps)
+}
+
+// GradlePlugins is used for templating
+func (data *ProjectData) GradlePlugins() []string {
+	plugins := data.Lang.GradlePlugins()
+	if data.IsDeployable() {
+		plugins = append(plugins, data.Lang.deployableConfig().deployableGradlePlugins()...)
+	}
+	plugins = append(plugins, "com.episode6.hackit.gdmc")
+	return plugins
 }
 
 // DeployableGradleProperties is used for templating
 func (data *ProjectData) DeployableGradleProperties() string {
-	return templateAsset("deployable-gradle.properties", data)
+	if data.IsDeployable() {
+		return templateAsset("deployable-gradle.properties", data)
+	}
+	return ""
 }
 
 // GitRepoURL is used for templating
@@ -146,6 +195,11 @@ func (data *ProjectData) CamelNameWithoutApp() string {
 		return camelName[0 : len(camelName)-3]
 	}
 	return camelName
+}
+
+// LookupVersion is used for templating
+func (data *ProjectData) LookupVersion(key string) string {
+	return data.getDepResolver().FindVersion(key)
 }
 
 func (data *ProjectData) getDepResolver() dependencyResolver {

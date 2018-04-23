@@ -13,13 +13,13 @@ node {
     goRunner = fileLoader.fromGit(
         'go/GoRunner',
         'git@github.com:episode6/jenkins-pipelines.git',
-        'v0.0.6',
+        'v0.0.7',
         null,
         '')
   }
 
-  def gradleRoot = tool name: 'Gradle 3.5', type: 'gradle'
+  def gradleRoot = tool name: 'Gradle 4.4', type: 'gradle'
   withEnv(["PATH+=:${gradleRoot}/bin"]) {
-    goRunner.buildAndTest(srcDir, goName, "60m")
+    goRunner.buildAndTest(srcDir, goName, "480m")
   }
 }

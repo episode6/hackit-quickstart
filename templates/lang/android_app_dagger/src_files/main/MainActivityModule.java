@@ -5,6 +5,7 @@ import android.app.Activity;
 import {{ .Group }}.base.BaseActivityModule;
 
 import com.episode6.hackit.android.inject.context.scope.ActivityScope;
+import com.episode6.hackit.android.inject.context.scope.FragmentScope;
 
 import dagger.Binds;
 import dagger.Module;
@@ -17,6 +18,7 @@ public abstract class MainActivityModule {
   @ActivityScope
   abstract Activity bindMainActivity(MainActivity activity);
 
+  @FragmentScope
   @ContributesAndroidInjector
   abstract MainFragment mainFragment();
 }

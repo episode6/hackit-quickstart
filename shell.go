@@ -1,13 +1,14 @@
 package main
 
 import (
+	"fmt"
 	"os"
 	"os/exec"
 	"path/filepath"
 )
 
 func execGdmcResolve() {
-	execOrPanic("./gradlew -Pgdmc.forceResolve=true gdmcResolve")
+	execOrPanic("./gradlew gdmcResolve")
 }
 
 func execOrPanic(command string) string {
@@ -15,14 +16,26 @@ func execOrPanic(command string) string {
 }
 
 func execOrPanicWithMessage(command string, errMessage string) string {
-	val, err := exec.Command("bash", "-c", command).Output()
-	if err != nil {
-		if errMessage == "" {
-			panic(err)
-		}
-		panic(errMessage)
+	val, err := execNoPanic(command)
+	if err == nil {
+		return val
 	}
-	return string(val)
+
+	if errMessage != "" {
+		errMessage = fmt.Sprintf("%v\n", errMessage)
+	}
+	errMessage = fmt.Sprintf(
+		"%vError executing bash command\ncommand: %v\nerror: %v\noutput: %v",
+		errMessage,
+		command,
+		err,
+		string(val))
+	panic(errMessage)
+}
+
+func execNoPanic(command string) (string, error) {
+	val, err := exec.Command("bash", "-c", command).CombinedOutput()
+	return string(val), err
 }
 
 func mkdir(paths ...string) {

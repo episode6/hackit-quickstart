@@ -10,8 +10,9 @@ import (
 const defaultProjectVersion = "0.0.1-SNAPSHOT"
 const defaultLicenseName = "The MIT License (MIT)"
 
-const defaultAndroidCompileSdkVersion = "25"
-const defaultAndroidBuildToolsVersion = "\"26.0.0\""
+const defaultGradleVersion = "4.4"
+
+const defaultAndroidCompileSdkVersion = "26"
 
 func defaultConfigFilePath() string {
 	userdir, err := homedir.Dir()

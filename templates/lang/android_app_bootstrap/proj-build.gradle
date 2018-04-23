@@ -1,0 +1,75 @@
+android {
+  compileSdkVersion {{ .AndroidCompileSdkVersion }}
+
+  defaultConfig {
+    applicationId project.group
+    minSdkVersion 16
+    targetSdkVersion {{ .AndroidCompileSdkVersion }}
+    versionCode 1
+    versionName project.version
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+  buildTypes {
+    release {
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+  testOptions {
+    unitTests {
+      includeAndroidResources = true
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'com.google.code.findbugs:jsr305'
+
+  implementation 'com.android.support:appcompat-v7'
+  implementation 'com.android.support:cardview-v7'
+  implementation 'com.android.support:design'
+  implementation 'com.android.support.constraint:constraint-layout'
+
+  implementation 'com.google.dagger:dagger'
+  implementation 'com.google.dagger:dagger-android'
+  annotationProcessor 'com.google.dagger:dagger-compiler'
+  annotationProcessor 'com.google.dagger:dagger-android-processor'
+
+  compileOnly 'com.episode6.hackit.auto.factory:auto-factory-annotations'
+  annotationProcessor 'com.google.auto.factory:auto-factory'
+
+  implementation 'com.jakewharton:butterknife'
+  annotationProcessor 'com.jakewharton:butterknife-compiler'
+
+  implementation 'com.episode6.hackit.android.inject:context-annotations'
+  implementation 'com.episode6.hackit.android.inject:context-modules'
+  implementation 'com.episode6.hackit.android.inject:more-annotations'
+
+  implementation 'com.episode6.hackit.chop:chop-core'
+  implementation 'com.episode6.hackit.chop:chop-android'
+
+  implementation 'com.episode6.hackit.disposable:disposables-core'
+  implementation 'com.episode6.hackit.disposable:pausables-core'
+  implementation 'com.episode6.hackit.disposable:disposable-android'
+  implementation 'com.episode6.hackit.disposable:disposable-butterknife'
+
+  implementation 'com.episode6.hackit.typed:typed-bundles'
+  implementation 'com.episode6.hackit.typed:typed-preferences'
+
+  testImplementation 'junit:junit'
+  testImplementation 'org.assertj:assertj-core'
+  testImplementation 'com.episode6.hackit.chop:chop-junit'
+  testImplementation 'com.episode6.hackit.mockspresso:mockspresso-quick'
+  testImplementation 'org.mockito:mockito-inline'
+  testImplementation 'org.powermock:powermock-api-mockito2'
+  testImplementation 'org.powermock:powermock-module-junit4'
+  testImplementation 'org.powermock:powermock-module-junit4-rule'
+  testImplementation 'org.powermock:powermock-classloading-xstream'
+  testImplementation 'org.robolectric:robolectric'
+
+  androidTestImplementation 'com.google.code.findbugs:jsr305'
+  androidTestImplementation 'com.squareup.assertj:assertj-android'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core'
+}

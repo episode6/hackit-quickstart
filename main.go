@@ -11,7 +11,7 @@ import (
 )
 
 // AppVersion is the current version of this app
-const AppVersion = "0.0.5"
+const AppVersion = "0.0.6"
 
 var projectTypes = map[string]projectTemplate{
 	"single": &singleProject{},
@@ -26,6 +26,7 @@ var projectLangs = map[string]languageTemplate{
 	"android":          &androidLibrary{},
 	"androidApp":       &androidApplication{},
 	"androidAppDagger": &androidApplicationWithDagger{},
+	// "androidAppBootstrap": &androidApplicationWithBootstrap{},
 }
 
 func main() {
@@ -53,12 +54,15 @@ func main() {
 	gdmcRepoURLStr := flag.String(
 		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
-	noGdmc := flag.Bool(
-		"noGdmcRepo", false,
-		"Don't use a gdmc repo, equivilent to gdmc=\"\"")
+	deployable := flag.Bool(
+		"deployable", false,
+		"Make a deployable library (has no effect on apps)")
 	licenseNameStr := flag.String(
 		"licenseName", defaultLicenseName,
 		"The name of the license you want to use (for deployable libraries)")
+	gradleVersion := flag.String(
+		"gradleVersion", defaultGradleVersion,
+		"Gradle version to apply to the project (root project only)")
 	androidSdkDirStr := flag.String(
 		"androidSdkDir", defaultAndroidSdkDir(),
 		"Android sdk directory")
@@ -68,19 +72,12 @@ func main() {
 	androidCompileSdkVersionStr := flag.String(
 		"androidCompileSdkVersion", defaultAndroidCompileSdkVersion,
 		"For android apps/libs, the value of compileSdkVersion")
-	androidBuildToolsVersionStr := flag.String(
-		"androidBuildToolsVersion", defaultAndroidBuildToolsVersion,
-		"For android apps/libs, the value of buildToolsVersion")
 
 	flag.Parse()
 
 	if *versionFlag {
 		fmt.Printf("hackit-quickstart v%v\n", AppVersion)
 		os.Exit(0)
-	}
-
-	if *noGdmc {
-		*gdmcRepoURLStr = ""
 	}
 
 	data := &ProjectData{
@@ -91,18 +88,18 @@ func main() {
 		Name:        *nameStr,
 		LicenseName: *licenseNameStr,
 		gdmcRepoURL: *gdmcRepoURLStr,
+		deployable:  *deployable,
 
+		GradleVersion:            *gradleVersion,
 		AndroidSdkDir:            *androidSdkDirStr,
 		AndroidNdkDir:            *androidNdkDirStr,
 		AndroidCompileSdkVersion: *androidCompileSdkVersionStr,
-		AndroidBuildToolsVersion: *androidBuildToolsVersionStr,
 	}
 
 	performProjectGeneration(data)
 }
 
 func performProjectGeneration(data *ProjectData) {
-	assertGitRepo()
 	data.validate()
 	data.generate()
 }
@@ -151,4 +148,48 @@ func readMissingParam(flagName string) string {
 		panic(err)
 	}
 	return strings.TrimSpace(input)
+}
+
+func readConsolStringInput(prompt string) string {
+	fmt.Printf("%v\n: ", prompt)
+	var input string
+	_, err := fmt.Scanln(&input)
+	if err != nil {
+		return ""
+	}
+	return strings.TrimSpace(input)
+}
+
+func readConsoleOptionInput(prompt string, defaultOption string, options []string) string {
+	var fullPrompt = prompt + "\n("
+	for i, opt := range options {
+		if defaultOption == opt {
+			fullPrompt += strings.ToUpper(opt)
+		} else {
+			fullPrompt += opt
+		}
+		if i != len(options)-1 {
+			fullPrompt += "/"
+		}
+	}
+	fullPrompt += "): "
+	fmt.Print(fullPrompt)
+
+	var input string
+	_, err := fmt.Scanln(&input)
+	if err != nil {
+		return defaultOption
+	}
+
+	input = strings.TrimSpace(input)
+	if input == "" {
+		return defaultOption
+	}
+
+	for _, opt := range options {
+		if input == opt {
+			return opt
+		}
+	}
+	return readConsoleOptionInput(prompt, defaultOption, options)
 }
