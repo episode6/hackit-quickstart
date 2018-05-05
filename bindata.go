@@ -184,7 +184,7 @@ func templatesJenkinsfile() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/Jenkinsfile", size: 414, mode: os.FileMode(420), modTime: time.Unix(1500318687, 0)}
+	info := bindataFileInfo{name: "templates/Jenkinsfile", size: 414, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -264,7 +264,7 @@ func templatesLangAndroid_appProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1181, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1181, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -324,7 +324,7 @@ func templatesLangAndroid_appRootGdmcJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2081, mode: os.FileMode(420), modTime: time.Unix(1524422265, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2081, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -364,7 +364,7 @@ func templatesLangAndroid_appSrc_filesMainactivityJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivity.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivity.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -384,7 +384,7 @@ func templatesLangAndroid_appSrc_filesMainactivityinstrumentedtestJava() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivityInstrumentedTest.java", size: 1269, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivityInstrumentedTest.java", size: 1269, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -404,7 +404,7 @@ func templatesLangAndroid_appSrc_filesMainactivitytestJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivityTest.java", size: 573, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainActivityTest.java", size: 573, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -424,7 +424,7 @@ func templatesLangAndroid_appSrc_filesMainfragmentJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainFragment.java", size: 722, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/MainFragment.java", size: 722, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -444,7 +444,7 @@ func templatesLangAndroid_appSrc_filesResLayoutActivity_mainXml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/activity_main.xml", size: 233, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/activity_main.xml", size: 233, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -464,7 +464,7 @@ func templatesLangAndroid_appSrc_filesResLayoutFragment_mainXml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/fragment_main.xml", size: 676, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/src_files/res/layout/fragment_main.xml", size: 676, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -644,7 +644,7 @@ func templatesLangAndroid_app_bootstrapProguardRulesPro() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -664,7 +664,7 @@ func templatesLangAndroid_app_bootstrapProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-build.gradle", size: 2909, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-build.gradle", size: 2909, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -684,7 +684,7 @@ func templatesLangAndroid_app_bootstrapProjGradleProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -704,7 +704,7 @@ func templatesLangAndroid_app_bootstrapProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -724,7 +724,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAndroidmanifestXml() (*asset, er
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -744,7 +744,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppAppJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/App.java", size: 556, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/App.java", size: 556, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -764,7 +764,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppAppcomponentJava() (*asset, e
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/AppComponent.java", size: 536, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/AppComponent.java", size: 536, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -784,7 +784,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppAppmoduleJava() (*asset, erro
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/AppModule.java", size: 618, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/AppModule.java", size: 618, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -804,7 +804,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppDebugappmoduleJava() (*asset,
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/DebugAppModule.java", size: 421, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/DebugAppModule.java", size: 421, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -824,7 +824,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppReleasedebugappmoduleJava() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/ReleaseDebugAppModule.java", size: 548, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/ReleaseDebugAppModule.java", size: 548, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -844,7 +844,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesAppRootbindingmoduleJava() (*ass
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/RootBindingModule.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/app/RootBindingModule.java", size: 515, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -864,7 +864,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesBaseBaseactivitymoduleJava() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseActivityModule.java", size: 1340, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseActivityModule.java", size: 1340, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -884,7 +884,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesBaseBaseappcompatactivityJava() 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseAppCompatActivity.java", size: 1604, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseAppCompatActivity.java", size: 1604, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -904,7 +904,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesBaseBasefragmentJava() (*asset, 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseFragment.java", size: 2726, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseFragment.java", size: 2726, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -924,7 +924,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesBaseBasefragmentmoduleJava() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseFragmentModule.java", size: 1690, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/base/BaseFragmentModule.java", size: 1690, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -944,7 +944,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesExecutorRootexecutorsmoduleJava(
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/executor/RootExecutorsModule.java", size: 859, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/executor/RootExecutorsModule.java", size: 859, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -964,7 +964,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesExecutorScopedexecutorsmoduleJav
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/executor/ScopedExecutorsModule.java", size: 1592, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/executor/ScopedExecutorsModule.java", size: 1592, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -984,7 +984,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesMainMainactivityJava() (*asset, 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainActivity.java", size: 547, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainActivity.java", size: 547, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1004,7 +1004,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesMainMainactivitymoduleJava() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainActivityModule.java", size: 692, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainActivityModule.java", size: 692, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1024,7 +1024,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesMainMainfragmentJava() (*asset, 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainFragment.java", size: 867, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/main/MainFragment.java", size: 867, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1044,7 +1044,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesPreferenceRootpreferencesmoduleJ
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/preference/RootPreferencesModule.java", size: 794, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/preference/RootPreferencesModule.java", size: 794, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1064,7 +1064,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestItMainactivityinstrumentedte
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/it/MainActivityInstrumentedTest.java", size: 1309, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/it/MainActivityInstrumentedTest.java", size: 1309, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1084,7 +1084,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtBuildmockspressoJava() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/BuildMockspresso.java", size: 736, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/BuildMockspresso.java", size: 736, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1104,7 +1104,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtAppMockspressotestappJava(
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/app/MockspressoTestApp.java", size: 2859, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/app/MockspressoTestApp.java", size: 2859, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1124,7 +1124,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtBaseBaseappcompatactivityt
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 2146, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 2146, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1144,7 +1144,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtBaseBasefragmenttestJava()
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/base/BaseFragmentTest.java", size: 3773, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/base/BaseFragmentTest.java", size: 3773, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1164,7 +1164,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtMainMainactivitytestJava()
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/main/MainActivityTest.java", size: 1132, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/main/MainActivityTest.java", size: 1132, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1184,7 +1184,7 @@ func templatesLangAndroid_app_bootstrapSrc_filesTestUtMainMainfragmenttestJava()
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/main/MainFragmentTest.java", size: 1191, mode: os.FileMode(420), modTime: time.Unix(1523451493, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_bootstrap/src_files/test/ut/main/MainFragmentTest.java", size: 1191, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1224,7 +1224,7 @@ func templatesLangAndroid_app_daggerProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1781, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/proj-build.gradle", size: 1781, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1344,7 +1344,7 @@ func templatesLangAndroid_app_daggerSrc_filesAppAppmoduleJava() (*asset, error) 
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/app/AppModule.java", size: 418, mode: os.FileMode(420), modTime: time.Unix(1497636877, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/app/AppModule.java", size: 418, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1424,7 +1424,7 @@ func templatesLangAndroid_app_daggerSrc_filesBaseBasefragmentJava() (*asset, err
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/base/BaseFragment.java", size: 953, mode: os.FileMode(420), modTime: time.Unix(1499271966, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/base/BaseFragment.java", size: 953, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1464,7 +1464,7 @@ func templatesLangAndroid_app_daggerSrc_filesMainMainactivitymoduleJava() (*asse
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/main/MainActivityModule.java", size: 609, mode: os.FileMode(420), modTime: time.Unix(1497914416, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/main/MainActivityModule.java", size: 609, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1504,7 +1504,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestItMainactivityinstrumentedtestJ
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.java", size: 1309, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.java", size: 1309, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1524,7 +1524,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtBuildmockspressoJava() (*asse
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/BuildMockspresso.java", size: 478, mode: os.FileMode(420), modTime: time.Unix(1523207803, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/BuildMockspresso.java", size: 478, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1544,7 +1544,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtAppMockspressotestappJava() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/app/MockspressoTestApp.java", size: 2955, mode: os.FileMode(420), modTime: time.Unix(1497966846, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/app/MockspressoTestApp.java", size: 2955, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1564,7 +1564,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtBaseBaseappcompatactivitytest
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 1167, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.java", size: 1167, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1584,7 +1584,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtBaseBasefragmenttestJava() (*
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/base/BaseFragmentTest.java", size: 1177, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/base/BaseFragmentTest.java", size: 1177, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1604,7 +1604,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtMainMainactivitytestJava() (*
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/main/MainActivityTest.java", size: 1132, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/main/MainActivityTest.java", size: 1132, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1624,7 +1624,7 @@ func templatesLangAndroid_app_daggerSrc_filesTestUtMainMainfragmenttestJava() (*
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/main/MainFragmentTest.java", size: 1191, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app_dagger/src_files/test/ut/main/MainFragmentTest.java", size: 1191, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1664,7 +1664,7 @@ func templatesLangAndroid_libProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_lib/proj-build.gradle", size: 545, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_lib/proj-build.gradle", size: 545, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1764,7 +1764,7 @@ func templatesLangAndroid_libSrc_filesSomeclasstestJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_lib/src_files/SomeClassTest.java", size: 328, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_lib/src_files/SomeClassTest.java", size: 328, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1784,7 +1784,7 @@ func templatesLangGradleProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/gradle/proj-build.gradle", size: 209, mode: os.FileMode(420), modTime: time.Unix(1523211921, 0)}
+	info := bindataFileInfo{name: "templates/lang/gradle/proj-build.gradle", size: 209, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -1904,7 +1904,7 @@ func templatesLangGroovyProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/groovy/proj-build.gradle", size: 194, mode: os.FileMode(420), modTime: time.Unix(1523207105, 0)}
+	info := bindataFileInfo{name: "templates/lang/groovy/proj-build.gradle", size: 194, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2004,7 +2004,7 @@ func templatesLangJavaProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/java/proj-build.gradle", size: 205, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/java/proj-build.gradle", size: 205, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2084,7 +2084,7 @@ func templatesLangJavaSrc_filesSomeclasstestJava() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/java/src_files/SomeClassTest.java", size: 328, mode: os.FileMode(420), modTime: time.Unix(1523363489, 0)}
+	info := bindataFileInfo{name: "templates/lang/java/src_files/SomeClassTest.java", size: 328, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2104,7 +2104,7 @@ func templatesProjMultiRootBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/proj/multi/root-build.gradle", size: 221, mode: os.FileMode(420), modTime: time.Unix(1524412031, 0)}
+	info := bindataFileInfo{name: "templates/proj/multi/root-build.gradle", size: 221, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2144,7 +2144,7 @@ func templatesProjSingleRootBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/proj/single/root-build.gradle", size: 158, mode: os.FileMode(420), modTime: time.Unix(1524412031, 0)}
+	info := bindataFileInfo{name: "templates/proj/single/root-build.gradle", size: 158, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2184,7 +2184,7 @@ func templatesProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/proj-build.gradle", size: 116, mode: os.FileMode(420), modTime: time.Unix(1524360773, 0)}
+	info := bindataFileInfo{name: "templates/proj-build.gradle", size: 116, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2204,7 +2204,7 @@ func templatesRootBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/root-build.gradle", size: 344, mode: os.FileMode(420), modTime: time.Unix(1524412031, 0)}
+	info := bindataFileInfo{name: "templates/root-build.gradle", size: 344, mode: os.FileMode(420), modTime: time.Unix(1524485837, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
