@@ -4,6 +4,11 @@
         "artifactId": "kotlin-gradle-plugin",
         "version": "{{ .LookupVersion "org.jetbrains.kotlin:kotlin-gradle-plugin" }}"
     },
+    "org.jetbrains.kotlin:kotlin-reflect": {
+        "groupId": "org.jetbrains.kotlin",
+        "artifactId": "kotlin-reflect",
+        "inheritVersion": "org.jetbrains.kotlin:kotlin-gradle-plugin"
+    },
     "org.jetbrains.kotlin:kotlin-stdlib": {
         "groupId": "org.jetbrains.kotlin",
         "artifactId": "kotlin-stdlib",
