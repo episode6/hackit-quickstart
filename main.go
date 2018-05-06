@@ -26,6 +26,7 @@ var projectLangs = map[string]languageTemplate{
 	"android":          &androidLibrary{},
 	"androidApp":       &androidApplication{},
 	"androidAppDagger": &androidApplicationWithDagger{},
+	"kotlin":           &kotlinLibrary{},
 	// "androidAppBootstrap": &androidApplicationWithBootstrap{},
 }
 
