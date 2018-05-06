@@ -99,6 +99,7 @@
 // templates/lang/kotlin/proj-build.gradle
 // templates/lang/kotlin/proj-gradle.properties
 // templates/lang/kotlin/proj-local.properties
+// templates/lang/kotlin/root-gdmc.json
 // templates/lang/kotlin/src_files/SomeClass.kt
 // templates/lang/kotlin/src_files/SomeClassTest.kt
 // templates/proj/multi/root-build.gradle
@@ -2154,6 +2155,26 @@ func templatesLangKotlinProjLocalProperties() (*asset, error) {
 	return a, nil
 }
 
+var _templatesLangKotlinRootGdmcJson = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xb4\x8f\xb1\x0a\x83\x30\x10\x40\x77\xbf\x22\xdc\x5c\x5d\x0b\xfe\x41\xa1\xb3\x7b\x6c\xd2\xf4\x34\x24\x72\x9e\x5d\x42\xfe\xbd\xd8\x2b\xe8\x20\xa5\x82\xcd\x12\x08\xef\x5e\xee\xa5\x42\x29\x88\xe4\xaa\xce\x72\x4b\x1a\xc3\x58\xf5\x91\x3d\x86\x5a\xae\xd2\x91\x36\xde\x96\x83\x9f\x1c\x06\xa8\xd5\x3c\x20\x07\x1c\xc5\x69\xb8\x18\xa8\xb7\x0d\x70\x5a\x50\x4d\x8c\x77\x7d\x63\xa1\x37\xd5\x2b\xfa\x69\x69\xc4\x38\xff\x06\x29\xa9\xea\x1a\x63\x3f\x0d\x8d\x3c\xee\xd9\x56\xe5\x0c\x6f\x6b\x16\xf9\xd7\xd1\x91\x8d\xc7\xf6\xd8\xc2\x8f\x73\x85\x61\x78\x58\x42\x6e\x96\xc2\xdf\x73\x76\xa6\x94\x9d\xe9\xcf\xff\xe8\x11\xf1\xa1\x51\x45\x2e\x5e\x01\x00\x00\xff\xff\xf8\x76\xee\xcb\x8a\x02\x00\x00")
+
+func templatesLangKotlinRootGdmcJsonBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinRootGdmcJson,
+		"templates/lang/kotlin/root-gdmc.json",
+	)
+}
+
+func templatesLangKotlinRootGdmcJson() (*asset, error) {
+	bytes, err := templatesLangKotlinRootGdmcJsonBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/root-gdmc.json", size: 650, mode: os.FileMode(420), modTime: time.Unix(1525621307, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
 var _templatesLangKotlinSrc_filesSomeclassKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2c\xca\xbd\x0a\x02\x30\x0c\x04\xe0\x3d\x4f\x71\xa3\x22\x08\xae\x3a\x3a\x88\xb3\x4f\x50\x43\x94\xaa\x4d\x4a\x7f\xa6\x92\x77\x17\x83\xc3\x1d\xc7\xc7\xd5\xc4\xef\xf4\x14\xac\x85\xfd\xa5\xd9\xac\x70\x27\xe2\x4f\xea\x1d\x37\x2b\x72\x8e\xb5\x08\x60\x2b\x35\x69\x36\x85\xdd\x5f\xc2\x23\x10\x78\x4c\x45\x56\x6e\x52\x44\xc7\x26\x1f\x71\xd5\xb1\x8d\xfe\x1f\x80\x26\x63\x36\x45\xde\x1d\x4e\x21\x4e\xbf\x38\x7d\x03\x00\x00\xff\xff\x8a\x57\x7e\xa9\x7c\x00\x00\x00")
 
 func templatesLangKotlinSrc_filesSomeclassKtBytes() ([]byte, error) {
@@ -2465,6 +2486,7 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/kotlin/proj-build.gradle": templatesLangKotlinProjBuildGradle,
 	"templates/lang/kotlin/proj-gradle.properties": templatesLangKotlinProjGradleProperties,
 	"templates/lang/kotlin/proj-local.properties": templatesLangKotlinProjLocalProperties,
+	"templates/lang/kotlin/root-gdmc.json": templatesLangKotlinRootGdmcJson,
 	"templates/lang/kotlin/src_files/SomeClass.kt": templatesLangKotlinSrc_filesSomeclassKt,
 	"templates/lang/kotlin/src_files/SomeClassTest.kt": templatesLangKotlinSrc_filesSomeclasstestKt,
 	"templates/proj/multi/root-build.gradle": templatesProjMultiRootBuildGradle,
@@ -2701,6 +2723,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"proj-build.gradle": &bintree{templatesLangKotlinProjBuildGradle, map[string]*bintree{}},
 				"proj-gradle.properties": &bintree{templatesLangKotlinProjGradleProperties, map[string]*bintree{}},
 				"proj-local.properties": &bintree{templatesLangKotlinProjLocalProperties, map[string]*bintree{}},
+				"root-gdmc.json": &bintree{templatesLangKotlinRootGdmcJson, map[string]*bintree{}},
 				"src_files": &bintree{nil, map[string]*bintree{
 					"SomeClass.kt": &bintree{templatesLangKotlinSrc_filesSomeclassKt, map[string]*bintree{}},
 					"SomeClassTest.kt": &bintree{templatesLangKotlinSrc_filesSomeclasstestKt, map[string]*bintree{}},

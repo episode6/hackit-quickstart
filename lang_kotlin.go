@@ -55,7 +55,9 @@ func (kl *kotlinLibrary) deployableJenkinsCommands() []string {
 }
 
 func (kl *kotlinLibrary) generateExtraRootProjectFiles(data *ProjectData) {
-
+	if data.gdmcRepoURL == "" {
+		templateTemplateableToFile("root-gdmc.json", "gdmc.json", kl, data)
+	}
 }
 
 func (kl *kotlinLibrary) generateLangSpecificFiles(data *ProjectData, subdir string) {
