@@ -96,6 +96,11 @@
 // templates/lang/java/proj-local.properties
 // templates/lang/java/src_files/SomeClass.java
 // templates/lang/java/src_files/SomeClassTest.java
+// templates/lang/kotlin/proj-build.gradle
+// templates/lang/kotlin/proj-gradle.properties
+// templates/lang/kotlin/proj-local.properties
+// templates/lang/kotlin/src_files/SomeClass.kt
+// templates/lang/kotlin/src_files/SomeClassTest.kt
 // templates/proj/multi/root-build.gradle
 // templates/proj/multi/settings.gradle
 // templates/proj/single/root-build.gradle
@@ -2089,6 +2094,106 @@ func templatesLangJavaSrc_filesSomeclasstestJava() (*asset, error) {
 	return a, nil
 }
 
+var _templatesLangKotlinProjBuildGradle = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x74\x8d\x3d\xaa\xc3\x30\x10\x84\xfb\x3d\xc5\x76\xaa\x6c\x78\x95\xc1\xf0\xaa\x54\x39\x86\x6c\x2d\x66\x65\x79\x65\xb4\xe3\x22\x84\xdc\x3d\xe4\xa7\x0a\x49\x33\x5f\x31\xc3\x7c\x5e\x8f\x36\xcb\xa9\x6e\x7b\x84\x4e\x5a\x14\x17\xfe\xe7\xbf\x7e\x20\xc4\xb6\x08\xbe\x35\x94\x64\x17\x4b\x62\xb3\x8a\xf3\x95\x98\x75\xdb\x8b\x6c\x62\x88\xd0\x6a\x1c\x6a\x5b\xfa\x2c\x98\x5a\x54\xf3\x7e\xad\x28\x6a\xe3\x0b\x9d\x23\x15\x9d\xba\x9c\xd6\x21\x10\x33\x31\x43\x1c\xe7\x8f\x87\x7c\x98\x62\x7c\x66\xf8\x31\x79\x48\xa2\xbb\x34\xe4\xf1\xcd\x6e\xae\x4d\x02\xdd\xe8\x1e\x00\x00\xff\xff\x77\x53\x00\x4e\xd7\x00\x00\x00")
+
+func templatesLangKotlinProjBuildGradleBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinProjBuildGradle,
+		"templates/lang/kotlin/proj-build.gradle",
+	)
+}
+
+func templatesLangKotlinProjBuildGradle() (*asset, error) {
+	bytes, err := templatesLangKotlinProjBuildGradleBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/proj-build.gradle", size: 215, mode: os.FileMode(420), modTime: time.Unix(1525613858, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _templatesLangKotlinProjGradleProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\xaa\xae\x56\xd0\x73\x49\x2d\xc8\xc9\xaf\x4c\x4c\xca\x49\x75\x2f\x4a\x4c\xc9\x49\x0d\x28\xca\x2f\x48\x2d\x2a\xc9\x4c\x2d\x56\xa8\xad\xe5\x02\x04\x00\x00\xff\xff\xa7\x96\xf1\xaf\x22\x00\x00\x00")
+
+func templatesLangKotlinProjGradlePropertiesBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinProjGradleProperties,
+		"templates/lang/kotlin/proj-gradle.properties",
+	)
+}
+
+func templatesLangKotlinProjGradleProperties() (*asset, error) {
+	bytes, err := templatesLangKotlinProjGradlePropertiesBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/proj-gradle.properties", size: 34, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _templatesLangKotlinProjLocalProperties = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x01\x00\x00\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00")
+
+func templatesLangKotlinProjLocalPropertiesBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinProjLocalProperties,
+		"templates/lang/kotlin/proj-local.properties",
+	)
+}
+
+func templatesLangKotlinProjLocalProperties() (*asset, error) {
+	bytes, err := templatesLangKotlinProjLocalPropertiesBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/proj-local.properties", size: 0, mode: os.FileMode(420), modTime: time.Unix(1495149977, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _templatesLangKotlinSrc_filesSomeclassKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x2c\xca\xbd\x0a\x02\x30\x0c\x04\xe0\x3d\x4f\x71\xa3\x22\x08\xae\x3a\x3a\x88\xb3\x4f\x50\x43\x94\xaa\x4d\x4a\x7f\xa6\x92\x77\x17\x83\xc3\x1d\xc7\xc7\xd5\xc4\xef\xf4\x14\xac\x85\xfd\xa5\xd9\xac\x70\x27\xe2\x4f\xea\x1d\x37\x2b\x72\x8e\xb5\x08\x60\x2b\x35\x69\x36\x85\xdd\x5f\xc2\x23\x10\x78\x4c\x45\x56\x6e\x52\x44\xc7\x26\x1f\x71\xd5\xb1\x8d\xfe\x1f\x80\x26\x63\x36\x45\xde\x1d\x4e\x21\x4e\xbf\x38\x7d\x03\x00\x00\xff\xff\x8a\x57\x7e\xa9\x7c\x00\x00\x00")
+
+func templatesLangKotlinSrc_filesSomeclassKtBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinSrc_filesSomeclassKt,
+		"templates/lang/kotlin/src_files/SomeClass.kt",
+	)
+}
+
+func templatesLangKotlinSrc_filesSomeclassKt() (*asset, error) {
+	bytes, err := templatesLangKotlinSrc_filesSomeclassKtBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/src_files/SomeClass.kt", size: 124, mode: os.FileMode(420), modTime: time.Unix(1525614382, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
+var _templatesLangKotlinSrc_filesSomeclasstestKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x54\x8e\xb1\x4e\xc5\x30\x0c\x45\x77\x7f\xc5\x1d\xdb\x25\x12\xec\x48\x20\x84\x18\x19\xe8\x0f\x58\x79\xe6\xbd\x94\x34\x0e\x89\x83\x90\xaa\xfe\x3b\x6a\x0b\x85\xb7\x59\xe7\xf8\xfa\x3a\xb3\x7f\xe7\xb3\x60\x9e\xe1\x9e\x8b\xb6\x8c\x65\x21\x0a\x53\xd6\x62\xd0\x72\x76\x5c\xab\x14\x1b\x9d\xd7\x22\x8e\x73\x70\x0f\x1b\x08\x9a\xea\x8f\x1b\x2e\x6c\xff\x13\x63\x4b\xc1\xdc\x20\xd5\x88\x7c\xe4\x5a\xf1\xaa\x93\x3c\xae\xd3\x0a\x31\x13\x01\xf7\x9b\x07\xde\x5a\x42\x8e\xec\xe5\xa2\xf1\x24\x65\xa5\x5d\x8f\x99\x00\xe0\x93\x23\x42\xca\xcd\x70\x87\x9b\x83\xc8\x57\x16\x6f\x72\x7a\x69\xb6\xab\x5b\x3a\x9c\xfe\xb2\xa3\xd1\x85\xe4\x8b\x4c\x92\xac\xdb\x4e\xf5\xfb\xf2\xdf\xe7\xdd\x9e\xe9\x5d\xa8\x4f\x1f\x8d\xe3\xa0\xdd\x75\x43\x4f\xc0\x42\x0b\x7d\x07\x00\x00\xff\xff\xf9\xd4\x5f\xb0\x2a\x01\x00\x00")
+
+func templatesLangKotlinSrc_filesSomeclasstestKtBytes() ([]byte, error) {
+	return bindataRead(
+		_templatesLangKotlinSrc_filesSomeclasstestKt,
+		"templates/lang/kotlin/src_files/SomeClassTest.kt",
+	)
+}
+
+func templatesLangKotlinSrc_filesSomeclasstestKt() (*asset, error) {
+	bytes, err := templatesLangKotlinSrc_filesSomeclasstestKtBytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindataFileInfo{name: "templates/lang/kotlin/src_files/SomeClassTest.kt", size: 298, mode: os.FileMode(420), modTime: time.Unix(1525614756, 0)}
+	a := &asset{bytes: bytes, info: info}
+	return a, nil
+}
+
 var _templatesProjMultiRootBuildGradle = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x34\x8e\xb1\x8a\xc3\x30\x10\x44\xfb\xfd\x8a\x29\x0c\xbe\x83\xc3\x1f\x60\x70\x67\xb8\xf6\xb8\x22\xbd\x62\x2d\x46\x89\x90\xc4\x4a\x0e\x09\x62\xff\x3d\xc8\x76\xba\x19\xde\x1b\x18\xe3\x7d\x92\x78\xe3\xa5\x64\x54\x02\x84\x53\xcc\xae\x44\x71\x9c\x51\x51\x2b\xc4\x84\x95\xd1\xb9\x60\xf9\xf9\x83\xae\x09\x18\x27\x0c\x7f\xc7\xec\xbf\x0d\xa0\x4a\x00\x9a\x7e\x08\xaa\x2d\x73\xb0\x07\x51\x22\x60\x95\xb8\x25\x4c\xe8\x6b\xc5\xf0\xbb\x17\xd5\x9e\x80\x07\x4b\x76\x31\x7c\xd0\xe5\xac\x0d\x2a\x51\x31\xf9\x8e\xc5\xb3\x09\x5f\xe5\x95\x78\xc4\xcc\x9e\x0b\x7f\xef\x77\xed\x9e\x21\x31\x96\xf3\xcf\x70\xdd\x9c\xb7\xb3\x13\x52\x7a\x07\x00\x00\xff\xff\x25\xbb\xab\x12\xdd\x00\x00\x00")
 
 func templatesProjMultiRootBuildGradleBytes() ([]byte, error) {
@@ -2357,6 +2462,11 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/java/proj-local.properties": templatesLangJavaProjLocalProperties,
 	"templates/lang/java/src_files/SomeClass.java": templatesLangJavaSrc_filesSomeclassJava,
 	"templates/lang/java/src_files/SomeClassTest.java": templatesLangJavaSrc_filesSomeclasstestJava,
+	"templates/lang/kotlin/proj-build.gradle": templatesLangKotlinProjBuildGradle,
+	"templates/lang/kotlin/proj-gradle.properties": templatesLangKotlinProjGradleProperties,
+	"templates/lang/kotlin/proj-local.properties": templatesLangKotlinProjLocalProperties,
+	"templates/lang/kotlin/src_files/SomeClass.kt": templatesLangKotlinSrc_filesSomeclassKt,
+	"templates/lang/kotlin/src_files/SomeClassTest.kt": templatesLangKotlinSrc_filesSomeclasstestKt,
 	"templates/proj/multi/root-build.gradle": templatesProjMultiRootBuildGradle,
 	"templates/proj/multi/settings.gradle": templatesProjMultiSettingsGradle,
 	"templates/proj/single/root-build.gradle": templatesProjSingleRootBuildGradle,
@@ -2585,6 +2695,15 @@ var _bintree = &bintree{nil, map[string]*bintree{
 				"src_files": &bintree{nil, map[string]*bintree{
 					"SomeClass.java": &bintree{templatesLangJavaSrc_filesSomeclassJava, map[string]*bintree{}},
 					"SomeClassTest.java": &bintree{templatesLangJavaSrc_filesSomeclasstestJava, map[string]*bintree{}},
+				}},
+			}},
+			"kotlin": &bintree{nil, map[string]*bintree{
+				"proj-build.gradle": &bintree{templatesLangKotlinProjBuildGradle, map[string]*bintree{}},
+				"proj-gradle.properties": &bintree{templatesLangKotlinProjGradleProperties, map[string]*bintree{}},
+				"proj-local.properties": &bintree{templatesLangKotlinProjLocalProperties, map[string]*bintree{}},
+				"src_files": &bintree{nil, map[string]*bintree{
+					"SomeClass.kt": &bintree{templatesLangKotlinSrc_filesSomeclassKt, map[string]*bintree{}},
+					"SomeClassTest.kt": &bintree{templatesLangKotlinSrc_filesSomeclasstestKt, map[string]*bintree{}},
 				}},
 			}},
 		}},
