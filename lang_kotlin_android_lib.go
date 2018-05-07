@@ -22,7 +22,6 @@ func (kal *kotlinAndroidLibrary) GradlePlugins() []string {
 	return []string{
 		"com.android.library",
 		"kotlin-android",
-		"kotlin-android-extensions",
 	}
 }
 
