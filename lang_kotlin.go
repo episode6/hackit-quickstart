@@ -15,7 +15,7 @@ func (kl *kotlinLibrary) describe() string {
 }
 
 func (kl *kotlinLibrary) deployableConfig() deployableConfig {
-	return nil
+	return kl
 }
 
 func (kl *kotlinLibrary) GradlePlugins() []string {
@@ -41,12 +41,12 @@ func (kl *kotlinLibrary) JenkinsCommands() []string {
 }
 
 func (kl *kotlinLibrary) deployableBuildscriptDependencies() []string {
-	return []string{}
+	return []string{"org.jetbrains.dokka:dokka-gradle-plugin"}
 }
 
 func (kl *kotlinLibrary) deployableGradlePlugins() []string {
 	return []string{
-		"com.episode6.hackit.deployable.jar",
+		"com.episode6.hackit.deployable.kt.jar",
 	}
 }
 

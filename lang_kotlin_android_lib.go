@@ -15,7 +15,7 @@ func (kal *kotlinAndroidLibrary) describe() string {
 }
 
 func (kal *kotlinAndroidLibrary) deployableConfig() deployableConfig {
-	return nil
+	return kal
 }
 
 func (kal *kotlinAndroidLibrary) GradlePlugins() []string {
@@ -37,12 +37,12 @@ func (kal *kotlinAndroidLibrary) JenkinsCommands() []string {
 }
 
 func (kal *kotlinAndroidLibrary) deployableBuildscriptDependencies() []string {
-	return []string{}
+	return []string{"org.jetbrains.dokka:dokka-android-gradle-plugin"}
 }
 
 func (kal *kotlinAndroidLibrary) deployableGradlePlugins() []string {
 	return []string{
-		"com.episode6.hackit.deployable.aar",
+		"com.episode6.hackit.deployable.kt.aar",
 	}
 }
 
