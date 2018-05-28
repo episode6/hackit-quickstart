@@ -12,8 +12,8 @@ public class MainActivity extends BaseAppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
 
-    if (getFragmentManager().findFragmentById(R.id.main_content) == null) {
-      getFragmentManager().beginTransaction()
+    if (getSupportFragmentManager().findFragmentById(R.id.main_content) == null) {
+      getSupportFragmentManager().beginTransaction()
           .add(R.id.main_content, new MainFragment())
           .commit();
     }
