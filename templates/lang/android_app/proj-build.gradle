@@ -25,7 +25,7 @@ android {
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation 'com.google.code.findbugs:jsr305'
+  implementation 'com.android.support:support-annotations'
   implementation 'com.android.support:appcompat-v7'
   implementation 'com.android.support.constraint:constraint-layout'
 
@@ -33,7 +33,6 @@ dependencies {
   testImplementation 'org.robolectric:robolectric'
   testImplementation 'org.assertj:assertj-core'
 
-  androidTestImplementation 'com.google.code.findbugs:jsr305'
   androidTestImplementation 'com.squareup.assertj:assertj-android'
   androidTestImplementation 'com.android.support.test.espresso:espresso-core'
 }

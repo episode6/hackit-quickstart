@@ -1,24 +1,24 @@
 package {{ .Group }}.base;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.content.Context;
 import android.os.Build;
+import android.support.v4.app.Fragment;
 
 import javax.inject.Inject;
 
-import dagger.android.AndroidInjection;
 import dagger.android.AndroidInjector;
 import dagger.android.DispatchingAndroidInjector;
-import dagger.android.HasFragmentInjector;
+import dagger.android.support.AndroidSupportInjection;
+import dagger.android.support.HasSupportFragmentInjector;
 
-public class BaseFragment extends Fragment implements HasFragmentInjector {
+public class BaseFragment extends Fragment implements HasSupportFragmentInjector {
 
   @Inject DispatchingAndroidInjector<Fragment> mChildFragmentInjector;
 
   @Override
   public void onAttach(Context context) {
-    AndroidInjection.inject(this);
+    AndroidSupportInjection.inject(this);
     super.onAttach(context);
   }
 
@@ -26,13 +26,13 @@ public class BaseFragment extends Fragment implements HasFragmentInjector {
   @Override
   public void onAttach(Activity activity) {
     if (Build.VERSION.SDK_INT < Build.VERSION_CODES.M) {
-      AndroidInjection.inject(this);
+      AndroidSupportInjection.inject(this);
     }
     super.onAttach(activity);
   }
 
   @Override
-  public AndroidInjector<Fragment> fragmentInjector() {
+  public AndroidInjector<Fragment> supportFragmentInjector() {
     return mChildFragmentInjector;
   }
 }

@@ -1,10 +1,10 @@
 package {{ .Group }}.app;
 
 import android.app.Activity;
-import android.app.Fragment;
 import android.app.Service;
 import android.content.BroadcastReceiver;
 import android.content.ContentProvider;
+import android.support.v4.app.Fragment;
 
 import com.episode6.hackit.mockspresso.Mockspresso;
 
@@ -17,8 +17,8 @@ import org.mockito.stubbing.Answer;
 import org.robolectric.RuntimeEnvironment;
 
 import dagger.android.AndroidInjector;
-import dagger.android.DaggerApplication;
 import dagger.android.DispatchingAndroidInjector;
+import dagger.android.support.DaggerApplication;
 
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.doAnswer;

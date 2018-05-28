@@ -58,5 +58,10 @@
     "groupId": "org.robolectric",
     "artifactId": "robolectric",
     "version": "{{ .LookupVersion "org.robolectric:robolectric" }}"
+  },
+  "org.robolectric:shadows-supportv4": {
+    "groupId": "org.robolectric",
+    "artifactId": "shadows-supportv4",
+    "inheritVersion": "org.robolectric:robolectric"
   }
 }
