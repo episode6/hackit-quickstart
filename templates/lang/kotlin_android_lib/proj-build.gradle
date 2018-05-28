@@ -1,0 +1,25 @@
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+android {
+  compileSdkVersion {{ .AndroidCompileSdkVersion }}
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+    }
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_7
+    targetCompatibility JavaVersion.VERSION_1_7
+  }
+}
+
+dependencies {
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7'
+
+  testImplementation 'junit:junit'
+  testImplementation 'org.assertj:assertj-core'
+}

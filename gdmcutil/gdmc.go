@@ -8,9 +8,10 @@ import (
 
 // GdmcDep is a representation of a single gdmc dependency
 type GdmcDep struct {
-	GroupID    string `json:"groupId"`
-	ArtifactID string `json:"artifactId"`
-	Version    string `json:"version"`
+	GroupID        string `json:"groupId"`
+	ArtifactID     string `json:"artifactId"`
+	Version        string `json:"version"`
+	InheritVersion string `json:"inheritVersion"`
 }
 
 // GdmcMap is a representation of an entrie gdmc json file
@@ -41,13 +42,20 @@ func (gdmcMap *GdmcMap) GetDep(depKey string) GdmcDep {
 // the same dependency in a gradle-acceptable format with
 // the version included (i.e. group:name:version)
 func (gdmcMap *GdmcMap) FormatKey(depKey string) string {
-	dep := gdmcMap.GetDep(depKey)
-	return fmt.Sprintf("%v:%v", depKey, dep.Version)
+	version := gdmcMap.FindVersion(depKey)
+	return fmt.Sprintf("%v:%v", depKey, version)
 }
 
 //FindVersion returns just the version for the supplied key
 func (gdmcMap *GdmcMap) FindVersion(key string) string {
-	return gdmcMap.GetDep(key).Version
+	dep := gdmcMap.GetDep(key)
+	if dep.Version != "" {
+		return dep.Version
+	}
+	if dep.InheritVersion != "" {
+		return gdmcMap.FindVersion(dep.InheritVersion)
+	}
+	panic("Could not find version for key: " + key)
 }
 
 // FormatKeys executes FormatKey on a slice of keys

@@ -45,6 +45,7 @@ func readGitOriginURL() string {
 		return readGitOriginURL()
 	}
 
+	repoURL = strings.TrimSpace(repoURL)
 	if strings.HasPrefix(repoURL, "git@") {
 		repoURL = "https://" + strings.Replace(repoURL[4:len(repoURL)], ":", "/", -1)
 	}

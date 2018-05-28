@@ -53,5 +53,10 @@
       "groupId": "com.android.support",
       "artifactId": "support-vector-drawable",
       "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "org.robolectric:robolectric": {
+    "groupId": "org.robolectric",
+    "artifactId": "robolectric",
+    "version": "{{ .LookupVersion "org.robolectric:robolectric" }}"
   }
 }
