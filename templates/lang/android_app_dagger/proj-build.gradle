@@ -25,13 +25,14 @@ android {
 
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
-  implementation 'com.google.code.findbugs:jsr305'
+  implementation 'com.android.support:support-annotations'
 
   implementation 'com.android.support:appcompat-v7'
   implementation 'com.android.support.constraint:constraint-layout'
 
   implementation 'com.google.dagger:dagger'
   implementation 'com.google.dagger:dagger-android'
+  implementation 'com.google.dagger:dagger-android-support'
   annotationProcessor 'com.google.dagger:dagger-compiler'
   annotationProcessor 'com.google.dagger:dagger-android-processor'
 
@@ -47,7 +48,6 @@ dependencies {
   testImplementation 'org.mockito:mockito-inline'
   testImplementation 'org.robolectric:robolectric'
 
-  androidTestImplementation 'com.google.code.findbugs:jsr305'
   androidTestImplementation 'com.squareup.assertj:assertj-android'
   androidTestImplementation 'com.android.support.test.espresso:espresso-core'
 }

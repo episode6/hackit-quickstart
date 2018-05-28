@@ -1,5 +1,6 @@
 package {{ .Group }}.main;
 
+import android.support.annotation.Nullable;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +9,6 @@ import android.widget.TextView;
 
 import {{ .Group }}.R;
 import {{ .Group }}.base.BaseFragment;
-
-import javax.annotation.Nullable;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
