@@ -52,7 +52,7 @@ func main() {
 		"Initial version name to use")
 	nameStr := flag.String(
 		"name", "",
-		"The name of the new module to generate (for a multi-module project, this will be the sub-module's name)")
+		"The name of the new module to generate (for a multi-module project, this will be the sub-modules name)")
 	gdmcRepoURLStr := flag.String(
 		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
