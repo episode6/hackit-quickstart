@@ -1,6 +1,7 @@
 package {{ .Group }};
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,8 +9,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import {{ .Group }}.R;
-
-import javax.annotation.Nullable;
 
 public class MainFragment extends Fragment {
 
