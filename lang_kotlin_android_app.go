@@ -34,9 +34,9 @@ func (kaa *kotlinAndroidApplication) generateExtraRootProjectFiles(data *Project
 func (kaa *kotlinAndroidApplication) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	kaa.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
-	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
-	testPath := pathWithOptSubdir(subdir, "src", "test", "java", data.Group.asPath())
-	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "java", data.Group.asPath())
+	mainPath := filepath.Join(mainRoot, "kotlin", data.Group.asPath())
+	testPath := pathWithOptSubdir(subdir, "src", "kotlin", "java", data.Group.asPath())
+	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "kotlin", data.Group.asPath())
 	mkdir(mainPath, testPath, androidTestPath)
 
 	templateTemplateableToFile(
@@ -50,13 +50,13 @@ func (kaa *kotlinAndroidApplication) generateLangSpecificFiles(data *ProjectData
 		kaa,
 		data)
 	templateTemplateableToFile(
-		"src_files/MainActivity.java",
-		filepath.Join(mainPath, "MainActivity.java"),
+		"src_files/MainActivity.kt",
+		filepath.Join(mainPath, "MainActivity.kt"),
 		kaa,
 		data)
 	templateTemplateableToFile(
-		"src_files/MainFragment.java",
-		filepath.Join(mainPath, "MainFragment.java"),
+		"src_files/MainFragment.kt",
+		filepath.Join(mainPath, "MainFragment.kt"),
 		kaa,
 		data)
 	templateTemplateableToFile(
