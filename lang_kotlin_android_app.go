@@ -60,8 +60,8 @@ func (kaa *kotlinAndroidApplication) generateLangSpecificFiles(data *ProjectData
 		kaa,
 		data)
 	templateTemplateableToFile(
-		"src_files/MainActivityTest.java",
-		filepath.Join(testPath, "MainActivityTest.java"),
+		"src_files/MainActivityTest.kt",
+		filepath.Join(testPath, "MainActivityTest.kt"),
 		kaa,
 		data)
 	templateTemplateableToFile(

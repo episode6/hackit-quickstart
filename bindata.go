@@ -110,7 +110,7 @@
 // templates/lang/kotlin_android_app/src_files/AndroidManifest.xml
 // templates/lang/kotlin_android_app/src_files/MainActivity.kt
 // templates/lang/kotlin_android_app/src_files/MainActivityInstrumentedTest.java
-// templates/lang/kotlin_android_app/src_files/MainActivityTest.java
+// templates/lang/kotlin_android_app/src_files/MainActivityTest.kt
 // templates/lang/kotlin_android_app/src_files/MainFragment.kt
 // templates/lang/kotlin_android_lib/proguard-rules.pro
 // templates/lang/kotlin_android_lib/proj-build.gradle
@@ -2393,22 +2393,22 @@ func templatesLangKotlin_android_appSrc_filesMainactivityinstrumentedtestJava() 
 	return a, nil
 }
 
-var _templatesLangKotlin_android_appSrc_filesMainactivitytestJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x92\xc1\x8a\xe3\x30\x0c\x86\xef\x7e\x0a\xd1\x93\x73\xf1\x0b\x84\x42\xbb\x65\xd9\xd3\xee\xa1\x04\xf6\xac\xba\x9e\x54\x1d\xd7\xf2\xd8\x72\x61\x08\x79\xf7\xc1\x69\x42\x5b\x66\x06\x26\x27\xe5\xd7\xa7\x5f\xbf\xc0\x11\xed\x2b\xf6\x0e\x86\x01\xcc\x9f\xc4\x25\xc2\x38\xb6\x4a\xd1\x25\x72\x12\xe0\xd4\x9b\x73\x09\x24\xa6\x73\x59\xda\xcf\x72\x2a\x21\xb8\x64\xf6\x25\xfc\x27\x39\x3d\x01\x89\x0f\xec\x9d\x95\x44\xd6\xec\xef\xf5\x4f\x98\xba\x6c\x3f\x39\x7f\x4b\x63\x08\x2c\x28\xc4\xc1\xec\x38\xbc\x50\x7f\x0f\x9d\xab\x6e\xa7\x09\xcc\xd9\x25\x39\x1b\xcb\xc9\x19\x8c\x64\xb6\x93\x40\x1c\xf2\xdc\xeb\x4e\x28\xad\x52\x9b\xf9\x02\xfd\x65\x0a\x63\x3d\xe6\xdc\xa8\xcd\x6d\x95\xb6\x1c\xb2\x60\x90\x0c\x6b\xf8\x55\xc8\x1f\x6f\xfa\x82\xc5\x72\xf0\x64\x61\xfa\x83\xbf\x48\x61\x6b\x85\xae\x24\xef\xd5\x11\x06\xa5\x00\x36\xb5\x54\x00\x33\x7a\x65\x3a\x42\xf4\x68\xdd\x89\xfd\xd1\xa5\xda\xd5\x0d\x0c\x0a\x00\x9e\x1c\x00\x97\x62\x0d\x0f\x51\x4d\x76\x52\xe2\x02\xe9\xc7\x89\x39\x54\xab\x26\xaf\xfb\xd1\x7a\x71\x32\xbd\x93\x8e\xc4\x3b\xdd\x34\x13\x53\x3f\x43\xf9\xf7\x5b\x41\xdf\xb1\x5e\xd5\xa7\xb1\xc3\x8b\xf3\xff\xf0\xe2\x60\x1c\x57\x4d\xab\x00\x46\x35\xaa\x8f\x00\x00\x00\xff\xff\xb1\xaa\xa7\xf8\x3d\x02\x00\x00")
+var _templatesLangKotlin_android_appSrc_filesMainactivitytestKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x91\x41\x6e\x32\x31\x0c\x85\xf7\x39\x85\xc5\x6a\x66\xe3\x03\xf0\x0b\x09\x7e\x54\x75\xd5\x2e\x10\x52\xd7\x6e\x08\x60\x1a\xe2\x69\xe2\x20\x55\xa3\xb9\x7b\x95\x30\x94\x59\x50\xa9\xd9\x24\x7a\x7e\xfe\xfc\x14\x77\x64\x3f\xe8\xe0\xa0\xef\x01\x9f\xa3\xe4\x0e\x86\xe1\x9f\x31\x7c\xee\x24\x2a\x48\x3c\x20\xa5\xe4\xa2\x9e\xd0\x4a\x74\x48\x1d\xe3\xaa\x0a\x2c\x21\x8d\xb5\xed\x91\x74\xda\x71\xca\x81\x15\xb7\x2e\x3d\x50\x63\x0e\xc1\x45\xdc\xe4\xf0\xc6\x7a\x9c\xd6\xa3\xbc\x8b\x77\x56\x23\x5b\xdc\xdc\xdf\x7f\xb0\x94\x49\x9b\xca\xfd\xcd\x4c\x21\x88\x52\xc9\x8c\x6b\x09\x7b\x3e\x18\xb3\x1c\x23\x34\x0f\x41\xf3\xb9\xf5\x94\x52\x6b\x96\x57\x7f\x63\x25\x24\xa5\xa0\x09\x16\xf0\x3f\xb3\xdf\x5d\xf5\x1f\x5f\xbd\xe0\x85\x38\xac\xac\xf2\x85\xf5\xab\xc0\xa0\x37\x06\x60\x59\xbf\x02\x60\x9f\x03\x74\x9e\xac\x3b\x8a\xdf\xb9\x58\xd4\xa6\x85\xde\x00\x00\x5c\xc8\x03\x8d\x9d\xb0\x80\x49\x28\x4c\x4e\x73\x77\xa3\x36\xd3\x11\xe3\x74\x3c\xd1\x85\x5a\x53\x39\xf7\x8d\x34\x37\x1c\x2a\xab\x77\x6d\x2d\x97\x83\x9c\x9e\x3e\x33\xf9\xad\x34\xb3\xb2\xf6\x35\x9d\x9d\x7f\xa5\xb3\x83\x61\x98\x15\xdb\x60\x06\xf3\x1d\x00\x00\xff\xff\xc4\xf4\xb2\x22\x18\x02\x00\x00")
 
-func templatesLangKotlin_android_appSrc_filesMainactivitytestJavaBytes() ([]byte, error) {
+func templatesLangKotlin_android_appSrc_filesMainactivitytestKtBytes() ([]byte, error) {
 	return bindataRead(
-		_templatesLangKotlin_android_appSrc_filesMainactivitytestJava,
-		"templates/lang/kotlin_android_app/src_files/MainActivityTest.java",
+		_templatesLangKotlin_android_appSrc_filesMainactivitytestKt,
+		"templates/lang/kotlin_android_app/src_files/MainActivityTest.kt",
 	)
 }
 
-func templatesLangKotlin_android_appSrc_filesMainactivitytestJava() (*asset, error) {
-	bytes, err := templatesLangKotlin_android_appSrc_filesMainactivitytestJavaBytes()
+func templatesLangKotlin_android_appSrc_filesMainactivitytestKt() (*asset, error) {
+	bytes, err := templatesLangKotlin_android_appSrc_filesMainactivitytestKtBytes()
 	if err != nil {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityTest.java", size: 573, mode: os.FileMode(420), modTime: time.Unix(1527554371, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityTest.kt", size: 536, mode: os.FileMode(420), modTime: time.Unix(1527557538, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2875,7 +2875,7 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/kotlin_android_app/src_files/AndroidManifest.xml": templatesLangKotlin_android_appSrc_filesAndroidmanifestXml,
 	"templates/lang/kotlin_android_app/src_files/MainActivity.kt": templatesLangKotlin_android_appSrc_filesMainactivityKt,
 	"templates/lang/kotlin_android_app/src_files/MainActivityInstrumentedTest.java": templatesLangKotlin_android_appSrc_filesMainactivityinstrumentedtestJava,
-	"templates/lang/kotlin_android_app/src_files/MainActivityTest.java": templatesLangKotlin_android_appSrc_filesMainactivitytestJava,
+	"templates/lang/kotlin_android_app/src_files/MainActivityTest.kt": templatesLangKotlin_android_appSrc_filesMainactivitytestKt,
 	"templates/lang/kotlin_android_app/src_files/MainFragment.kt": templatesLangKotlin_android_appSrc_filesMainfragmentKt,
 	"templates/lang/kotlin_android_lib/proguard-rules.pro": templatesLangKotlin_android_libProguardRulesPro,
 	"templates/lang/kotlin_android_lib/proj-build.gradle": templatesLangKotlin_android_libProjBuildGradle,
@@ -3135,7 +3135,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 					"AndroidManifest.xml": &bintree{templatesLangKotlin_android_appSrc_filesAndroidmanifestXml, map[string]*bintree{}},
 					"MainActivity.kt": &bintree{templatesLangKotlin_android_appSrc_filesMainactivityKt, map[string]*bintree{}},
 					"MainActivityInstrumentedTest.java": &bintree{templatesLangKotlin_android_appSrc_filesMainactivityinstrumentedtestJava, map[string]*bintree{}},
-					"MainActivityTest.java": &bintree{templatesLangKotlin_android_appSrc_filesMainactivitytestJava, map[string]*bintree{}},
+					"MainActivityTest.kt": &bintree{templatesLangKotlin_android_appSrc_filesMainactivitytestKt, map[string]*bintree{}},
 					"MainFragment.kt": &bintree{templatesLangKotlin_android_appSrc_filesMainfragmentKt, map[string]*bintree{}},
 				}},
 			}},
