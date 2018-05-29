@@ -20,15 +20,16 @@ var projectTypes = map[string]projectTemplate{
 }
 
 var projectLangs = map[string]languageTemplate{
-	"java":             &javaLibrary{},
-	"groovy":           &groovyLibrary{},
-	"gradle":           &gradleLibrary{},
-	"android":          &androidLibrary{},
-	"androidApp":       &androidApplication{},
-	"androidAppDagger": &androidApplicationWithDagger{},
-	"kotlin":           &kotlinLibrary{},
-	"kotlinAndroid":    &kotlinAndroidLibrary{},
-	"kotlinAndroidApp": &kotlinAndroidApplication{},
+	"java":                   &javaLibrary{},
+	"groovy":                 &groovyLibrary{},
+	"gradle":                 &gradleLibrary{},
+	"android":                &androidLibrary{},
+	"androidApp":             &androidApplication{},
+	"androidAppDagger":       &androidApplicationWithDagger{},
+	"kotlin":                 &kotlinLibrary{},
+	"kotlinAndroid":          &kotlinAndroidLibrary{},
+	"kotlinAndroidApp":       &kotlinAndroidApplication{},
+	"kotlinAndroidAppDagger": &kotlinAndroidApplicationWithDagger{},
 	// "androidAppBootstrap": &androidApplicationWithBootstrap{},
 }
 

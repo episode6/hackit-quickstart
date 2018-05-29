@@ -3,7 +3,7 @@ package main
 import "path/filepath"
 
 type kotlinAndroidApplication struct {
-	androidAppShared
+	kotlinAndroidAppShared
 }
 
 func (kaa *kotlinAndroidApplication) templateAlias() string {
@@ -12,23 +12,6 @@ func (kaa *kotlinAndroidApplication) templateAlias() string {
 
 func (kaa *kotlinAndroidApplication) describe() string {
 	return "An android application with kotlin support"
-}
-
-func (kaa *kotlinAndroidApplication) GradlePlugins() []string {
-	return append(kaa.androidAppShared.GradlePlugins(),
-		"kotlin-android",
-		"kotlin-android-extensions")
-}
-
-func (kaa *kotlinAndroidApplication) buildscriptDependencies() []string {
-	return append(kaa.androidAppShared.buildscriptDependencies(),
-		"org.jetbrains.kotlin:kotlin-gradle-plugin")
-}
-
-func (kaa *kotlinAndroidApplication) generateExtraRootProjectFiles(data *ProjectData) {
-	if data.gdmcRepoURL == "" {
-		templateTemplateableToFile("root-gdmc.json", "gdmc.json", kaa, data)
-	}
 }
 
 func (kaa *kotlinAndroidApplication) generateLangSpecificFiles(data *ProjectData, subdir string) {
