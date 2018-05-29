@@ -35,7 +35,7 @@ func (kaa *kotlinAndroidApplication) generateLangSpecificFiles(data *ProjectData
 	kaa.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
 	mainPath := filepath.Join(mainRoot, "kotlin", data.Group.asPath())
-	testPath := pathWithOptSubdir(subdir, "src", "kotlin", "java", data.Group.asPath())
+	testPath := pathWithOptSubdir(subdir, "src", "test", "kotlin", data.Group.asPath())
 	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "kotlin", data.Group.asPath())
 	mkdir(mainPath, testPath, androidTestPath)
 
