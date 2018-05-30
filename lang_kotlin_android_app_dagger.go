@@ -17,9 +17,9 @@ func (kad *kotlinAndroidApplicationWithDagger) describe() string {
 func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	kad.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
-	mainPath := filepath.Join(mainRoot, "java", data.Group.asPath())
-	testPath := pathWithOptSubdir(subdir, "src", "test", "java", data.Group.asPath())
-	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "java", data.Group.asPath())
+	mainPath := filepath.Join(mainRoot, "kotlin", data.Group.asPath())
+	testPath := pathWithOptSubdir(subdir, "src", "test", "kotlin", data.Group.asPath())
+	androidTestPath := pathWithOptSubdir(subdir, "src", "androidTest", "kotlin", data.Group.asPath())
 	mainAppPath := filepath.Join(mainPath, "app")
 	mainMainPath := filepath.Join(mainPath, "main")
 	mainBasePath := filepath.Join(mainPath, "base")
