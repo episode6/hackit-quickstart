@@ -59,8 +59,8 @@ func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *P
 		kad,
 		data)
 	templateTemplateableToFile(
-		"src_files/app/RootBindingModule.java",
-		filepath.Join(mainAppPath, "RootBindingModule.java"),
+		"src_files/app/RootBindingModule.kt",
+		filepath.Join(mainAppPath, "RootBindingModule.kt"),
 		kad,
 		data)
 
