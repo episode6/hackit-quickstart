@@ -49,8 +49,8 @@ func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *P
 		kad,
 		data)
 	templateTemplateableToFile(
-		"src_files/app/AppComponent.java",
-		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppComponent.java"),
+		"src_files/app/AppComponent.kt",
+		filepath.Join(mainAppPath, data.CamelNameWithoutApp()+"AppComponent.kt"),
 		kad,
 		data)
 	templateTemplateableToFile(
