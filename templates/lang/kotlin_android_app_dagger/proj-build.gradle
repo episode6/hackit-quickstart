@@ -31,18 +31,15 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7'
-  
+
   implementation 'com.android.support:appcompat-v7'
   implementation 'com.android.support.constraint:constraint-layout'
 
   implementation 'com.google.dagger:dagger'
   implementation 'com.google.dagger:dagger-android'
   implementation 'com.google.dagger:dagger-android-support'
-  annotationProcessor 'com.google.dagger:dagger-compiler'
-  annotationProcessor 'com.google.dagger:dagger-android-processor'
-
-  implementation 'com.jakewharton:butterknife'
-  annotationProcessor 'com.jakewharton:butterknife-compiler'
+  kapt 'com.google.dagger:dagger-compiler'
+  kapt 'com.google.dagger:dagger-android-processor'
 
   implementation 'com.episode6.hackit.android.inject:context-annotations'
   implementation 'com.episode6.hackit.android.inject:context-modules'

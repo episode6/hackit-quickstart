@@ -14,6 +14,10 @@ func (kad *kotlinAndroidApplicationWithDagger) describe() string {
 	return "An android application with kotlin support and a default dagger 2 implementation"
 }
 
+func (kad *kotlinAndroidApplicationWithDagger) GradlePlugins() []string {
+	return append(kad.kotlinAndroidAppShared.GradlePlugins(), "kotlin-kapt")
+}
+
 func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *ProjectData, subdir string) {
 	kad.androidAppShared.generateAppResources(data, subdir)
 	mainRoot := pathWithOptSubdir(subdir, "src", "main")
