@@ -1,24 +1,22 @@
-package {{ .Group }}.main
+package {{ .Group }}.base
 
-import com.episode6.hackit.mockspresso.Mockspresso
 import {{ .Group }}.BuildConfig
 import {{ .Group }}.BuildMockspresso
 import {{ .Group }}.app.MockspressoTestApp
-import kotlinx.android.synthetic.main.fragment_main.*
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
+import org.robolectric.Robolectric
 import org.robolectric.RobolectricTestRunner
 import org.robolectric.annotation.Config
-import org.robolectric.shadows.support.v4.SupportFragmentController
 
 /**
- * Test [MainFragment]
+ * Tests [BaseAppCompatActivity]
  */
 @RunWith(RobolectricTestRunner::class)
 @Config(constants = BuildConfig::class, application = MockspressoTestApp::class)
-class MainFragmentTest {
+class BaseAppCompatActivityTest {
 
   @get:Rule
   val mockspresso = BuildMockspresso.forRobolectric()
@@ -26,15 +24,16 @@ class MainFragmentTest {
 
   @Test
   fun sanityCheck() {
-    val controller = SupportFragmentController.of(MainFragment())
-        .create()
-        .start()
-        .resume()
-        .visible()
+    val controller = Robolectric.buildActivity(TestBaseAppCompatActivity::class.java)
+        .setup()
+    val activity = controller.get()
 
-    val fragment = controller.get()
-    assertThat(fragment.tv_hello_world.text).isEqualTo("Hello Earth!")
+    assertThat(activity.supportFragmentInjector()).isNotNull
 
     controller.pause().stop().destroy()
+  }
+
+  companion object {
+    class TestBaseAppCompatActivity : BaseAppCompatActivity()
   }
 }

@@ -17,7 +17,6 @@ class MainFragment : BaseFragment() {
     return inflater.inflate(R.layout.fragment_main, container, false)
   }
 
-
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     tv_hello_world.text = "Hello Earth!"
   }
