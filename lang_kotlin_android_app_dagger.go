@@ -81,8 +81,8 @@ func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *P
 		data)
 
 	templateTemplateableToFile(
-		"src_files/main/MainActivity.java",
-		filepath.Join(mainMainPath, "MainActivity.java"),
+		"src_files/main/MainActivity.kt",
+		filepath.Join(mainMainPath, "MainActivity.kt"),
 		kad,
 		data)
 	templateTemplateableToFile(
@@ -102,8 +102,8 @@ func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *P
 		kad,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/ut/main/MainActivityTest.java",
-		filepath.Join(testMainPath, "MainActivityTest.java"),
+		"src_files/test/ut/main/MainActivityTest.kt",
+		filepath.Join(testMainPath, "MainActivityTest.kt"),
 		kad,
 		data)
 	templateTemplateableToFile(
