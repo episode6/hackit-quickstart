@@ -128,7 +128,7 @@
 // templates/lang/kotlin_android_app_dagger/src_files/main/MainActivityModule.kt
 // templates/lang/kotlin_android_app_dagger/src_files/main/MainFragment.kt
 // templates/lang/kotlin_android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.java
-// templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.java
+// templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt
 // templates/lang/kotlin_android_app_dagger/src_files/test/ut/app/MockspressoTestApp.kt
 // templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.kt
 // templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseFragmentTest.kt
@@ -2775,22 +2775,22 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestItMainactivityinstrument
 	return a, nil
 }
 
-var _templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x90\x3f\x4f\xc4\x30\x0c\xc5\xf7\x7c\x0a\x8f\xed\xe2\x91\xe5\x26\x10\x12\x13\x03\x08\x3e\x40\x9a\xfa\x7a\xa1\x7f\x6c\x1c\x47\x0c\x55\xbf\x3b\x4a\x75\xa8\xd1\x31\x40\x87\xca\xb2\xdf\xfb\xbd\xa7\x88\x0f\xa3\x1f\x08\xd6\x15\xf0\x49\x39\x0b\x6c\xdb\xc9\xb9\x38\x0b\xab\x41\xe0\x19\x49\x62\xe2\x9e\xee\xf0\xe2\xc3\x18\x0d\x67\x0e\x63\x12\xa5\x94\x18\x9f\x8f\xf9\x30\xd5\x28\xf4\x22\xb5\xea\x8d\x92\xdd\x8b\x1c\xe2\x64\xde\x62\xf8\x33\xe8\x33\xc7\x30\xe2\x4b\xf9\x3f\xe4\x38\xf5\x15\x12\xbf\xa2\x5d\x4e\xce\x49\xee\xa6\x42\x9a\x7c\x4a\x70\x2b\x82\xd5\x01\x5c\x15\xd7\xc8\x1a\xb1\xcb\x49\xa1\xa0\x1e\xe9\xec\xf3\x64\xa9\x69\x77\x13\x80\x92\x65\x5d\xf6\x5b\xd3\xee\x9b\xf2\x61\x5c\x3e\x28\x18\x6b\xd3\x62\xef\x87\x81\xb4\x3e\x96\xee\x65\xb3\x0f\xd1\xb8\x69\x4f\x0e\x60\x73\xff\x6a\x71\x66\x7d\xe5\x8e\x27\x0a\xa6\x31\xdc\xf6\xf8\xfd\x9a\x38\x90\x35\x2d\x76\xc5\xfe\x2e\xbc\xfc\x84\x6d\xee\x3b\x00\x00\xff\xff\x75\x1e\x10\x0f\xde\x01\x00\x00")
+var _templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x90\xbd\x4e\xc5\x30\x0c\x85\xf7\x3c\x85\xc7\x76\xf1\xc8\xc0\x06\x42\x62\x62\x00\xc1\x03\xa4\xa9\xdb\x1b\xfa\x63\xe3\x38\x62\xa8\xfa\xee\x28\xe5\x22\x82\xb8\xc3\xcd\x64\xf9\x7c\x3e\xe7\x28\xe2\xc3\xe4\x47\x82\x6d\x03\x7c\x54\xce\x02\xfb\xee\x5c\x5c\x84\xd5\xfe\x2c\xd1\x8b\xe0\x13\x87\x29\x89\x52\x4a\xfc\x4a\xc9\xee\x44\x7e\xd0\xc0\x0b\x92\xc4\xc4\x3d\xdd\xe0\xc9\x87\x29\x1a\x2e\xbf\x74\x7d\x79\xed\xc9\x47\x8e\x61\xc2\xfb\x1c\xe7\xfe\xb9\x8c\xb5\x85\xe3\xee\x9d\x82\xc1\xa1\x56\x02\x6c\x0e\x60\xc8\x2b\x7c\x46\x3b\x3d\xd0\xe0\xf3\x6c\xa9\x69\x6f\xa1\x62\xbe\x2d\x49\x0f\x16\x40\xc9\xb2\xae\x70\x31\x07\x8b\x4d\xd3\x1e\x5c\x79\x18\xd7\x12\xcb\xda\xb4\xd8\xfb\x71\x24\xad\xc5\x52\xbe\x6c\x8e\x21\x1a\x1f\xda\xee\xce\x8d\x06\xd6\x17\xee\x78\xa6\x60\x1a\xc3\x55\x9d\xfe\x7f\x37\x8e\x64\x4d\x8b\x5d\xa1\xdf\x84\xd7\x73\xc4\xee\xbe\x02\x00\x00\xff\xff\xee\x82\xbf\xe3\xc8\x01\x00\x00")
 
-func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJavaBytes() ([]byte, error) {
+func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKtBytes() ([]byte, error) {
 	return bindataRead(
-		_templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJava,
-		"templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.java",
+		_templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt,
+		"templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt",
 	)
 }
 
-func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJava() (*asset, error) {
-	bytes, err := templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJavaBytes()
+func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt() (*asset, error) {
+	bytes, err := templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKtBytes()
 	if err != nil {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.java", size: 478, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt", size: 456, mode: os.FileMode(420), modTime: time.Unix(1530397363, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -3355,7 +3355,7 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/kotlin_android_app_dagger/src_files/main/MainActivityModule.kt": templatesLangKotlin_android_app_daggerSrc_filesMainMainactivitymoduleKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/main/MainFragment.kt": templatesLangKotlin_android_app_daggerSrc_filesMainMainfragmentKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.java": templatesLangKotlin_android_app_daggerSrc_filesTestItMainactivityinstrumentedtestJava,
-	"templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.java": templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJava,
+	"templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt": templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/test/ut/app/MockspressoTestApp.kt": templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.kt": templatesLangKotlin_android_app_daggerSrc_filesTestUtBaseBaseappcompatactivitytestKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseFragmentTest.kt": templatesLangKotlin_android_app_daggerSrc_filesTestUtBaseBasefragmenttestKt,
@@ -3651,7 +3651,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 							"MainActivityInstrumentedTest.java": &bintree{templatesLangKotlin_android_app_daggerSrc_filesTestItMainactivityinstrumentedtestJava, map[string]*bintree{}},
 						}},
 						"ut": &bintree{nil, map[string]*bintree{
-							"BuildMockspresso.java": &bintree{templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoJava, map[string]*bintree{}},
+							"BuildMockspresso.kt": &bintree{templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt, map[string]*bintree{}},
 							"app": &bintree{nil, map[string]*bintree{
 								"MockspressoTestApp.kt": &bintree{templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappKt, map[string]*bintree{}},
 							}},
