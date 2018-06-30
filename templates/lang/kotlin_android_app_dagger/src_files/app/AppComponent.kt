@@ -10,7 +10,7 @@ import javax.inject.Singleton
     AndroidSupportInjectionModule::class,
     {{ .CamelNameWithoutApp }}AppModule::class,
     RootBindingModule::class))
-internal interface {{ .CamelNameWithoutApp }}AppComponent : AndroidInjector<{{ .CamelNameWithoutApp }}App> {
+interface {{ .CamelNameWithoutApp }}AppComponent : AndroidInjector<{{ .CamelNameWithoutApp }}App> {
 
   @Component.Builder
   abstract class Builder : AndroidInjector.Builder<{{ .CamelNameWithoutApp }}App>()

@@ -7,7 +7,7 @@ import dagger.Module
 import javax.inject.Singleton
 
 @Module(includes = arrayOf(ApplicationContextModule::class))
-internal abstract class {{ .CamelNameWithoutApp }}AppModule {
+abstract class {{ .CamelNameWithoutApp }}AppModule {
 
   @Binds
   @Singleton
