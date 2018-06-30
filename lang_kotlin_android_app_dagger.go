@@ -112,8 +112,8 @@ func (kad *kotlinAndroidApplicationWithDagger) generateLangSpecificFiles(data *P
 		kad,
 		data)
 	templateTemplateableToFile(
-		"src_files/test/ut/app/MockspressoTestApp.java",
-		filepath.Join(testAppPath, "MockspressoTestApp.java"),
+		"src_files/test/ut/app/MockspressoTestApp.kt",
+		filepath.Join(testAppPath, "MockspressoTestApp.kt"),
 		kad,
 		data)
 	templateTemplateableToFile(
