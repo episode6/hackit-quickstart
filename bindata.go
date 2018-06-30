@@ -121,7 +121,7 @@
 // templates/lang/kotlin_android_app_dagger/src_files/app/AppComponent.kt
 // templates/lang/kotlin_android_app_dagger/src_files/app/AppModule.kt
 // templates/lang/kotlin_android_app_dagger/src_files/app/RootBindingModule.kt
-// templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.java
+// templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt
 // templates/lang/kotlin_android_app_dagger/src_files/base/BaseAppCompatActivity.java
 // templates/lang/kotlin_android_app_dagger/src_files/base/BaseFragment.java
 // templates/lang/kotlin_android_app_dagger/src_files/main/MainActivity.java
@@ -2635,22 +2635,22 @@ func templatesLangKotlin_android_app_daggerSrc_filesAppRootbindingmoduleKt() (*a
 	return a, nil
 }
 
-var _templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJava = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x9c\x90\xbf\x6a\xf4\x30\x10\xc4\x7b\x3d\xc5\x96\x77\xcd\x96\x5f\x63\x3e\xb8\x5c\x8a\x54\xa9\xf2\x04\xeb\xd5\xe2\x6c\xce\x96\x84\xb4\x0e\x17\x8c\xdf\x3d\xf8\x8f\x70\x38\x52\xa5\xd2\x30\x62\x7e\x33\x6c\x22\xbe\x51\x27\x30\x4d\x80\x2f\x39\x8e\x09\xe6\x19\x5b\x2a\xd2\x38\xa7\x43\x8a\xd9\x80\x82\xcf\x51\x3d\x52\x4a\xf8\xc4\xa6\x9f\x6a\x5f\xcd\xe3\x27\xc7\x60\x12\x0c\x9f\x97\xf7\x6e\x47\x9a\xe3\x80\x92\xb4\x44\x2f\xff\xf0\x9d\xf8\xa6\x86\x35\xa4\xe1\x43\xd8\xb6\xec\xdd\x70\x88\x7e\xec\x05\xdf\x38\x26\xf1\x3b\xe8\x75\xf5\x9a\x3f\xd0\xca\x82\xa9\x7b\x56\xe6\x31\xca\x53\xd7\x49\xc6\xab\x06\x5f\x9a\x07\xb3\x36\xba\xcb\xa6\x4e\x1a\xb8\x1f\xbd\x14\xf8\x0f\xd3\x2f\xdb\x90\x7b\x2a\x65\x3e\xbb\x34\xb6\xbd\x32\x50\x5b\x2c\x13\x1b\xac\x3e\x5c\xa9\x48\xbd\xda\x16\x80\xc9\x39\x80\xcb\x5a\xbe\x88\x9f\x13\x1d\x1c\xf9\xdd\x87\x56\x43\x6d\x3c\x55\x12\xd0\x2e\xce\x8d\x9b\xdd\x77\x00\x00\x00\xff\xff\x16\x4a\xe1\x80\xc5\x01\x00\x00")
+var _templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x9c\x90\x31\x4f\xc4\x30\x0c\x85\xf7\xfc\x0a\x8f\xed\xe2\x91\xa1\x12\x52\x39\x06\x26\xc4\xc0\x2f\x70\x13\x5f\x31\xd7\x26\x51\xe2\xa2\x3b\x55\xfd\xef\xe8\xda\x06\x89\x8a\x89\x29\xd1\xb3\xfd\xbd\xa7\x17\xc9\x5e\xa8\x67\x98\x67\xc0\x97\x14\xa6\x08\xcb\x82\x1d\x65\x36\x46\xc6\x18\x92\x02\x79\x97\x82\x38\xa4\x18\xf1\xc9\xaa\x7c\x89\xde\x8e\x33\x1b\xbc\xb2\x57\x7c\xbe\xbf\x57\x2d\x63\x1b\x46\xe4\x28\x39\x38\x7e\xc0\x0f\xb2\x17\x51\x2c\x27\xe2\x3f\xd9\xea\x76\x79\x55\x1c\x83\x9b\x06\xc6\x77\x1b\x22\xbb\x1d\xf3\xba\x6a\xff\x80\xe5\x3b\xa5\x84\x59\x91\x05\xe2\xa8\xef\x39\xe1\x49\xbc\xcb\x07\x6d\x77\x33\xed\xf6\xa9\xc4\xdb\x61\x72\x9c\xe1\x11\x28\x25\xba\xbd\x9d\xab\x3f\xd2\x35\x8d\x1d\x28\xe7\xba\x36\xd4\x65\x4d\x64\x15\x56\x01\x4e\x94\xb9\xd4\xb5\xad\xc2\x6c\x0c\x40\xbb\x79\x03\xb4\xbf\xf2\x01\x88\x57\x4e\x9e\x06\xf8\x01\x9d\x27\x0f\x9d\xf8\x62\x58\xd1\x8e\x6b\xa0\x80\xeb\x06\x4a\xe5\x8b\xf9\x0e\x00\x00\xff\xff\x5f\xb9\xe6\x6d\xcb\x01\x00\x00")
 
-func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJavaBytes() ([]byte, error) {
+func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKtBytes() ([]byte, error) {
 	return bindataRead(
-		_templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJava,
-		"templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.java",
+		_templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt,
+		"templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt",
 	)
 }
 
-func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJava() (*asset, error) {
-	bytes, err := templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJavaBytes()
+func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt() (*asset, error) {
+	bytes, err := templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKtBytes()
 	if err != nil {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.java", size: 453, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt", size: 459, mode: os.FileMode(420), modTime: time.Unix(1530392348, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -3348,7 +3348,7 @@ var _bindata = map[string]func() (*asset, error){
 	"templates/lang/kotlin_android_app_dagger/src_files/app/AppComponent.kt": templatesLangKotlin_android_app_daggerSrc_filesAppAppcomponentKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/app/AppModule.kt": templatesLangKotlin_android_app_daggerSrc_filesAppAppmoduleKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/app/RootBindingModule.kt": templatesLangKotlin_android_app_daggerSrc_filesAppRootbindingmoduleKt,
-	"templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.java": templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJava,
+	"templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt": templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt,
 	"templates/lang/kotlin_android_app_dagger/src_files/base/BaseAppCompatActivity.java": templatesLangKotlin_android_app_daggerSrc_filesBaseBaseappcompatactivityJava,
 	"templates/lang/kotlin_android_app_dagger/src_files/base/BaseFragment.java": templatesLangKotlin_android_app_daggerSrc_filesBaseBasefragmentJava,
 	"templates/lang/kotlin_android_app_dagger/src_files/main/MainActivity.java": templatesLangKotlin_android_app_daggerSrc_filesMainMainactivityJava,
@@ -3637,7 +3637,7 @@ var _bintree = &bintree{nil, map[string]*bintree{
 						"RootBindingModule.kt": &bintree{templatesLangKotlin_android_app_daggerSrc_filesAppRootbindingmoduleKt, map[string]*bintree{}},
 					}},
 					"base": &bintree{nil, map[string]*bintree{
-						"BaseActivityModule.java": &bintree{templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleJava, map[string]*bintree{}},
+						"BaseActivityModule.kt": &bintree{templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt, map[string]*bintree{}},
 						"BaseAppCompatActivity.java": &bintree{templatesLangKotlin_android_app_daggerSrc_filesBaseBaseappcompatactivityJava, map[string]*bintree{}},
 						"BaseFragment.java": &bintree{templatesLangKotlin_android_app_daggerSrc_filesBaseBasefragmentJava, map[string]*bintree{}},
 					}},
