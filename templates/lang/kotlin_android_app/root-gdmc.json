@@ -1,4 +1,9 @@
 {
+  "com.android.support.constraint:constraint-layout": {
+    "groupId": "com.android.support.constraint",
+    "artifactId": "constraint-layout",
+    "version": "{{ .LookupVersion "com.android.support.constraint:constraint-layout" }}"
+  },
   "com.android.support:animated-vector-drawable": {
       "groupId": "com.android.support",
       "artifactId": "animated-vector-drawable",
