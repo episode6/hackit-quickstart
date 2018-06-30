@@ -28,7 +28,7 @@ class MainActivityTest {
     val activity = controller.get()
 
     assertThat(activity.title)
-        .isEqualTo("MyCoolTestApp")
+        .isEqualTo("{{ .CamelName }}")
 
     controller.pause().stop().destroy()
   }
