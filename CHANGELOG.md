@@ -1,5 +1,7 @@
 # ChangeLog
 
+### v0.0.8-SNAPSHOT - unreleased
+
 ### v0.0.7-SNAPSHOT - unreleased
  - introduce ChangeLog
  - add `kotlin` library support
