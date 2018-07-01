@@ -31,16 +31,16 @@ Usage of hackit-quickstart:
     	GroupId (aka package name) of library to generate
   -lang string
     	Language of project to create. Valid values are
-    java: A deployable java library
-    groovy: A deployable groovy library
-    gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
-    kotlin: A deployable kotlin library
-    kotlinAndroid: An android library
-    kotlinAndroidApp: An android application with kotlin support
-    kotlinAndroidAppDagger: An android application with kotlin support and a default dagger 2 implementation
-    android: An android library
-    androidApp: An android application
-    androidAppDagger: An android application with a default dagger 2 implementation
+		java: A deployable java library
+		groovy: A deployable groovy library
+		gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
+		kotlin: A deployable kotlin library
+		kotlinAndroid: An android library
+		kotlinAndroidApp: An android application with kotlin support
+		kotlinAndroidAppDagger: An android application with kotlin support and a default dagger 2 implementation
+		android: An android library
+		androidApp: An android application
+		androidAppDagger: An android application with a default dagger 2 implementation
   -licenseName string
     	The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
   -name string
