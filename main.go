@@ -11,7 +11,7 @@ import (
 )
 
 // AppVersion is the current version of this app
-const AppVersion = "0.0.7-SNAPSHOT"
+const AppVersion = "0.0.7"
 
 var projectTypes = map[string]projectTemplate{
 	"single": &singleProject{},
