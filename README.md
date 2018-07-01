@@ -14,13 +14,13 @@ go get -u github.com/episode6/hackit-quickstart/...
 ```bash
 Usage of hackit-quickstart:
   -androidCompileSdkVersion string
-    	For android apps/libs, the value of compileSdkVersion (default "26")
+    	For android apps/libs, the value of compileSdkVersion (default "27")
   -androidNdkDir string
-    	Android ndk directory (default "/android/sdk/ndk-bundle")
+    	Android ndk directory (default "$ANDROID_HOME/ndk-bundle")
   -androidSdkDir string
-    	Android sdk directory (default "/android/sdk")
+    	Android sdk directory (default "$ANDROID_HOME")
   -config string
-    	path to config file (default "/Users/ghackett/.hackit-quickstart")
+    	path to config file (default "~/.hackit-quickstart")
   -deployable
     	Make a deployable library (has no effect on apps)
   -gdmc string
@@ -31,14 +31,16 @@ Usage of hackit-quickstart:
     	GroupId (aka package name) of library to generate
   -lang string
     	Language of project to create. Valid values are
-		kotlin: A deployable kotlin library
-		kotlinAndroid: An android library
-		java: A deployable java library
-		groovy: A deployable groovy library
-		gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
-		android: An android library
-		androidApp: An android application
-		androidAppDagger: An android application with a default dagger 2 implementation
+    java: A deployable java library
+    groovy: A deployable groovy library
+    gradle: A deployable groovy library with the gradle api and an empty gradle plugin.
+    kotlin: A deployable kotlin library
+    kotlinAndroid: An android library
+    kotlinAndroidApp: An android application with kotlin support
+    kotlinAndroidAppDagger: An android application with kotlin support and a default dagger 2 implementation
+    android: An android library
+    androidApp: An android application
+    androidAppDagger: An android application with a default dagger 2 implementation
   -licenseName string
     	The name of the license you want to use (for deployable libraries) (default "The MIT License (MIT)")
   -name string
