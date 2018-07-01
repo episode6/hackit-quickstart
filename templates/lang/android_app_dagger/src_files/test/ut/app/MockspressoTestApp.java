@@ -7,6 +7,7 @@ import android.content.ContentProvider;
 import android.support.v4.app.Fragment;
 
 import com.episode6.hackit.mockspresso.Mockspresso;
+import com.episode6.hackit.mockspresso.quick.QuickMockspresso;
 
 import {{ .Group }}.BuildMockspresso;
 
@@ -34,7 +35,7 @@ public class MockspressoTestApp extends {{ .CamelNameWithoutApp }}App {
   }
 
   private final DispatchingInjectors mInjectors = new DispatchingInjectors();
-  private final Mockspresso mAppMockspresso = BuildMockspresso.withDefaults()
+  private final QuickMockspresso mAppMockspresso = BuildMockspresso.withDefaults()
       .testResources(mInjectors)
       .build();
 
@@ -48,7 +49,7 @@ public class MockspressoTestApp extends {{ .CamelNameWithoutApp }}App {
     };
   }
 
-  public Mockspresso.Builder buildUpon() {
+  public QuickMockspresso.Builder buildUpon() {
     return mAppMockspresso.buildUpon().testResources(new InjectorAttacher());
   }
 
