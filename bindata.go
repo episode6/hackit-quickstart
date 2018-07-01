@@ -310,7 +310,7 @@ func templatesLangAndroid_appProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1184, mode: os.FileMode(420), modTime: time.Unix(1527554459, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/proj-build.gradle", size: 1184, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -370,7 +370,7 @@ func templatesLangAndroid_appRootGdmcJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2665, mode: os.FileMode(420), modTime: time.Unix(1530399602, 0)}
+	info := bindataFileInfo{name: "templates/lang/android_app/root-gdmc.json", size: 2665, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2270,7 +2270,7 @@ func templatesLangKotlin_android_appProguardRulesPro() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proguard-rules.pro", size: 1, mode: os.FileMode(420), modTime: time.Unix(1527554371, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proguard-rules.pro", size: 1, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2290,7 +2290,7 @@ func templatesLangKotlin_android_appProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-build.gradle", size: 1258, mode: os.FileMode(420), modTime: time.Unix(1527555977, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-build.gradle", size: 1258, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2310,7 +2310,7 @@ func templatesLangKotlin_android_appProjGradleProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1527554371, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2330,7 +2330,7 @@ func templatesLangKotlin_android_appProjLocalProperties() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1527554371, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2350,7 +2350,7 @@ func templatesLangKotlin_android_appRootGdmcJson() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/root-gdmc.json", size: 3479, mode: os.FileMode(420), modTime: time.Unix(1530399528, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/root-gdmc.json", size: 3479, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2370,7 +2370,7 @@ func templatesLangKotlin_android_appSrc_filesAndroidmanifestXml() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/AndroidManifest.xml", size: 607, mode: os.FileMode(420), modTime: time.Unix(1527554371, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/AndroidManifest.xml", size: 607, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2390,7 +2390,7 @@ func templatesLangKotlin_android_appSrc_filesMainactivityKt() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivity.kt", size: 486, mode: os.FileMode(420), modTime: time.Unix(1527556379, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivity.kt", size: 486, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2410,7 +2410,7 @@ func templatesLangKotlin_android_appSrc_filesMainactivityinstrumentedtestKt() (*
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityInstrumentedTest.kt", size: 1121, mode: os.FileMode(420), modTime: time.Unix(1527593937, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityInstrumentedTest.kt", size: 1121, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2430,7 +2430,7 @@ func templatesLangKotlin_android_appSrc_filesMainactivitytestKt() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityTest.kt", size: 536, mode: os.FileMode(420), modTime: time.Unix(1527557538, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainActivityTest.kt", size: 536, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2450,7 +2450,7 @@ func templatesLangKotlin_android_appSrc_filesMainfragmentKt() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainFragment.kt", size: 595, mode: os.FileMode(420), modTime: time.Unix(1527556719, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app/src_files/MainFragment.kt", size: 595, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2470,7 +2470,7 @@ func templatesLangKotlin_android_app_daggerProguardRulesPro() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proguard-rules.pro", size: 66, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2490,7 +2490,7 @@ func templatesLangKotlin_android_app_daggerProjBuildGradle() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-build.gradle", size: 1778, mode: os.FileMode(420), modTime: time.Unix(1527641460, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-build.gradle", size: 1778, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2510,7 +2510,7 @@ func templatesLangKotlin_android_app_daggerProjGradleProperties() (*asset, error
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-gradle.properties", size: 29, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2530,7 +2530,7 @@ func templatesLangKotlin_android_app_daggerProjLocalProperties() (*asset, error)
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/proj-local.properties", size: 90, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2550,7 +2550,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesAndroidmanifestXml() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1527596340, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/AndroidManifest.xml", size: 668, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2570,7 +2570,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesAppAppKt() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/App.kt", size: 344, mode: os.FileMode(420), modTime: time.Unix(1527641688, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/App.kt", size: 344, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2590,7 +2590,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesAppAppcomponentKt() (*asset,
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/AppComponent.kt", size: 549, mode: os.FileMode(420), modTime: time.Unix(1530395551, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/AppComponent.kt", size: 549, mode: os.FileMode(420), modTime: time.Unix(1530413107, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2610,7 +2610,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesAppAppmoduleKt() (*asset, er
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/AppModule.kt", size: 431, mode: os.FileMode(420), modTime: time.Unix(1530395568, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/AppModule.kt", size: 431, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2630,7 +2630,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesAppRootbindingmoduleKt() (*a
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/RootBindingModule.kt", size: 528, mode: os.FileMode(420), modTime: time.Unix(1527679764, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/app/RootBindingModule.kt", size: 528, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2650,7 +2650,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseactivitymoduleKt() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt", size: 459, mode: os.FileMode(420), modTime: time.Unix(1530392348, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseActivityModule.kt", size: 459, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2670,7 +2670,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesBaseBaseappcompatactivityKt(
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseAppCompatActivity.kt", size: 767, mode: os.FileMode(420), modTime: time.Unix(1530393640, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseAppCompatActivity.kt", size: 767, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2690,7 +2690,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesBaseBasefragmentKt() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseFragment.kt", size: 957, mode: os.FileMode(420), modTime: time.Unix(1530394702, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/base/BaseFragment.kt", size: 957, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2710,7 +2710,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesMainMainactivityKt() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainActivity.kt", size: 516, mode: os.FileMode(420), modTime: time.Unix(1530395155, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainActivity.kt", size: 516, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2730,7 +2730,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesMainMainactivitymoduleKt() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainActivityModule.kt", size: 626, mode: os.FileMode(420), modTime: time.Unix(1530392560, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainActivityModule.kt", size: 626, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2750,7 +2750,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesMainMainfragmentKt() (*asset
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainFragment.kt", size: 624, mode: os.FileMode(420), modTime: time.Unix(1530393678, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/main/MainFragment.kt", size: 624, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2770,12 +2770,12 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestItMainactivityinstrument
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.kt", size: 1158, mode: os.FileMode(420), modTime: time.Unix(1530398278, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/it/MainActivityInstrumentedTest.kt", size: 1158, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x8c\x90\xbd\x4e\xc5\x30\x0c\x85\xf7\x3c\x85\xc7\x76\xf1\xc8\xc0\x06\x42\x62\x62\x00\xc1\x03\xa4\xa9\xdb\x1b\xfa\x63\xe3\x38\x62\xa8\xfa\xee\x28\xe5\x22\x82\xb8\xc3\xcd\x64\xf9\x7c\x3e\xe7\x28\xe2\xc3\xe4\x47\x82\x6d\x03\x7c\x54\xce\x02\xfb\xee\x5c\x5c\x84\xd5\xfe\x2c\xd1\x8b\xe0\x13\x87\x29\x89\x52\x4a\xfc\x4a\xc9\xee\x44\x7e\xd0\xc0\x0b\x92\xc4\xc4\x3d\xdd\xe0\xc9\x87\x29\x1a\x2e\xbf\x74\x7d\x79\xed\xc9\x47\x8e\x61\xc2\xfb\x1c\xe7\xfe\xb9\x8c\xb5\x85\xe3\xee\x9d\x82\xc1\xa1\x56\x02\x6c\x0e\x60\xc8\x2b\x7c\x46\x3b\x3d\xd0\xe0\xf3\x6c\xa9\x69\x6f\xa1\x62\xbe\x2d\x49\x0f\x16\x40\xc9\xb2\xae\x70\x31\x07\x8b\x4d\xd3\x1e\x5c\x79\x18\xd7\x12\xcb\xda\xb4\xd8\xfb\x71\x24\xad\xc5\x52\xbe\x6c\x8e\x21\x1a\x1f\xda\xee\xce\x8d\x06\xd6\x17\xee\x78\xa6\x60\x1a\xc3\x55\x9d\xfe\x7f\x37\x8e\x64\x4d\x8b\x5d\xa1\xdf\x84\xd7\x73\xc4\xee\xbe\x02\x00\x00\xff\xff\xee\x82\xbf\xe3\xc8\x01\x00\x00")
+var _templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x94\x91\xbf\x4e\xf5\x30\x0c\xc5\xf7\x3c\x85\xc7\x76\xf1\xf8\x0d\xdf\x06\x42\x62\x62\x00\xc1\x03\xa4\xa9\xdb\x1b\xfa\xc7\xc6\x71\xc4\x50\xf5\xdd\x51\xc2\x45\x14\x2e\x03\x64\x88\x22\x9f\xe3\xdf\x71\x64\xf1\x61\xf2\x23\xc1\xb6\x01\xde\x2a\x67\x81\x7d\x77\x2e\x2e\xc2\x6a\x5f\x8a\xe8\x45\xf0\x8e\xc3\x94\x44\x29\x25\x7e\xa4\x64\x57\x22\x1f\xd6\xc0\x0b\x92\xc4\xc4\x3d\xfd\xc3\x93\x0f\x53\x34\x5c\x3e\xdd\xf8\x92\x63\x98\xf0\xbe\xdc\x07\xc8\xdf\xba\xaf\x73\x9c\xfb\x0b\x84\xe3\xee\x99\x82\x41\x55\x0f\x02\x6c\x0e\x60\xc8\x2b\xbc\x46\x3b\xdd\xd0\xe0\xf3\x6c\xa9\x69\xff\xc3\x77\xc2\x3b\x97\xb4\x36\x00\x28\x59\xd6\x15\x7e\x0c\xc3\xc2\x6a\xda\xea\x2b\x07\xe3\x5a\xb2\x59\x9b\x16\x7b\x3f\x8e\xa4\x47\xb1\xfc\xa0\x54\xea\x23\x1a\x57\x6d\x77\xe7\xb1\x06\xd6\x07\xee\x78\xa6\x60\x1a\xc3\xef\x07\xbb\xdc\x01\x8e\x64\x4d\x8b\x5d\x71\x3f\x09\xaf\xe7\x9c\xdd\xbd\x05\x00\x00\xff\xff\x78\xeb\x4d\x37\xdd\x01\x00\x00")
 
 func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKtBytes() ([]byte, error) {
 	return bindataRead(
@@ -2790,12 +2790,12 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtBuildmockspressoKt() (
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt", size: 456, mode: os.FileMode(420), modTime: time.Unix(1530397363, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/BuildMockspresso.kt", size: 477, mode: os.FileMode(420), modTime: time.Unix(1530448103, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
 
-var _templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x9c\x56\x4d\x6f\xe3\x36\x10\xbd\xeb\x57\xcc\x51\x0a\xb0\xdc\x1e\x8a\x1e\x82\xc4\xa8\x92\xb4\x45\x0f\x5b\x14\x69\x8b\x1e\x8a\x02\x4b\x53\x63\x99\x89\x44\x12\xe4\x50\x41\x60\xf8\xbf\x2f\x28\x89\xb2\x44\x7f\xac\x91\x1c\x22\x45\x9c\x79\x6f\x38\x7c\x9c\x17\xc3\xc5\x2b\xaf\x11\x76\x3b\x60\xbf\x59\xed\x0d\xec\xf7\x8c\x1b\x93\x65\xb2\x35\xda\xd2\x72\xe1\xc1\xcb\xa6\xfa\xa2\xc5\xab\x33\x16\x9d\xd3\x31\x88\xab\xca\x6a\x59\x85\x44\x56\x0a\x92\x9d\xa4\xf7\x53\x6b\x7f\xa1\xed\xa4\xc0\x74\x49\x68\x45\xa8\x88\x3d\x58\xcd\x2b\xc1\x1d\x3d\xa3\x40\xd9\xa1\x3d\x17\xf8\x38\x3c\xff\xb4\xba\x93\xd5\x71\x98\xf3\x26\xfc\xcd\xba\x1f\x7b\xd6\x5f\x2d\xaf\x5b\x54\x14\xc3\x84\x6e\x19\x1a\xe9\x74\x85\x3f\xb1\x2d\x17\xaf\x92\x58\x7b\xd8\x14\x3b\xb1\xc1\x8a\xd7\x35\x5a\x16\x09\xca\xe1\xf9\xbb\x7a\x41\x41\xda\x9e\x89\x7a\x92\xce\x70\x12\x5b\xa9\xea\xeb\x12\x62\xdd\x4f\xfd\xe7\xd2\x98\x46\x0a\x4e\x52\xab\x18\xaf\x6d\xcd\x5e\xbc\x92\xc4\x1e\x70\xa3\x2d\xce\xbf\x87\x1d\x48\xd2\xac\xb4\xb5\x0f\xbb\xfd\x12\xa8\xd1\x3a\xc6\xd5\xfb\xa9\xb8\xb0\xcb\x73\xdf\xc3\xb3\xd2\xa5\x72\x6f\x87\xe6\xce\x63\x1c\xf9\xf5\x5a\xaa\x9a\x1d\x87\x58\xbd\xd6\x0d\x0a\xb2\x52\xb0\x67\xaf\x48\xb6\xf8\x8b\xea\xa4\xd5\xaa\x3f\x82\xec\xf3\xcd\x4d\x06\x37\x50\x2a\x90\xad\x69\x30\x7c\xec\xb7\x08\x7a\x03\xff\x05\xb1\x3d\xf2\x16\x9b\x3f\x78\x8b\xff\x4a\xda\x6a\x4f\xa5\x09\xd2\x2b\x8d\xf9\x1f\x68\xcb\x09\x64\xdf\x43\x07\xce\xaf\x3f\x09\xdd\x1a\xad\x50\x91\x03\xef\xa4\xaa\x03\xf2\xec\xf4\x18\x3c\xa1\x93\xb5\xc2\x0a\x36\xda\x82\x77\x08\x6f\x92\xb6\xf0\x3c\xab\x31\x83\x9b\xcf\x99\x68\xb8\x73\xf3\xcc\xbf\xd1\xf5\xc4\xb7\x70\xb1\xa4\xbc\x80\x5d\x96\x01\x18\x2b\x3b\x4e\x08\x1d\x6f\xc6\xfa\xb4\x75\x70\x0f\x33\x05\xc4\xa3\x77\x79\x91\x24\x70\x63\x66\xcc\x70\x0f\xe9\x2d\x63\xa1\xe8\x27\xdc\x70\xdf\xd0\x90\x1e\x7e\x18\x61\xb8\x28\x4e\x7b\x2b\xd0\xe5\x13\xed\xb4\xbe\x0e\x30\x79\x11\xea\xd3\x1d\x5a\x2b\x2b\x84\x8d\x57\x81\x2f\xea\x2a\x16\x95\x17\xb7\x90\x48\xf4\x4e\x7b\x82\x23\x21\xae\x60\xd7\xc3\x5b\x24\x6f\x15\xe8\x75\x08\xfe\x5e\x97\x1e\xe3\x29\x8d\xc9\x49\x3d\x43\xe5\xb9\x54\x8e\xb8\x12\xf8\x1d\xb0\x62\x02\x81\xa4\x73\x2c\x01\x8a\x8d\xd8\x67\xf1\xf7\x3e\xf4\x22\x50\xf6\xad\xf9\xc7\x68\x15\x36\x3e\x87\xe8\x5b\x8f\x76\xb9\xcb\x84\x66\x96\x9c\x9c\x41\xec\x5d\x49\xc4\xc3\xdd\xcb\x8b\x22\xb2\x4a\x45\x68\x55\x2f\x0f\x85\x16\x06\xc1\xa5\xf1\x23\xed\xcf\xe3\xe5\x0e\xef\xa1\x5a\x87\xe4\x4d\x3e\x9b\x50\x8b\x9a\x0f\x0d\x99\x24\xc0\xfa\x8c\x83\xe2\x66\xa9\xc5\xb2\x19\x51\x87\x43\x3d\xa7\xe4\x1a\x6b\xea\xc7\x45\x78\x6b\x38\xa1\x54\x92\xa0\xe3\x16\xf8\x38\xec\x63\xf8\x2d\x9c\x1f\x7a\x77\xd1\x19\x56\x97\x10\xd7\xa9\x07\x5c\x05\x7d\xe4\x1c\x17\x39\x36\xa3\x21\x5c\x05\x1d\xdd\xe3\x22\xa2\x1b\x8c\xed\x2a\xc0\xd1\x04\x2f\xe2\x89\xa5\xc1\x5d\x85\x9b\x98\xe2\x2a\x5b\x0a\xe8\xa4\x1c\xce\x28\xe9\x30\xc7\x86\x01\x0f\xf7\x30\xbc\xdc\x95\xea\x7d\x05\x3b\x90\xaa\xd3\xc3\x44\x80\x4f\xab\xe9\x3e\xb6\xa7\x2e\x63\x0c\x64\x35\x52\xf4\xa6\xfc\x87\xa2\x98\xb2\x94\x6f\x9a\xe9\xaa\x8e\x2f\xd1\x7c\xf2\x79\x15\x05\xfb\xfa\xb6\x45\xf5\x35\x4f\x55\x57\x44\x36\xae\xde\xf3\xa8\xb2\xdb\xdb\x5e\xd4\xec\x85\x77\x7c\x62\xbb\x8c\x7b\x56\x7b\x0b\x82\x23\xad\x7d\x80\x29\x55\xe0\x82\x20\x2a\xee\x03\xb8\x89\x0e\x17\xb0\xa3\xee\x3e\x80\x7a\x46\x8d\x0b\xf4\x44\x7d\x27\x58\xa6\xa1\x13\x5c\x9b\xab\xde\xf3\x07\xff\xd8\x4d\x4a\xad\x91\x92\x91\x1c\x9d\x38\x4a\x73\x9c\xc9\xc7\xff\x5a\xb0\x99\xaf\x01\x3f\xe5\xe6\xb3\x2a\xf6\xd9\xb7\x00\x00\x00\xff\xff\x2c\x76\x40\x0e\xf9\x0a\x00\x00")
+var _templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappKt = []byte("\x1f\x8b\x08\x00\x00\x00\x00\x00\x00\xff\x9c\x56\xc1\x6e\xe3\x36\x10\xbd\xeb\x2b\xe6\x28\x05\x58\x6e\x0f\x45\x0f\x46\x62\x54\x49\xda\xa2\x87\x2d\xda\xb4\x45\x0f\x45\x81\xa5\xa9\xb1\xcc\x44\x22\x59\x72\xa8\x20\x30\xfc\xef\x0b\x4a\xa2\x2c\xc9\xb2\x63\x24\x07\x49\x91\x66\xde\x1b\x0e\x1f\xe7\xd9\x70\xf1\xc2\x4b\x84\xfd\x1e\xd8\x2f\x56\x7b\x03\x87\x03\xe3\xc6\x24\x89\xac\x8d\xb6\x34\xfd\x70\xef\x65\x55\x7c\xd1\xe2\xc5\x19\x8b\xce\xe9\x18\xc4\x55\x61\xb5\x2c\x42\x22\xcb\x05\xc9\x46\xd2\xdb\xd2\xb7\x3f\xd1\x36\x52\xe0\xfc\x93\xd0\x8a\x50\x11\xbb\xb7\x9a\x17\x82\x3b\x7a\x42\x81\xb2\x41\x7b\x2e\xf0\xa1\xbb\xff\x6e\x75\x23\x8b\xd3\x30\xe7\x4d\xf8\x9f\x35\xdf\xb7\xac\x3f\x5b\x5e\xd6\xa8\x28\x86\x09\x5d\x33\x34\xd2\xe9\x02\x7f\x60\x3b\x2e\x5e\x24\xb1\xfa\xb8\x28\xb6\xb0\xc0\xf7\x52\xfe\xf7\x52\xbc\xb0\x3f\xc2\x75\x21\xbb\xe0\x65\x89\x96\xc5\xf2\xf2\xee\xfe\xab\x7a\x46\x41\xda\x9e\x89\x7a\x94\xce\x70\x12\x3b\xa9\xca\xeb\x12\xe2\xaa\x1f\xdb\xd7\xb9\x31\x95\x14\x9c\xa4\x56\x31\x5e\xdb\x92\x3d\x7b\x25\x89\xdd\xe3\x56\x5b\x1c\xbf\x0f\x8b\x91\xa4\x59\x6e\x4b\x1f\x7a\xf5\x25\x50\xa3\x75\x8c\xab\xb7\xa5\xb8\xb0\xca\x73\xef\xc3\xbd\xd0\xb9\x72\xaf\xc7\xad\x19\xc7\x38\xf2\x9b\x8d\x54\x25\x3b\x0d\xb1\x7a\xa3\x2b\x14\x64\xa5\x60\x4f\x5e\x91\xac\xf1\x27\xd5\x48\xab\x55\xbb\x81\xc9\xe7\x9b\x9b\x04\x6e\x20\x57\x20\x6b\x53\x61\x78\xd9\x2e\x11\xf4\x16\xfe\x0d\x52\x7d\xe0\x35\x56\xbf\xf1\x1a\xff\x91\xb4\xd3\x9e\x72\x13\x84\x9b\x1b\xf3\x1f\xd0\x8e\x13\xc8\xb6\x87\x0e\x9c\xdf\x7c\x12\xba\x36\x5a\xa1\x22\x07\xde\x49\x55\x06\xe4\xd1\xee\x31\x78\x44\x27\x4b\x85\x05\x6c\xb5\x05\xef\x10\x5e\x25\xed\xe0\x69\x54\x63\x02\x37\x9f\x13\x51\x71\xe7\xc6\x99\x7f\xa1\x6b\x89\x57\x70\xb1\xa4\x34\x83\x7d\x92\x00\x18\x2b\x1b\x4e\x08\x0d\xaf\xfa\xfa\xb4\x75\x70\x07\x23\x05\xc4\xad\x77\x69\x36\x4b\xe0\xc6\x8c\x98\xe1\x0e\xe6\x67\x94\x85\xa2\x1f\x71\xcb\x7d\x45\x5d\x7a\xf8\x63\x84\xe1\x98\x39\xed\xad\x40\x97\x0e\xb4\xc3\xf7\x4d\x80\x49\xb3\x50\x9f\x6e\xd0\x5a\x59\x20\x6c\xbd\x0a\x7c\x51\x57\xb1\xa8\x34\x5b\xc1\x4c\xa2\xb7\xda\x13\x9c\x08\x71\x0d\xfb\x16\xde\x22\x79\xab\x40\x6f\x42\xf0\x7b\x5d\x7a\x88\xbb\xd4\x27\xcf\xea\xe9\x2a\x4f\xa5\x72\xc4\x95\xc0\x77\xc0\xb2\x01\x04\x66\x9d\x63\x33\xa0\xd8\x88\x43\x12\xaf\x87\xd0\x8b\x40\xd9\xb6\xe6\x6f\xa3\x55\x58\xf8\xfc\xcc\x77\x33\x12\xed\x74\xa9\x33\xae\x11\xc2\x6c\x23\x62\x03\x73\x22\x1e\x0e\x60\x9a\x65\x91\x5a\x2a\x42\xab\x5a\x8d\x28\xb4\xd0\xa9\x6e\x1e\xdf\xd3\xfe\xd8\x9f\xf0\xf0\x1c\x4a\x76\x48\xde\xa4\xa3\x89\xb5\x1a\xeb\xf5\xd8\x95\x41\x07\xac\xcd\x38\xca\x6e\x94\x9a\x4d\x3b\x12\xc5\xd8\xd5\xb3\xa4\xd9\x58\x53\x3b\x33\xc2\x53\xc5\x09\xa5\x92\x04\x0d\xb7\xc0\x7b\xbf\x88\xe1\x2b\x38\x3f\xf9\x6e\xa3\xb9\xac\x2f\x21\x6e\xe6\x36\x72\x15\xf4\x89\xf9\x5c\xe4\xd8\xf6\x9e\x72\x15\x74\x34\xa0\x8b\x88\xae\xf3\xc6\xab\x00\x7b\x1f\xbd\x88\x27\xa6\x1e\x79\x15\xee\xcc\x57\xd7\xc9\x54\x40\x8b\x72\x38\xa3\xa4\xe3\x30\xeb\xa6\x3c\xdc\x41\xf7\x70\x9b\xab\xb7\x35\xec\x41\xaa\x46\x77\x63\x01\x3e\xad\x87\x43\x59\x2f\x9d\xc8\x18\xc8\x4a\xa4\x68\x50\xe9\x77\x59\x36\x64\x29\x5f\x55\xc3\x79\xed\x1f\xa2\x03\xa5\xe3\x2a\x32\xf6\xf5\x75\x87\xea\x6b\x3a\x57\x5d\x16\xd9\xb8\x7a\x4b\xa3\xca\x56\xab\x56\xd4\xec\x99\x37\x7c\x60\xbb\x8c\x7b\x56\x7b\x13\x82\x13\xad\x7d\x80\x69\xae\xc0\x09\x41\x54\xdc\x07\x70\x67\x3a\x9c\xc0\xf6\xba\xfb\x00\xea\x19\x35\x4e\xd0\x67\xea\x5b\x60\x19\x86\x4e\xb0\x6e\xae\x5a\xe3\xef\x4c\x64\x3f\x28\xb5\x44\x0a\x73\x79\xc1\x8e\xa3\x34\xfb\x99\x7c\xfa\xfb\x82\x8d\xcc\x0d\xf8\x92\xa5\x8f\xaa\x38\x24\xdf\x02\x00\x00\xff\xff\x56\xa6\x2e\x03\x3c\x0b\x00\x00")
 
 func templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappKtBytes() ([]byte, error) {
 	return bindataRead(
@@ -2810,7 +2810,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtAppMockspressotestappK
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/app/MockspressoTestApp.kt", size: 2809, mode: os.FileMode(420), modTime: time.Unix(1530398746, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/app/MockspressoTestApp.kt", size: 2876, mode: os.FileMode(420), modTime: time.Unix(1530448199, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2830,7 +2830,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtBaseBaseappcompatactiv
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.kt", size: 1035, mode: os.FileMode(420), modTime: time.Unix(1530393817, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseAppCompatActivityTest.kt", size: 1035, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2850,7 +2850,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtBaseBasefragmenttestKt
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseFragmentTest.kt", size: 1073, mode: os.FileMode(420), modTime: time.Unix(1530394446, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/base/BaseFragmentTest.kt", size: 1073, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2870,7 +2870,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtMainMainactivitytestKt
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/main/MainActivityTest.kt", size: 916, mode: os.FileMode(420), modTime: time.Unix(1530399057, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/main/MainActivityTest.kt", size: 916, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }
@@ -2890,7 +2890,7 @@ func templatesLangKotlin_android_app_daggerSrc_filesTestUtMainMainfragmenttestKt
 		return nil, err
 	}
 
-	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/main/MainFragmentTest.kt", size: 1111, mode: os.FileMode(420), modTime: time.Unix(1530393712, 0)}
+	info := bindataFileInfo{name: "templates/lang/kotlin_android_app_dagger/src_files/test/ut/main/MainFragmentTest.kt", size: 1111, mode: os.FileMode(420), modTime: time.Unix(1530413108, 0)}
 	a := &asset{bytes: bytes, info: info}
 	return a, nil
 }

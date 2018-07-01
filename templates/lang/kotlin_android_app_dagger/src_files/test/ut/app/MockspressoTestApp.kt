@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver
 import android.content.ContentProvider
 import android.support.v4.app.Fragment
 import com.episode6.hackit.mockspresso.Mockspresso
+import com.episode6.hackit.mockspresso.quick.QuickMockspresso
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
 import dagger.android.support.DaggerApplication
@@ -36,7 +37,7 @@ class MockspressoTestApp : {{ .CamelNameWithoutApp }}App() {
     }
   }
 
-  fun buildUpon(): Mockspresso.Builder {
+  fun buildUpon(): QuickMockspresso.Builder {
     return appMockspresso.buildUpon().testResources(InjectorAttacher())
   }
 
