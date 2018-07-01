@@ -11,8 +11,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.robolectric.Robolectric;
 import org.robolectric.RobolectricTestRunner;
-import org.robolectric.android.controller.FragmentController;
 import org.robolectric.annotation.Config;
+import org.robolectric.shadows.support.v4.SupportFragmentController;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -28,7 +28,7 @@ public class MainFragmentTest {
 
   @Test
   public void sanityCheck() {
-    FragmentController<MainFragment> controller = Robolectric.buildFragment(MainFragment.class)
+    SupportFragmentController<MainFragment> controller = SupportFragmentController.of(new MainFragment())
         .create()
         .start()
         .resume()

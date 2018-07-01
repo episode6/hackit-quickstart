@@ -31,7 +31,7 @@ func (al *androidLibrary) buildscriptDependencies() []string {
 }
 
 func (al *androidLibrary) JenkinsCommands() []string {
-	return []string{"buildAndTest", "maybeDeploy"}
+	return []string{"buildAndTest"}
 }
 
 func (al *androidLibrary) deployableBuildscriptDependencies() []string {

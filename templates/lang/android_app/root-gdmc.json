@@ -1,4 +1,9 @@
 {
+  "com.android.support.constraint:constraint-layout": {
+    "groupId": "com.android.support.constraint",
+    "artifactId": "constraint-layout",
+    "version": "{{ .LookupVersion "com.android.support.constraint:constraint-layout" }}"
+  },
   "com.android.support:animated-vector-drawable": {
       "groupId": "com.android.support",
       "artifactId": "animated-vector-drawable",
@@ -53,5 +58,15 @@
       "groupId": "com.android.support",
       "artifactId": "support-vector-drawable",
       "inheritVersion": "com.android.support:appcompat-v7"
+  },
+  "org.robolectric:robolectric": {
+    "groupId": "org.robolectric",
+    "artifactId": "robolectric",
+    "version": "{{ .LookupVersion "org.robolectric:robolectric" }}"
+  },
+  "org.robolectric:shadows-supportv4": {
+    "groupId": "org.robolectric",
+    "artifactId": "shadows-supportv4",
+    "inheritVersion": "org.robolectric:robolectric"
   }
 }

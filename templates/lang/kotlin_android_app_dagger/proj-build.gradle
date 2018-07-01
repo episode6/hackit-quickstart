@@ -1,0 +1,56 @@
+android {
+  compileSdkVersion {{ .AndroidCompileSdkVersion }}
+
+  defaultConfig {
+    applicationId project.group
+    minSdkVersion 16
+    targetSdkVersion {{ .AndroidCompileSdkVersion }}
+    versionCode 1
+    versionName project.version
+    testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+  }
+
+  sourceSets.each {
+    it.java.srcDirs += "src/${it.name}/kotlin"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled true
+      shrinkResources true
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+  testOptions {
+    unitTests {
+      includeAndroidResources = true
+    }
+  }
+}
+
+dependencies {
+  implementation fileTree(dir: 'libs', include: ['*.jar'])
+  implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7'
+
+  implementation 'com.android.support:appcompat-v7'
+  implementation 'com.android.support.constraint:constraint-layout'
+
+  implementation 'com.google.dagger:dagger'
+  implementation 'com.google.dagger:dagger-android'
+  implementation 'com.google.dagger:dagger-android-support'
+  kapt 'com.google.dagger:dagger-compiler'
+  kapt 'com.google.dagger:dagger-android-processor'
+
+  implementation 'com.episode6.hackit.android.inject:context-annotations'
+  implementation 'com.episode6.hackit.android.inject:context-modules'
+
+  testImplementation 'junit:junit'
+  testImplementation 'org.assertj:assertj-core'
+  testImplementation 'com.episode6.hackit.mockspresso:mockspresso-quick'
+  testImplementation 'org.mockito:mockito-inline'
+  testImplementation 'org.robolectric:robolectric'
+  testImplementation 'org.robolectric:shadows-supportv4'
+
+  androidTestImplementation 'com.squareup.assertj:assertj-android'
+  androidTestImplementation 'com.android.support.test.espresso:espresso-core'
+}

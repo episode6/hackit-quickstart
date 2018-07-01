@@ -32,7 +32,7 @@ public class BaseAppCompatActivityTest {
         .setup();
     BaseAppCompatActivity activity = controller.get();
 
-    assertThat(activity.fragmentInjector()).isNotNull();
+    assertThat(activity.supportFragmentInjector()).isNotNull();
 
     controller.pause().stop().destroy();
   }

@@ -11,7 +11,7 @@ import (
 )
 
 // AppVersion is the current version of this app
-const AppVersion = "0.0.6"
+const AppVersion = "0.0.7"
 
 var projectTypes = map[string]projectTemplate{
 	"single": &singleProject{},
@@ -20,12 +20,16 @@ var projectTypes = map[string]projectTemplate{
 }
 
 var projectLangs = map[string]languageTemplate{
-	"java":             &javaLibrary{},
-	"groovy":           &groovyLibrary{},
-	"gradle":           &gradleLibrary{},
-	"android":          &androidLibrary{},
-	"androidApp":       &androidApplication{},
-	"androidAppDagger": &androidApplicationWithDagger{},
+	"java":                   &javaLibrary{},
+	"groovy":                 &groovyLibrary{},
+	"gradle":                 &gradleLibrary{},
+	"android":                &androidLibrary{},
+	"androidApp":             &androidApplication{},
+	"androidAppDagger":       &androidApplicationWithDagger{},
+	"kotlin":                 &kotlinLibrary{},
+	"kotlinAndroid":          &kotlinAndroidLibrary{},
+	"kotlinAndroidApp":       &kotlinAndroidApplication{},
+	"kotlinAndroidAppDagger": &kotlinAndroidApplicationWithDagger{},
 	// "androidAppBootstrap": &androidApplicationWithBootstrap{},
 }
 
@@ -50,7 +54,7 @@ func main() {
 		"Initial version name to use")
 	nameStr := flag.String(
 		"name", "",
-		"The name of the new module to generate (for a multi-module project, this will be the sub-module's name)")
+		"The name of the new module to generate (for a multi-module project, this will be the sub-modules name)")
 	gdmcRepoURLStr := flag.String(
 		"gdmc", "",
 		"Url of a shared gdmc repo to add as a sub-module")
