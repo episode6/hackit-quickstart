@@ -10,7 +10,7 @@ import (
 const defaultProjectVersion = "0.0.1-SNAPSHOT"
 const defaultLicenseName = "The MIT License (MIT)"
 
-const defaultGradleVersion = "4.4"
+const defaultGradleVersion = "4.9"
 
 const defaultAndroidCompileSdkVersion = "27"
 
