@@ -1,6 +1,7 @@
 # ChangeLog
 
 ### v0.0.8-SNAPSHOT - unreleased
+ - Update default gradle 4.9 to support dependent library changes
 
 ### v0.0.7 - July 1st, 2018
  - introduce ChangeLog
