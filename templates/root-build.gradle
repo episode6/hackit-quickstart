@@ -7,7 +7,7 @@ buildscript {
   }
 }
 
-task wrapper(type: Wrapper) {
+wrapper {
   gradleVersion = "{{ .GradleVersion }}"
   distributionType = "all"
 }
